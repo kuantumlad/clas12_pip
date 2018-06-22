@@ -13,17 +13,11 @@ import org.jlab.clas.physics.LorentzVector;
        
 System.out.println(" >> TEST ELECTRONPID ");
 
-int run_number = 3050;
-String in_file = "/lustre/expphy/volatile/halla/sbs/bclary/clas12Analysis/SKIMclas12/skim_003050_pass1/skim_clas_003050.evio.1.hipo"
+int run_number = 4031;
+String in_file = INSERT FILE PATH HERE;
 
-RunPropertiesLoader run_properties = new RunPropertiesLoader();
-run_properties.loadRunProperties(run_number);
-run_properties.setRunProperties();
-
-CutLoader cut_loader = new CutLoader();
-cut_loader.loadRunCuts(run_number,"cut_nom");
-cut_loader.setRunCuts();
-cut_loader.printRunCuts();
+RunPropertiesLoader run_properties = new RunPropertiesLoader(run_number,"DATA");
+CutLoader cut_loader = new CutLoader(run_number,"DATA","cut_nom");
 
 HipoDataSource reader = new HipoDataSource();
 
