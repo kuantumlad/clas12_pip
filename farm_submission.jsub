@@ -1,0 +1,14 @@
+JOBNAME: bcPhiAnalyis 
+OS: centos7 
+TRACK: debug 
+MEMORY: 100 GB 
+DISK_SPACE: 100 GB 
+CPU: 12 
+PROJECT: clas12 
+COMMAND: /u/home/bclary/CLAS12/phi_analysis/v3/v2/v1/./compile_script.sh SCLAS12 3222 470 DATA
+OTHER_FILE:/u/home/bclary/CLAS12/phi_analysis/v3/v2/v1/compile_script.sh 
+/u/home/bclary/CLAS12/phi_analysis/v3/v2/v1/./electronPID 
+/u/home/bclary/CLAS12/phi_analysis/v3/v2/v1/target/ElectronPID-1.0-SNAPSHOT.jar 
+OUTPUT_DATA: out_temp 
+OUTPUT_TEMPLATE: 
+/w/hallb-scifs17exp/clas12/bclary/pics/pid_clary/*.hipo 

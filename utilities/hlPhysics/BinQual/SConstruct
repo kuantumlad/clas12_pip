@@ -1,0 +1,19 @@
+import os
+#import glob
+
+env = Environment(ENV=os.environ)
+env.ParseConfig("root-config --cflags --glibs")
+env.Append(CXXFLAGS = '-std=c++11')
+env.Dump()
+env.Append(CCFLAGS = ['-O2','-g'])
+env.Append(CPPPATH = ['/u/home/bclary/CLAS12/phi_analysis/v1/utilities/hlPhysics/BinQual/'])
+
+#env.Append(CPPPATH = ['/usr/lib64/'], LIBPATH = ['/usr/lib64/'])
+
+env.Append(CPPPATH = ['/u/apps/root/6.08.00/root/include/'], LIBPATH = ['/u/apps/root/6.08.00/root/lib/'],LIBS = ['Geom'])
+env.Program('binApp',Glob('*.cc'))
+
+
+
+
+

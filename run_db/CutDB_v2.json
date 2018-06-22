@@ -1,0 +1,25 @@
+{
+
+    "run_info":{
+	"r3048": {
+	    "run_number":3048,
+	    "beam_energy":6.4,
+	    "cut_type":{
+		"cuts_nominal":{
+		    "cut_type":0,
+		    "ec_samplingfraction_cuts":{
+			[
+			    {"sector_id": 1, "ec_max_fita": -0.0000227443, "ec_max_fitb": 0.00021585, "ec_max_fitc": 0.003401, "ec_max_fitd": 0.281033, "ec_min_fita": -0.00044476, "ec_min_fitb": -0.0033433, "ec_min_fitc":  -0.042742, "ec_min_fitd":0.051381},
+			    {"sector_id": 2, "ec_max_fita": -0.00098297, "ec_max_fitb": 0.01054, "ec_max_fitc": -0.02541, "ec_max_fitd": 0.32973, "ec_min_fita": 0.002422, "ec_min_fitb": -0.032483, "ec_min_fitc": 0.12361, "ec_min_fitd": 0.001471},
+			    {"sector_id": 3, "ec_max_fita": -0.00098576, "ec_max_fitb": 0.013365, "ec_max_fitc": -0.045060, "ec_max_fitd": 0.35207, "ec_min_fita": 0.001505, "ec_min_fitb": -0.02720, "ec_min_fitc": 0.118194, "ec_min_fitd": 0.009738},
+			    {"sector_id": 4, "ec_max_fita": -0.00035624, "ec_max_fitb": 0.006140, "ec_max_fitc": -0.02418, "ec_max_fitd": 0.339398, "ec_min_fita": 0.001166, "ec_min_fitb": -0.02028, "ec_min_fitc": 0.10928, "ec_min_fitd": -0.006886},
+			    {"sector_id": 5, "ec_max_fita": 0.001334, "ec_max_fitb": -0.008054, "ec_max_fitc": 0.0175172, "ec_max_fitd": 0.307856, "ec_min_fita": 0.000242525, "ec_min_fitb": -0.015441, "ec_min_fitc":  0.093504, "ec_min_fitd":0.019457},
+			    {"sector_id:" 6, "ec_max_fita": 0.000286206, "ec_max_fitb": -0.003115, "ec_max_fitc": 0.017801, "ec_max_fitd": 0.29787, "ec_min_fita": -0.000164413, "ec_min_fitb": -0.008059, "ec_min_fitc": 0.057283, "ec_min_fitd":0.060298}
+			]			
+		    }
+		}
+	    }
+	}
+
+    }
+}

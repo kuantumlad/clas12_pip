@@ -1,0 +1,15 @@
+{
+    "el_cuts": [
+	"negative_charge",
+ 	"pcal_fiducial",
+	"dcr1_fiducial",
+	"dcr2_fiducial",
+	"dcr3_fiducial",
+ 	"ecsf",
+	"ftof_hit",
+	"min_pcal_energy"
+    ],
+    "pr_cuts": [
+	"positive_charge"
+    ]
+}
