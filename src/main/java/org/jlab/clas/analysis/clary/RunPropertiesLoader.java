@@ -14,8 +14,10 @@ public class RunPropertiesLoader{
     RunInformation runinfo = new RunInformation();
     String analysis_type = null;
 
-    public RunPropertiesLoader(String analy_type){
+    public RunPropertiesLoader(int run, String analy_type){
 	analysis_type = analy_type;
+	loadRunProperties(run);
+	setRunProperties();       
     }
 
     public void loadRunProperties(int run){

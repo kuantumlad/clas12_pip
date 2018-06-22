@@ -178,11 +178,12 @@ public class ParallelElectron implements Runnable{
 
     public void initConfig(int run_number){
 
-	run_properties = new RunPropertiesLoader(dataOrSim_type);
-	if( run_number > 0 ){
-	    run_properties.loadRunProperties(run_number);
-	    run_properties.setRunProperties();
-	    run_properties.writeRunProperties();
+	run_properties = new RunPropertiesLoader(run_number,dataOrSim_type);
+	if( run_number < 0 ){
+	    System.out.println(" >> ERROR NEED RUN ");
+	    //run_properties.loadRunProperties(run_number);
+	    //run_properties.setRunProperties();
+	    //run_properties.writeRunProperties();
 	}
 	//List<String> my_el_cuts = cutconfig.el_cuts;
     }

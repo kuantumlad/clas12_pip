@@ -137,12 +137,12 @@ public class phiAnalysis{
 	//   INIT CLASSES & CUTS
 	//
  	////////////////////////////
-	RunPropertiesLoader run_properties = new RunPropertiesLoader(dataSim);
+	//RunPropertiesLoader run_properties = new RunPropertiesLoader(run_number,dataSim);
 	//run_properties.addRun("r3050");
 
 	if( run_number > 0 ){
-	    run_properties.loadRunProperties(run_number);
-	    run_properties.setRunProperties();
+	    //run_properties.loadRunProperties(run_number);
+	    //run_properties.setRunProperties();
 	    //run_properties.writeRunProperties();
 	}
 	/*
@@ -230,13 +230,13 @@ public class phiAnalysis{
 	//match_kp.initializeCuts();
 	System.out.println(" LOADING CUTS" );
 	if( run_number > 0 ){
-	    CutLoader cut_loader = new CutLoader(dataSim);
-	    System.out.println(" LOADING CUTS 2" );
- 	    cut_loader.loadRunCuts(run_number,"cut_nom");
-	    System.out.println(" LOADING CUTS 3" );		
-	    cut_loader.setRunCuts();
-	    System.out.println(" LOADING CUTS 4" );
-	    cut_loader.printRunCuts();
+	    CutLoader cut_loader = new CutLoader(run_number,dataSim,"cut_nom");
+	    //System.out.println(" LOADING CUTS 2" );
+ 	    //cut_loader.loadRunCuts(run_number,"cut_nom");
+	    //System.out.println(" LOADING CUTS 3" );		
+	    //cut_loader.setRunCuts();
+	    //System.out.println(" LOADING CUTS 4" );
+	    //cut_loader.printRunCuts();
 	}
 	
 	find_el.initializeCuts();

@@ -92,9 +92,12 @@ public class CutLoader{
     static List<Double> pos_vz_sec_5;
     static List<Double> pos_vz_sec_6;
 
-    public CutLoader(String an_type){
+    public CutLoader(int run, String an_type, String cut_strength){
 		
 	setAnalysisType(an_type);
+	loadRunCuts(run,cut_strength);
+	setRunCuts();
+	printRunCuts();
 
     }
 
