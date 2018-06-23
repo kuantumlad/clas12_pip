@@ -107,6 +107,10 @@ public class phiAnalysis{
 	    file_ext = ".hipo";
 	}
 
+	file_loc = analysisInfo[4];
+	file_name =  analysisInfo[5];
+	file_ext = ".hipo"; //JUST TAKE FILE INFO FROM INPUT PARAMETERS BC IT KEEPS CHANGING TOO MUCH
+
 	int max_files = num_files_process;
 	int count = 0;
 	

@@ -3,6 +3,7 @@ import com.google.gson.*;
 
 import java.io.*;
 import java.util.*;
+import java.net.*;
 
 import org.jlab.clas.analysis.clary.RunInformation;
 import org.json.*;
@@ -115,7 +116,10 @@ public class CutLoader{
 
 	try{
 	    Gson gson = new Gson();
-	    BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
+	    
+	    URL oracle = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    BufferedReader br = new BufferedReader(new InputStreamReader(oracle.openStream()));
+	    //BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
 	    //BufferedReader br = new BufferedReader( new FileReader("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json") );
 	    runinfo = gson.fromJson(br, RunInformation.class );
 	}
@@ -133,10 +137,18 @@ public class CutLoader{
 	try{
 	    Gson gson = new Gson();
 	    String jsonstring = gson.toJson(runinfo);
-	    FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
+
+	    URL url = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    URLConnection connection = url.openConnection();
+	    connection.setDoOutput(true);
+	    OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
+	    out.write(jsonstring);
+	    out.close();
+	    //FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
 	    //FileWriter fileWriter = new FileWriter("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json");
-	    fileWriter.write( jsonstring );
-	    fileWriter.close();
+	    //fileWriter.write( jsonstring );
+	    //fileWriter.close();
+	   
 		}
 	catch( IOException e ){
 	    System.out.println(" >> ERROR WRITING CUT DB JSON FILE " );

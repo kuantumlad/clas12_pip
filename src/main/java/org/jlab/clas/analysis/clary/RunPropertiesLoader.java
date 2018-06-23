@@ -5,6 +5,7 @@ import com.google.gson.*;
 import org.json.*;
 import org.jlab.jnp.utils.json.*;
 import org.jlab.clas.analysis.clary.RunInformation;
+import java.net.*;
 
 public class RunPropertiesLoader{
 
@@ -25,12 +26,17 @@ public class RunPropertiesLoader{
 	System.out.println(" >> LOADING JSON FILE FOR " + analysis_type + " ANALYSIS " );
 	try{
 	    Gson gson = new Gson();
-	    BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
+
+	    URL oracle = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    URLConnection yc = oracle.openConnection();
+	    //BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
+	    BufferedReader br = new BufferedReader(new InputStreamReader(oracle.openStream()));
+	    //BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
 	    //BufferedReader br = new BufferedReader( new FileReader("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json") );
 	    runinfo = gson.fromJson(br, RunInformation.class );
 	}
 	catch( IOException e ){
-	    System.out.println(" >> ERROR LOADING CUT DB JSON FILE " );
+	    System.out.println(" >> ERROR LOADING CUT DB JSON FILE " + e );
 	}	
     }
 
@@ -40,10 +46,17 @@ public class RunPropertiesLoader{
 	try{
 	    Gson gson = new Gson();
 	    String jsonstring = gson.toJson(runinfo);
-	    FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
+	    //FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
 	    //FileWriter fileWriter = new FileWriter("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json");
-	    fileWriter.write(jsonstring);
-	    fileWriter.close();
+	    //fileWriter.write(jsonstring);
+	    //fileWriter.close();
+	    URL url = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    URLConnection connection = url.openConnection();
+	    connection.setDoOutput(true);
+	    OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
+	    out.write(jsonstring);
+	    out.close();
+
 	}
 	catch( IOException e ){
 	    System.out.println(" >> ERROR WRITING TO JSON FILE " );
