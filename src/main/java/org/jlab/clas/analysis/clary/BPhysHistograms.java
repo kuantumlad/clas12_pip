@@ -145,7 +145,6 @@ public class BPhysHistograms {
 	System.out.println(" >> SAVING HIPO FILE NOW ");
 	dir.writeFile(savepath+"h_"+s_run_number+"_"+n_thread+"_phys_clary.hipo");
 
-
     }
 
     public void printHistograms(){

@@ -80,9 +80,7 @@ public class ElectronPID implements IParticleIdentifier{
 	m_el_cut_dir.put("min_mntm", minmomentum_cut);
 	m_el_cut_dir.put("min_pcal_energy", pcalhit_cut);
 	m_el_cut_dir.put("vz_pos", vz_cut);
-			
-	
-
+				
     }
 
     public void initializeCuts(){
@@ -102,6 +100,7 @@ public class ElectronPID implements IParticleIdentifier{
 	v_cuts.add(dcr2_fiducial_cut);
 	v_cuts.add(dcr3_fiducial_cut);
 	v_cuts.add(pcal_fiducial_cut);
+	//v_cuts.add(sectormatch_cut); -- ADD AFTER HELPING NICK
 
 	////////////////////
 	//TRIGGER CUT
@@ -109,7 +108,7 @@ public class ElectronPID implements IParticleIdentifier{
  	
 	//////////////
 	//ENERGY CUTS
-	v_cuts.add(ecsf_cut);	
+	v_cuts.add(ecsf_cut);
 	v_cuts.add(nphe_cut);
 	v_cuts.add(minmomentum_cut);
 	v_cuts.add(pcalhit_cut);

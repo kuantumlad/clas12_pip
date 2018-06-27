@@ -106,11 +106,16 @@ public class phiAnalysis{
 	    file_name = "skim_clas_00"+Integer.toString(run_number)+".evio.";	       
 	    file_ext = ".hipo";
 	}
-
-	file_loc = analysisInfo[4];
-	file_name =  analysisInfo[5];
-	file_ext = ".hipo"; //JUST TAKE FILE INFO FROM INPUT PARAMETERS BC IT KEEPS CHANGING TOO MUCH
-
+	else if( inName.equals("NICK") ){
+	    file_loc = analysisInfo[4];
+	    file_name = "out_inclusive2FileSolenoid0.6.Torus0.6"; //"out_inclusive12FileSolenoid-1.Torus-1InclusiveNonElastic";
+	    file_ext = "April_24_TorusSymmetric.dat.hipo";
+	}
+	else{	    
+	    file_loc = analysisInfo[4];
+	    file_name =  analysisInfo[5];
+	    file_ext = ".hipo"; //JUST TAKE FILE INFO FROM INPUT PARAMETERS BC IT KEEPS CHANGING TOO MUCH
+	}
 	int max_files = num_files_process;
 	int count = 0;
 	
@@ -300,7 +305,7 @@ public class phiAnalysis{
 	    System.out.println(">> PROCESSING FROM FILE LOCATION " + f_prefix);
 	    if( max_files == 1 ){ n_threads = 1; }
 	    int nfiles_thread = max_files/n_threads;
-	    int shift = 250;
+	    int shift = 0;
 	    for( int n = 0;  n < n_threads; n++ ){
 		el_threads.add( new ParallelElectron(simOrdata+"_thread-"+Integer.toString(n),s_run_number,f_prefix,singleMultiFile,simOrdata) );
 		System.out.println(">> THREAD PROCESSING FILES FROM " + Integer.toString(n*nfiles_thread) + " " + Integer.toString((n+1)*nfiles_thread) );

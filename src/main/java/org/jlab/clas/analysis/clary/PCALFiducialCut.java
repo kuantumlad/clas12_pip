@@ -41,6 +41,10 @@ class PCALFiducialCut implements BICandidate {
 			}
 			
 			/*
+
+			  ///USE THIS FOR FIDUCIAL CUT ON PCAL SURFACE
+			  //WHEN COMPARING TO STEFANS SHIT CODE
+
 			int sec_PCAL = sector_pcal;
 			double x_PCAL = v_pcal_hit.get(0);
 			double y_PCAL = v_pcal_hit.get(1);
@@ -49,7 +53,7 @@ class PCALFiducialCut implements BICandidate {
 			double y_PCAL_rot = y_PCAL * Math.cos(sec_PCAL*60.0*Math.PI/180) - x_PCAL * Math.sin(sec_PCAL*60.0*Math.PI/180);
 
 			double angle_PCAL = 60;
-			double height_PCAL = 45;   // PCAL starts at a hight of 39 + 1.5 PCAL
+			double height_PCAL = 47;   // PCAL starts at a hight of 39 + 1.5 PCAL
 			//scintillator bars (each is 4.5 cm)
 
 			double slope_PCAL = 1/Math.tan(0.5*angle_PCAL*Math.PI/180);
@@ -60,7 +64,7 @@ class PCALFiducialCut implements BICandidate {
 			//another 6 cm circle in the inner triangle tip to reject particles
 			//influenced by dead metarial
 
-			if(x_PCAL_rot > left_PCAL && x_PCAL_rot > right_PCAL &&	Math.pow(x_PCAL_rot,2) > radius2_PCAL && x_PCAL_rot < 372)
+			if(x_PCAL_rot > left_PCAL && x_PCAL_rot > right_PCAL &&	Math.pow(x_PCAL_rot,2) > radius2_PCAL && x_PCAL_rot < 371)
 			    {
 				return true;
 			    }					  

@@ -152,8 +152,8 @@ public class BHistoCLAS12PID {
 	h_clas12.h_el_vz.fill(clas12_vz);
 
 	int sector_ec = Detectors.getSectorECAL(event, rec_i ) - 1;
-	int sector_dc = Detectors.getSectorDC(event, rec_i ) - 1;
-	int sector_pcal = Detectors.getSectorDC(event, rec_i ) - 1;
+	int sector_dc = Detectors.getDCTrajSect(event, rec_i, 12) - 1; // PROBS NOT SAME AS SD
+	int sector_pcal = Detectors.getSectorPCAL(event, rec_i ) - 1;
 
 	if( sector_dc >= 0 ){
 	    h_clas12.h2_el_sect_thetap.get(sector_dc).fill(p, theta);
@@ -259,7 +259,7 @@ public class BHistoCLAS12PID {
 	
 	float pr_beta = recBank.getFloat("beta",rec_i);
 	double pr_vz = recBank.getFloat("vz",rec_i);
-	int sector_dc = Detectors.getSectorDC(event, rec_i ) - 1;
+	int sector_dc = Detectors.getDCTrajSect(event, rec_i, 12) - 1; // PROBS NOT SAME AS SD
 
 	double rf_time = rfBank.getFloat("time",1);
 	h_clas12proton.h_pr_rf_time.fill( rf_time );	

@@ -33,7 +33,8 @@ public class BHistoPIDLevel {
     }
 
     private int run_number = -1;
-    BPIDHistograms h_bpid;                                                                                                                                                                                 
+    BPIDHistograms h_bpid; 
+    
     BPIDProtonHistograms h_bprotonpid;
     BPIDKaonPlusHistograms h_bkppid;
 
@@ -45,9 +46,7 @@ public class BHistoPIDLevel {
 	h_bkppid = new BPIDKaonPlusHistograms(run_number);
 	
     }
-    
-    EmbeddedCanvas c_el = new EmbeddedCanvas();
-    
+        
     Vector<H1F> v_el_pass = new Vector<H1F>();
     Vector<H2F> v2_el_pass = new Vector<H2F>();
 
@@ -162,7 +161,7 @@ public class BHistoPIDLevel {
 		double ecdep_tot = 0; //ENERGY DEPOSITED WITHIN ALL LAYERS
 	
 		int sector_ec = Detectors.getSectorECAL( event, rec_i ) - 1; 
-		int sector_dc = Detectors.getSectorDC( event, rec_i ) - 1;
+		int sector_dc = Detectors.getDCTrajSect(event, rec_i, 12) - 1; // PROBS NOT SAME AS SD
 		int sector_pcal = Detectors.getSectorPCAL( event, rec_i ) - 1;
 
 		double e_pcal = 0.0;
@@ -191,6 +190,9 @@ public class BHistoPIDLevel {
 		h_bpid.h2_el_pcalecal.get(j).fill(e_pcal, e_ecal ); 
 
 		h_bpid.h_el_p.get(j).fill( p );
+
+		h_bpid.h_el_p_test.get(j).fill(p);
+
 		h_bpid.h_el_theta.get(j).fill( theta );
 		h_bpid.h_el_phi.get(j).fill( phi );
 		h_bpid.h_el_vz.get(j).fill( vz );
@@ -210,11 +212,11 @@ public class BHistoPIDLevel {
 		h_bpid.h2_el_pcalp.get(j).fill(p, e_pcal/p);
 		h_bpid.h2_el_eieo.get(j).fill(e_ecal_ei, e_ecal_eo);
 
+		//System.out.println(" >> " + j + " " + p + " " + theta );
 		h_bpid.h2_el_thetap.get(j).fill(p, theta);
 		h_bpid.h2_el_phip.get(j).fill(p, phi);
 		h_bpid.h2_el_edepdiff.get(j).fill( (e_ecal - e_pcal)/(e_ecal + e_pcal), e_ecal + e_pcal );
 		h_bpid.h2_el_phivz.get(j).fill(vz, phi);
-
 		
 		  		
 		if( event.hasBank("REC::Track") && event.hasBank("TimeBasedTrkg::TBCrosses") && event.hasBank("TimeBasedTrkg::TBTracks") ){

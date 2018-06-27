@@ -13,6 +13,7 @@ public class CutType{
     int cutlvl;
     Map<String, ECCutParameters> cut_ecdetectors;
     Map<String, BetaCutParameters> cut_betadetectors;
+    Map<String, VertexCutParameters> cut_vertex;
     
     public CutType(){
 	
@@ -35,6 +36,10 @@ public class CutType{
 	cut_betadetectors = new HashMap<String,BetaCutParameters>();
     }
 
+    public void setVertexParameterMap(){
+	cut_vertex = new HashMap<String,VertexCutParameters>();
+    }
+
     public Map<String, ECCutParameters> getECCutParameters() { //CutDetectors> getCutDetectors(){
 	return cut_ecdetectors;
     }
@@ -42,6 +47,10 @@ public class CutType{
     //new
     public Map<String, BetaCutParameters> getBetaCutParameters() { //CutDetectors> getCutDetectors(){
 	return cut_betadetectors;
+    }
+
+    public Map<String, VertexCutParameters> getVertexCutParameters() { //CutDetectors> getCutDetectors(){
+	return cut_vertex;
     }
 
     public void addECCutParameters(String temp_name){
@@ -53,6 +62,10 @@ public class CutType{
  	cut_betadetectors.put(temp_name, new BetaCutParameters() );
     }
 
+    public void addVertexCutParameters(String temp_name){
+ 	cut_vertex.put(temp_name, new VertexCutParameters() );
+    }
+
     public ECCutParameters getECCutParametersClass( String temp_name ){
 	return cut_ecdetectors.get(temp_name);
     }
@@ -60,6 +73,10 @@ public class CutType{
     //new
     public BetaCutParameters getBetaCutParametersClass( String temp_name ){
 	return cut_betadetectors.get(temp_name);
+    }
+
+    public VertexCutParameters getVertexCutParametersClass( String temp_name ){
+	return cut_vertex.get(temp_name);
     }
 
 }

@@ -14,12 +14,15 @@ class ECALInnerOuterCut implements BICandidate {
 
 	double edep_ei = 0.0;
 	double edep_eo = 0.0;
-	if(event.hasBank("REC::Calorimeter")){
-	    
+	double edep_pcal = 0.0;
+	if(event.hasBank("REC::Calorimeter")){	    
 	    Map<Integer, Double> m_edep = Detectors.getEDepCal( event, rec_i );
 	    for( Map.Entry<Integer,Double> entry : m_edep.entrySet() ){
 		int layer = entry.getKey();
 		double edep = entry.getValue();
+		if( layer == Detectors.pcal ){
+		    edep_pcal = edep;
+		}
 		if( layer == Detectors.ec_ei ){
 		    edep_ei = edep;
 		}
@@ -27,8 +30,9 @@ class ECALInnerOuterCut implements BICandidate {
 		    edep_eo = edep;
 		}
 	    }
+
 	    double edep_tot = edep_ei + edep_eo;
-	    if( edep_ei > 0.05 ){
+	    if( edep_pcal > 0.06 ){
 		return true;
 	    }	    
 	}

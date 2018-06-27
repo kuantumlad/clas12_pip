@@ -47,7 +47,7 @@ public class DCFiducialCut implements BICandidate{
 	
 
 	double angle = 60;
-	double height = 26;//31;
+	double height = 26;//31; // CHANGE TO 29 LATER / AFTER DOING 2 GEV
 
 	Vector<Double> dc_r1 = Detectors.getDCTrajR1(event, rec_i);
 	double cx = dc_r1.get(0);
@@ -63,7 +63,7 @@ public class DCFiducialCut implements BICandidate{
 	    double left  = (height - slope * y1_rot);
 	    double right = (height + slope * y1_rot);
 	    
-	    double radius2_DCr1 = Math.pow(31,2) - Math.pow(y1_rot,2);    // cut out the inner circle //32 -> 31 temp mod
+	    double radius2_DCr1 = Math.pow(31,2) - Math.pow(y1_rot,2);    // cut out the inner circle //32 -> 31 temp mod // CHANGED TO 30 TO MATCH STEFAN
 	    
 	    if( x1_rot > left && x1_rot > right &&  Math.pow(x1_rot,2) > radius2_DCr1 ){
 

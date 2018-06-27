@@ -211,7 +211,7 @@ public class BHistoKinPlotter {
 	
 	double beta_mntm = Calculator.betaMntm( event, rec_i, PhysicalConstants.mass_proton);
 
-	int sector = Detectors.getSectorDC( event, rec_i );
+	int sector = Detectors.getDCTrajSect(event, rec_i, 12) - 1; // PROBS NOT SAME AS SD
 
 	if( sector > 0 ){
 	    for( Map.Entry<Integer, Vector<H1F> > entry : m_beta_sector_layers.entrySet() ){

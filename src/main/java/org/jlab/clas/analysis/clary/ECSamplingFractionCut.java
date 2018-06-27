@@ -19,7 +19,7 @@ class ECSamplingFractionCut implements BICandidate {
 	    
 	    DataBank recBank = event.getBank("REC::Particle");	    
 	    double p = Calculator.lv_particle(recBank, rec_i, 11).p();
-	    int sector = Detectors.getSectorECAL(event, rec_i) - 1;
+	    int sector = 7;// Detectors.getSectorECAL(event, rec_i) - 1;
 	    //int sector = recBank.getByte("sector",rec_i);
 
 	    for( Map.Entry<Integer, Double> entry : m_edep.entrySet() ){

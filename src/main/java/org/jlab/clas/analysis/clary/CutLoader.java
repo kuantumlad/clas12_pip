@@ -227,6 +227,76 @@ public class CutLoader{
 	kp_beta_min_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("kp_beta_cut_ftofl2").getMinFitParametersSector6("kaon");
     }
    
+    public void setVertexCut(){
+		
+	//List<Double> vz_min_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector1();
+	//neg_vz_sec_1.add(vz_min_1.get(0));
+
+	//System.out.println(" >> " + runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector1().get(0) );
+
+	double min1  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector1().get(0);
+	double max1  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector1().get(0);
+	List<Double> temp1 = new ArrayList<Double>();
+	temp1.add(min1);
+	temp1.add(max1);
+	neg_vz_sec_1 = temp1;
+
+	double min2  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector2().get(0);
+	double max2  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector2().get(0);
+	List<Double> temp2 = new ArrayList<Double>();
+	temp2.add(min2);
+	temp2.add(max2);
+	neg_vz_sec_2 = temp2;
+
+	double min3  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector3().get(0);
+	double max3  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector3().get(0);
+	List<Double> temp3 = new ArrayList<Double>();
+	temp3.add(min3);
+	temp3.add(max3);
+	neg_vz_sec_3 = temp3;
+
+	double min4  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector4().get(0);
+	double max4  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector4().get(0);
+	List<Double> temp4 = new ArrayList<Double>();
+	temp4.add(min4);
+	temp4.add(max4);
+	neg_vz_sec_4 = temp4;
+
+	double min5  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector5().get(0);
+	double max5  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector5().get(0);
+	List<Double> temp5 = new ArrayList<Double>();
+	temp5.add(min5);
+	temp5.add(max5);
+	neg_vz_sec_5 = temp5;
+
+	double min6  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector6().get(0);
+	double max6  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector6().get(0);
+	List<Double> temp6 = new ArrayList<Double>();
+	temp6.add(min6);
+	temp6.add(max6);
+	neg_vz_sec_6 = temp6;
+
+	/*neg_vz_sec_1.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector1().get(0));
+
+	neg_vz_sec_2.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector2().get(0));
+	neg_vz_sec_2.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector2().get(0));
+
+	neg_vz_sec_3.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector3().get(0));
+	neg_vz_sec_3.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector3().get(0));
+
+	neg_vz_sec_4.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector4().get(0));
+	neg_vz_sec_4.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector4().get(0));
+
+	neg_vz_sec_5.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector5().get(0));
+	neg_vz_sec_5.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector5().get(0));
+
+	neg_vz_sec_6.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector6().get(0));
+	neg_vz_sec_6.add(runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector6().get(0));
+	*/
+
+    }
+
+
     public void setRunCuts(){
 
 	setECMaxSectorAllCuts();
@@ -234,6 +304,8 @@ public class CutLoader{
 
 	setBetaMaxSectorAllCuts();
 	setBetaMinSectorAllCuts();
+	
+	setVertexCut();
 
     }
 
@@ -270,8 +342,14 @@ public class CutLoader{
 	    System.out.println(">> KAON PLUS BETA FTOF L2 MIN : S1 " + kp_beta_min_fit_values_sector_1.get(p) + " S2 " + kp_beta_min_fit_values_sector_2.get(p) + " S3 " + kp_beta_min_fit_values_sector_3.get(p) + " S4 " + kp_beta_min_fit_values_sector_4.get(p) + " S5 " + kp_beta_min_fit_values_sector_5.get(p) + " S6 " + kp_beta_min_fit_values_sector_6.get(p) );
 	}
 
-    
-
+	System.out.println(" >> PRINTING VERTEX CUTS " );
+	System.out.println(" >> VERTEX CUT SECTOR 1 " + neg_vz_sec_1 );
+	System.out.println(" >> VERTEX CUT SECTOR 2 " + neg_vz_sec_2 );
+	System.out.println(" >> VERTEX CUT SECTOR 3 " + neg_vz_sec_3 );
+	System.out.println(" >> VERTEX CUT SECTOR 4 " + neg_vz_sec_4 );
+	System.out.println(" >> VERTEX CUT SECTOR 5 " + neg_vz_sec_5 );
+	System.out.println(" >> VERTEX CUT SECTOR 6 " + neg_vz_sec_6 );
+	
     }
 
     static public List<Double> getECMaxSector1Cut(){ return ecsf_max_s1; }
@@ -329,5 +407,12 @@ public class CutLoader{
     static public List<Double> getMinKPBetaSector4Cut(){ return kp_beta_min_fit_values_sector_4; }
     static public List<Double> getMinKPBetaSector5Cut(){ return kp_beta_min_fit_values_sector_5; }
     static public List<Double> getMinKPBetaSector6Cut(){ return kp_beta_min_fit_values_sector_6; }
+
+    static public List<Double> getVertexCutSector1(){ return neg_vz_sec_1; }
+    static public List<Double> getVertexCutSector2(){ return neg_vz_sec_2; }
+    static public List<Double> getVertexCutSector3(){ return neg_vz_sec_3; }
+    static public List<Double> getVertexCutSector4(){ return neg_vz_sec_4; }
+    static public List<Double> getVertexCutSector5(){ return neg_vz_sec_5; }
+    static public List<Double> getVertexCutSector6(){ return neg_vz_sec_6; }
 
 }

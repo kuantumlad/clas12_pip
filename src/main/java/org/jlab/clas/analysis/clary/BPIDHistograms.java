@@ -30,15 +30,19 @@ public class BPIDHistograms {
     private int run_number = -1;
     private String s_run_number = " ";
     private String n_thread = " ";
+
+    private TDirectory dir;
+
     public BPIDHistograms(int temp_run, String temp_n_threads) {
 	//constructor
 	run_number = temp_run;
 	s_run_number = Integer.toString(run_number);
 	n_thread = temp_n_threads;
+	dir = new TDirectory();
+
     }
 
     //CREATE HISTOGRAMS FOR CUT BASED HISTO HERE
-    TDirectory dir = new TDirectory();
 
     String savepath = "/home/bclary/CLAS12/pics/pid_clary/";
 
@@ -51,6 +55,9 @@ public class BPIDHistograms {
     Vector<H1F> h_el_p_cutrates = new Vector<H1F>();
 
     Vector<H1F> h_el_p = new Vector<H1F>();
+
+    Vector<H1F> h_el_p_test = new Vector<H1F>();
+
     Vector<H1F> h_el_theta = new Vector<H1F>();
     Vector<H1F> h_el_phi = new Vector<H1F>();
     Vector<H1F> h_el_vz = new Vector<H1F>();
@@ -205,8 +212,10 @@ public class BPIDHistograms {
     int n_rebinx = 5;
     int n_rebiny = 5;
 
+    H1F h_el_comparison = new H1F("h_"+s_run_number+"_el_comparison","h_"+s_run_number+"_el_cutrates", 10, 0.0, 10.0 );
 
-   H1F h_el_comparison = new H1F("h_"+s_run_number+"_el_comparison","h_"+s_run_number+"_el_cutrates", 10, 0.0, 10.0 );
+    //
+
     H1F h_el_p_comp = new H1F("h_"+s_run_number+"_el_p_comp","h_"+s_run_number+"_el_p_comp",100,0.0,beam_energy );
     H1F h_el_theta_comp = new H1F("h_"+s_run_number+"_el_theta_comp","h_"+s_run_number+"_el_theta_comp",100,min_theta, max_theta );
     H1F h_el_phi_comp = new H1F("h_"+s_run_number+"_el_phi_comp","h_"+s_run_number+"_el_phi_comp",200, min_phi, max_phi );
@@ -216,7 +225,6 @@ public class BPIDHistograms {
     H1F h_el_w_comp = new H1F("h_"+s_run_number+"_el_w_comp","h_"+s_run_number+"_el_w_comp",100, 0.0, 6.0);
 
     H2F h_el_q2x_comp = new H2F("h_"+s_run_number+"_el_q2x_comp","h_"+s_run_number+"_el_q2x_comp", 200, 0.0, 1.1, 200, 0.0, beam_energy);
-
 
     public void createElectronHistoToHipoOut( int i ){
 		
@@ -229,6 +237,9 @@ public class BPIDHistograms {
 	h_el_p_cutrates.add( new H1F("h_"+s_run_number+"_el_prates_cutlvl"+Integer.toString(i),"h_"+s_run_number+"_el_prates_cutlvl"+Integer.toString(i), 100, min_p, max_p ) );
 
 	h_el_p.add( new H1F("h_"+s_run_number+"_el_p_cutlvl"+Integer.toString(i),"h_"+s_run_number+"_el_p_cutlvl"+Integer.toString(i), 100, min_p, max_p ) );
+
+	h_el_p_test.add( new H1F("h_"+s_run_number+"_el_p_test_cutlvl"+Integer.toString(i),"h_"+s_run_number+"_el_p_test_cutlvl"+Integer.toString(i), 100, min_p, max_p ) );
+
 	h_el_theta.add( new H1F("h_"+s_run_number+"_el_theta_cutlvl"+Integer.toString(i),"h_"+s_run_number+"_el_theta_cutlvl"+Integer.toString(i), 100, min_theta, max_theta) );
 	h_el_phi.add( new H1F("h_"+s_run_number+"_el_phi_cutlvl"+Integer.toString(i),"h_"+s_run_number+"_el_phi_cutlvl"+Integer.toString(i), 100, min_phi, max_phi ) );
 	h_el_vz.add( new H1F("h_"+s_run_number+"_el_vz_cutlvl"+Integer.toString(i),"h_"+s_run_number+"_el_vz_cutlvl"+Integer.toString(i), 100, min_vz, max_vz ) );
@@ -504,13 +515,16 @@ public class BPIDHistograms {
 
 	dir.mkdir("/cutlvls/h_el_p/");
 	dir.cd("/cutlvls/h_el_p/");
-	for( H1F h_temp : h_el_p ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	for( int i  = 0; i < h_el_p.size(); i++ ){
+	    EmbeddedCanvas ctemp_p = new EmbeddedCanvas();
+	    ctemp_p.setSize(800,800);
+	    ctemp_p.divide(1,1);
+	    ctemp_p.cd(0);
+	    ctemp_p.draw(h_el_p.get(i));
+	    H1F h_temp = h_el_p.get(i);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
-	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
+
 
 	dir.mkdir("/cutlvls/h_el_theta/");
 	dir.cd("/cutlvls/h_el_theta/");
@@ -518,7 +532,17 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
+	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
+	}
+
+	dir.mkdir("/cutlvls/h_el_pt/");
+	dir.cd("/cutlvls/h_el_pt/");
+	for( H1F h_temp : h_el_p ){
+	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    ctemp.setSize(800,800);
+	    dir.addDataSet(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -538,7 +562,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);	
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -548,7 +572,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
       
@@ -558,7 +582,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -566,9 +590,9 @@ public class BPIDHistograms {
 	dir.cd("/cutlvls/h_el_ecei/");
 	for( H1F h_temp : h_el_ecei ){
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    ctemp.setSize(800,800);	    
+	    ctemp.draw(h_temp);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -578,7 +602,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -588,7 +612,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -598,7 +622,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -608,7 +632,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -618,7 +642,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -628,7 +652,7 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
@@ -638,15 +662,15 @@ public class BPIDHistograms {
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
-	    //ctemp.draw(h_temp);
+	    ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h_el_ecv/");
 	dir.cd("/cutlvls/h_el_ecv/");
 	for( H1F h_temp : h_el_ecv ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    // EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
 	    //ctemp.draw(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
@@ -655,91 +679,93 @@ public class BPIDHistograms {
 	dir.mkdir("/cutlvls/h_el_ecw/");
 	dir.cd("/cutlvls/h_el_ecw/");
 	for( H1F h_temp : h_el_ecw ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    //EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_etotnphe/");
-	dir.cd("/cutlvls/h2_el_etotnphe");
+	dir.cd("/cutlvls/h2_el_etotnphe/");
 	for( H2F h2_temp : h2_el_etotnphe ){
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
 	    dir.addDataSet(h2_temp);
-	    //ctemp.draw(h2_temp,"colz");
+	    ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_ectotp/");
- 	dir.cd("/cutlvls/h2_el_ectotp");
+ 	dir.cd("/cutlvls/h2_el_ectotp/");
 	for( H2F h2_temp : h2_el_ectotp ){
 	    //H2F h2_temprbX = h2_temp.rebinX(n_rebinx);
 	    //H2F h2_temprbXY = h2_temprbX.rebinY(n_rebiny);
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
-	    dir.addDataSet(h2_temp);
-	    //ctemp.draw(h2_temp,"colz");
+	    dir.addDataSet((H2F)h2_temp);
+	    ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_ectotp2/");
- 	dir.cd("/cutlvls/h2_el_ectotp2");
+ 	dir.cd("/cutlvls/h2_el_ectotp2/");
 	for( H2F h2_temp : h2_el_ectotp2 ){
 	    //H2F h2_temprbX = h2_temp.rebinX(n_rebinx);
 	    //H2F h2_temprbXY = h2_temprbX.rebinY(n_rebiny);
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    //EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h2_temp);
 	    //ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_pcalp/");
- 	dir.cd("/cutlvls/h2_el_pcalp");
+ 	dir.cd("/cutlvls/h2_el_pcalp/");
 	for( H2F h2_temp : h2_el_pcalp ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    //EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h2_temp);
 	    // ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_eieo/");
- 	dir.cd("/cutlvls/h2_el_eieo");
+ 	dir.cd("/cutlvls/h2_el_eieo/");
 	for( H2F h2_temp : h2_el_eieo ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    //EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h2_temp);
 	    //ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_thetap/");
- 	dir.cd("/cutlvls/h2_el_thetap");
+ 	dir.cd("/cutlvls/h2_el_thetap/");
+	System.out.println(" >> MAKING THETA P HISTO ");
 	for( H2F h2_temp : h2_el_thetap ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    //EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h2_temp);
+	    System.out.println(" >> " + h2_temp.getTitle() );
 	    //ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_phip/");
- 	dir.cd("/cutlvls/h2_el_phip");
+ 	dir.cd("/cutlvls/h2_el_phip/");
 	for( H2F h2_temp : h2_el_phip ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    //EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h2_temp);
 	    //ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
 	dir.mkdir("/cutlvls/h2_el_echitxy/");
- 	dir.cd("/cutlvls/h2_el_echitxy");
+ 	dir.cd("/cutlvls/h2_el_echitxy/");
 	for( H2F h2_temp : h2_el_echitxy ){
-	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
-	    ctemp.setSize(800,800);
+	    //EmbeddedCanvas ctemp = new EmbeddedCanvas();
+	    //ctemp.setSize(800,800);
 	    dir.addDataSet(h2_temp);
 	    //ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
@@ -772,7 +798,7 @@ public class BPIDHistograms {
 	fid_cut_bottom.setLineWidth(3);
 	
 	dir.mkdir("/cutlvls/h2_el_pcalhitxy/");
- 	dir.cd("/cutlvls/h2_el_pcalhitxy");
+ 	dir.cd("/cutlvls/h2_el_pcalhitxy/");
 	for( H2F h2_temp : h2_el_pcalhitxy ){
 	    EmbeddedCanvas c_fid_pcal = new EmbeddedCanvas();
 	    c_fid_pcal.setSize(800,800);
@@ -790,7 +816,7 @@ public class BPIDHistograms {
 
 
 	dir.mkdir("/cutlvls/h2_el_pcalecal/");
- 	dir.cd("/cutlvls/h2_el_pcalecal");
+ 	dir.cd("/cutlvls/h2_el_pcalecal/");
 	for( H2F h2_temp : h2_el_pcalecal ){
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
 	    ctemp.setSize(800,800);
@@ -944,7 +970,7 @@ public class BPIDHistograms {
 	c_temp1.setSize(800,800);
 	c_temp1.divide(3,2);
 	dir.mkdir("/cutlvls/h_el_w/");
- 	dir.cd("/cutlvls/h_el_w");
+ 	dir.cd("/cutlvls/h_el_w/");
 	int c_i = 0;
 	for( H1F h_temp : h_el_w ){
 	    dir.addDataSet(h_temp);
@@ -956,7 +982,7 @@ public class BPIDHistograms {
 	//c_temp1.save(savepath+"h_"+s_run_number+"_el_w_cutset.png");
 
 	dir.mkdir("/cutlvls/h2_el_wphi/");
- 	dir.cd("/cutlvls/h2_el_wphi");
+ 	dir.cd("/cutlvls/h2_el_wphi/");
 	int c_j = 0;
 	for( H2F h_temp : h2_el_wphi ){
 	    EmbeddedCanvas c_temp2 = new EmbeddedCanvas();
@@ -971,7 +997,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_wq2/");
- 	dir.cd("/cutlvls/h2_el_wq2");
+ 	dir.cd("/cutlvls/h2_el_wq2/");
 	int c_m = 0;
 	for( H2F h_temp : h2_el_wq2 ){ 
 	    EmbeddedCanvas c_temp3 = new EmbeddedCanvas();
@@ -987,7 +1013,7 @@ public class BPIDHistograms {
 
 
 	dir.mkdir("/cutlvls/h2_el_phivz/");
- 	dir.cd("/cutlvls/h2_el_phivz");              		
+ 	dir.cd("/cutlvls/h2_el_phivz/");              		
 	for( int i = 0; i < h2_el_phivz.size(); i++ ){
 		H2F h2_temp = h2_el_phivz.get(i);
 		EmbeddedCanvas ctemp = new EmbeddedCanvas();
@@ -1003,7 +1029,7 @@ public class BPIDHistograms {
 	//SECTOR BASED HISTOGRAMS
 
 	dir.mkdir("/cutlvls/h_el_sect_p/");
- 	dir.cd("/cutlvls/h_el_sect_p");              		
+ 	dir.cd("/cutlvls/h_el_sect_p/");              		
 	for( int i = 0; i < h_el_sect_p.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_p.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1017,7 +1043,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_theta/");
- 	dir.cd("/cutlvls/h_el_sect_theta");              		
+ 	dir.cd("/cutlvls/h_el_sect_theta/");              		
 	for( int i = 0; i < h_el_sect_theta.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_theta.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1031,7 +1057,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_phi/");
- 	dir.cd("/cutlvls/h_el_sect_phi");              		
+ 	dir.cd("/cutlvls/h_el_sect_phi/");              		
 	for( int i = 0; i < h_el_sect_phi.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_phi.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1045,7 +1071,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_vz/");
- 	dir.cd("/cutlvls/h_el_sect_vz");              		
+ 	dir.cd("/cutlvls/h_el_sect_vz/");              		
 	for( int i = 0; i < h_el_sect_vz.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_vz.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1059,7 +1085,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_timing/");
- 	dir.cd("/cutlvls/h_el_sect_timing");              		
+ 	dir.cd("/cutlvls/h_el_sect_timing/");              		
 	for( int i = 0; i < h_el_sect_timing.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_timing.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1073,7 +1099,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_nphe/");
- 	dir.cd("/cutlvls/h_el_sect_nphe");              		
+ 	dir.cd("/cutlvls/h_el_sect_nphe/");              		
 	for( int i = 0; i < h_el_sect_nphe.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_nphe.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1087,7 +1113,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_pcaltot/");
- 	dir.cd("/cutlvls/h_el_sect_pcaltot");              		
+ 	dir.cd("/cutlvls/h_el_sect_pcaltot/");              		
 	for( int i = 0; i < h_el_sect_pcal.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_pcal.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1101,7 +1127,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_ecei/");
- 	dir.cd("/cutlvls/h_el_sect_ecei");              		
+ 	dir.cd("/cutlvls/h_el_sect_ecei/");              		
 	for( int i = 0; i < h_el_sect_ecei.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_ecei.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1115,7 +1141,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_eceo/");
- 	dir.cd("/cutlvls/h_el_sect_eceo");              		
+ 	dir.cd("/cutlvls/h_el_sect_eceo/");              		
 	for( int i = 0; i < h_el_sect_eceo.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_eceo.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1129,7 +1155,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_ectot/");
- 	dir.cd("/cutlvls/h_el_sect_ectot");              		
+ 	dir.cd("/cutlvls/h_el_sect_ectot/");              		
 	for( int i = 0; i < h_el_sect_ectot.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_ectot.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1143,7 +1169,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h_el_sect_w/");
- 	dir.cd("/cutlvls/h_el_sect_w");
+ 	dir.cd("/cutlvls/h_el_sect_w/");
 	System.out.println(" >> W " + h_el_sect_w.size() );
 	for( int i = 0; i < h_el_sect_w.size(); i++ ){
 	    EmbeddedCanvas c_w = new EmbeddedCanvas();
@@ -1182,7 +1208,7 @@ public class BPIDHistograms {
 	*/
 
 	dir.mkdir("/cutlvls/h2_el_sect_etotnphe/");
- 	dir.cd("/cutlvls/h2_el_sect_etotnphe");              		
+ 	dir.cd("/cutlvls/h2_el_sect_etotnphe/");              		
 	for( int i = 0; i < h2_el_sect_etotnphe.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_etotnphe.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1196,7 +1222,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_ectotp/");
- 	dir.cd("/cutlvls/h2_el_sect_ectotp");              		
+ 	dir.cd("/cutlvls/h2_el_sect_ectotp/");              		
 	for( int i = 0; i < h2_el_sect_ectotp.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_ectotp.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){				
@@ -1210,7 +1236,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_ectotp2/");
- 	dir.cd("/cutlvls/h2_el_sect_ectotp2");              		
+ 	dir.cd("/cutlvls/h2_el_sect_ectotp2/");              		
 	for( int i = 0; i < h2_el_sect_ectotp2.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_ectotp2.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){				
@@ -1224,7 +1250,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2rb_el_sect_ectotp/");
- 	dir.cd("/cutlvls/h2rb_el_sect_ectotp");              		
+ 	dir.cd("/cutlvls/h2rb_el_sect_ectotp/");              		
 	for( int i = 0; i < h2_el_sect_ectotp.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_ectotp.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){				
@@ -1240,7 +1266,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_pcalp/");
- 	dir.cd("/cutlvls/h2_el_sect_pcalp");              		
+ 	dir.cd("/cutlvls/h2_el_sect_pcalp/");              		
 	for( int i = 0; i < h2_el_sect_pcalp.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_pcalp.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1254,7 +1280,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_eieo/");
- 	dir.cd("/cutlvls/h2_el_sect_eieo");              		
+ 	dir.cd("/cutlvls/h2_el_sect_eieo/");              		
 	for( int i = 0; i < h2_el_sect_eieo.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_eieo.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){	
@@ -1284,7 +1310,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_phip/");
- 	dir.cd("/cutlvls/h2_el_sect_phip");              		
+ 	dir.cd("/cutlvls/h2_el_sect_phip/");              		
 	for( int i = 0; i < h2_el_sect_phip.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_phip.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1298,7 +1324,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_thetavz/");
- 	dir.cd("/cutlvls/h2_el_sect_thetavz");              		
+ 	dir.cd("/cutlvls/h2_el_sect_thetavz/");              		
 	for( int i = 0; i < h2_el_sect_thetavz.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_thetavz.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1312,7 +1338,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_phivz/");
- 	dir.cd("/cutlvls/h2_el_sect_phivz");              		
+ 	dir.cd("/cutlvls/h2_el_sect_phivz/");              		
 	for( int i = 0; i < h2_el_sect_phivz.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_phivz.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1326,7 +1352,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_pvz/");
- 	dir.cd("/cutlvls/h2_el_sect_pvz");              		
+ 	dir.cd("/cutlvls/h2_el_sect_pvz/");              		
 	for( int i = 0; i < h2_el_sect_pvz.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_pvz.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1340,7 +1366,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_pcalecal/");
- 	dir.cd("/cutlvls/h2_el_sect_pcalecal");              		
+ 	dir.cd("/cutlvls/h2_el_sect_pcalecal/");              		
 	for( int i = 0; i <  h2_el_sect_pcalecal.size(); i++ ){
 	    Vector<H2F> v_temp =  h2_el_sect_pcalecal.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1354,7 +1380,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_wp/");
- 	dir.cd("/cutlvls/h2_el_sect_wp");              		
+ 	dir.cd("/cutlvls/h2_el_sect_wp/");              		
 	for( int i = 0; i < h2_el_sect_wp.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_wp.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1368,7 +1394,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_ptime/");
- 	dir.cd("/cutlvls/h2_el_sect_ptime");              		
+ 	dir.cd("/cutlvls/h2_el_sect_ptime/");              		
 	for( int i = 0; i < h2_el_sect_ptime.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_ptime.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1382,7 +1408,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_dc_R3_xy/");
- 	dir.cd("/cutlvls/h2_el_sect_dc_R3_xy");              		
+ 	dir.cd("/cutlvls/h2_el_sect_dc_R3_xy/");              		
 	for( int i = 0; i < h2_el_sect_dc_R3_xy.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_dc_R3_xy.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1396,7 +1422,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_dc_R1_xy/");
- 	dir.cd("/cutlvls/h2_el_sect_dc_R1_xy");              		
+ 	dir.cd("/cutlvls/h2_el_sect_dc_R1_xy/");              		
 	for( int i = 0; i < h2_el_sect_dc_R1_xy.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_dc_R1_xy.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1410,7 +1436,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_dc_R3_lxy/");
- 	dir.cd("/cutlvls/h2_el_sect_dc_R3_lxy");              		
+ 	dir.cd("/cutlvls/h2_el_sect_dc_R3_lxy/");              		
 	for( int i = 0; i < h2_el_sect_dc_R3_lxy.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_dc_R3_lxy.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1424,7 +1450,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_dc_R1_lxy/");
- 	dir.cd("/cutlvls/h2_el_sect_dc_R1_lxy");              		
+ 	dir.cd("/cutlvls/h2_el_sect_dc_R1_lxy/");              		
 	for( int i = 0; i < h2_el_sect_dc_R1_lxy.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_dc_R1_lxy.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1438,7 +1464,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_pcalhitxy/");
- 	dir.cd("/cutlvls/h2_el_sect_pcalhitxy");              		
+ 	dir.cd("/cutlvls/h2_el_sect_pcalhitxy/");              		
 	for( int i = 0; i < h2_el_sect_pcalhitxy.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_pcalhitxy.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		
@@ -1452,7 +1478,7 @@ public class BPIDHistograms {
 	}
 
 	dir.mkdir("/cutlvls/h2_el_sect_q2w/");
- 	dir.cd("/cutlvls/h2_el_sect_q2w");              		
+ 	dir.cd("/cutlvls/h2_el_sect_q2w/");              		
 	for( int i = 0; i < h2_el_sect_q2w.size(); i++ ){
 	    Vector<H2F> v_temp = h2_el_sect_q2w.get(i);       
 	    for( int j = 0; j < v_temp.size(); j++){		

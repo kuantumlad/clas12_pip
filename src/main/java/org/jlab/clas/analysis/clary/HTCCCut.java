@@ -14,7 +14,7 @@ class HTCCCut implements BICandidate {
 	double nphe = Detectors.getCherenkovNPHE( event, rec_index );
 
 
-	if( nphe >= 2 ){
+	if( nphe > 2 ){
 	    //System.out.println(" >> IN ELECTRON CHARGE CUT " + charge  );	    
 	    return true;
 	}

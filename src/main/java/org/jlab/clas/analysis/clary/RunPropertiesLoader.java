@@ -19,6 +19,7 @@ public class RunPropertiesLoader{
 	analysis_type = analy_type;
 	loadRunProperties(run);
 	setRunProperties();       
+	
     }
 
     public void loadRunProperties(int run){
@@ -77,6 +78,7 @@ public class RunPropertiesLoader{
 
     public void setBeamEnergy(){
 	beamEnergy = runinfo.getRunParameters().get(run_number).getBeamEnergy();
+	System.out.println(">> BEAM ENERGY SET TO: " + beamEnergy);
     }
 
     public void updateBeamEnergy( double temp ){
