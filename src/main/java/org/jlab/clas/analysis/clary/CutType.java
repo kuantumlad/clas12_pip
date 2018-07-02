@@ -7,16 +7,18 @@ import java.util.*;
 
 import org.jlab.clas.analysis.clary.ECCutParameters;//CutDetectors;
 import org.jlab.clas.analysis.clary.BetaCutParameters;//CutDetectors;
+import org.jlab.clas.analysis.clary.VertexCutParameters;//CutDetectors;
 
 public class CutType{
 
     int cutlvl;
+    Map<String, VertexCutParameters> cut_vertex;// = new HashMap<String,VertexCutParameters>();
     Map<String, ECCutParameters> cut_ecdetectors;
     Map<String, BetaCutParameters> cut_betadetectors;
-    Map<String, VertexCutParameters> cut_vertex;
     
     public CutType(){
-	
+	//setVertexParameterMap();	
+
     }
    
     public void setCutLevel( int temp_cutlvl ){
@@ -41,6 +43,7 @@ public class CutType{
     }
 
     public Map<String, ECCutParameters> getECCutParameters() { //CutDetectors> getCutDetectors(){
+	System.out.println(" >> getting sc sf shit " + cut_ecdetectors );
 	return cut_ecdetectors;
     }
     
@@ -50,6 +53,7 @@ public class CutType{
     }
 
     public Map<String, VertexCutParameters> getVertexCutParameters() { //CutDetectors> getCutDetectors(){
+	System.out.println(" >> GET VERTEXCUTPARAMETERS " + cut_vertex );
 	return cut_vertex;
     }
 

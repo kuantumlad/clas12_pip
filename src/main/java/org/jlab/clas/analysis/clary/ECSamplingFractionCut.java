@@ -19,7 +19,7 @@ class ECSamplingFractionCut implements BICandidate {
 	    
 	    DataBank recBank = event.getBank("REC::Particle");	    
 	    double p = Calculator.lv_particle(recBank, rec_i, 11).p();
-	    int sector = 7;// Detectors.getSectorECAL(event, rec_i) - 1;
+	    int sector = Detectors.getSectorECAL(event, rec_i) - 1;
 	    //int sector = recBank.getByte("sector",rec_i);
 
 	    for( Map.Entry<Integer, Double> entry : m_edep.entrySet() ){
@@ -204,6 +204,8 @@ class ECSamplingFractionCut implements BICandidate {
 
 	    double sf_limit_upper = fit_max_a + fit_max_b/(p-0.1) + fit_max_c + fit_max_d/(Math.sqrt(p-0.1)) + fit_max_e/p;
 	    double sf_limit_lower = fit_min_a + fit_min_b/(p-0.1) - fit_min_c - fit_min_d/(Math.sqrt(p-0.1)) - fit_min_e/p;
+
+	    //	    System.out.println(" >> UPPER " + sf_limit_upper + " LOWER " + sf_limit_lower );
 
 	    boolean sf_upper_pass = sf_limit_upper > ec_sf;
 	    boolean sf_lower_pass = sf_limit_lower < ec_sf;

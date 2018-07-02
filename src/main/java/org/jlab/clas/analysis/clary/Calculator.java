@@ -329,7 +329,7 @@ public class Calculator{
 
     public static F1D fitHistogram( H1F h_temp ){
 
-	System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
+	//System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
 	double xlow, xhigh, histmax;
 	int binlow, binhigh, binmax;
 
@@ -360,7 +360,7 @@ public class Calculator{
 	    fit = fit_temp;  
 
 	    //}
-	    System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
+	    //  System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
 
 	}
 	catch(Exception e){
@@ -371,7 +371,7 @@ public class Calculator{
 
     public static F1D fitHistogram( H1F h_temp, double temp_percentofmax ){
 
-	System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
+	//	System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
 	double xlow, xhigh, histmax;
 	int binlow, binhigh, binmax;
 
@@ -402,7 +402,7 @@ public class Calculator{
 	    fit = fit_temp;  
 
 	    //}
-	    System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
+	    //  System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
 
 	}
 	catch(Exception e){
@@ -413,7 +413,7 @@ public class Calculator{
 
     public static F1D fitHistogramRange( H1F h_temp, double temp_percentofmax, double min, double max){
 
-	System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
+	//System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
 	double xlow, xhigh, histmax;
 
  	double percentofmax = temp_percentofmax; 
@@ -436,7 +436,7 @@ public class Calculator{
 	    DataFitter.fit(fit_temp, h_temp, "REQ"); //was only R at first
 	    fit = fit_temp;  
 		
-	    System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
+	    //  System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
 	}
 	catch( Exception e ){
 	    System.out.println(" ERROR FITTING HISTOGRAM RANGE ");

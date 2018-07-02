@@ -50,7 +50,7 @@ class VertexCut implements BICandidate {
 	    min_vz=0.0;
 	    max_vz=0.0;
 	}
-	System.out.println(" >> " + min_vz + " " + max_vz );
+	//System.out.println(" >> " + min_vz + " " + max_vz );
 	if( vz <= max_vz && vz >= min_vz ){
 	    //System.out.println(" >> PASSED ELECTRON CHARGE CUT " + charge  );	   
 	    return true;

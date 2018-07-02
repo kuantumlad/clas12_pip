@@ -12,7 +12,7 @@ class NegativeChargeCut implements BICandidate {
     public boolean candidate( DataEvent event, int rec_index ){
 
 	DataBank recBank = event.getBank("REC::Particle");
-	int charge = recBank.getInt("charge",rec_index);
+	int charge = (int)recBank.getByte("charge",rec_index);
 	//System.out.println(" >> IN ELECTRON CHARGE CUT " + charge  );	    
 	if( charge == -1 ){
 	    //System.out.println(" >> PASSED ELECTRON CHARGE CUT " + charge  );

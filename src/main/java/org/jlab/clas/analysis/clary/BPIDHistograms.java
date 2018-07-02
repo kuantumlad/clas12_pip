@@ -33,12 +33,18 @@ public class BPIDHistograms {
 
     private TDirectory dir;
 
+    double beam_energy = PhysicalConstants.eBeam;
+
     public BPIDHistograms(int temp_run, String temp_n_threads) {
 	//constructor
 	run_number = temp_run;
 	s_run_number = Integer.toString(run_number);
 	n_thread = temp_n_threads;
 	dir = new TDirectory();
+
+	if( beam_energy > 5.0 && beam_energy < 9.0 ){
+	    beam_energy = 3.5;
+	}
 
     }
 
@@ -175,8 +181,6 @@ public class BPIDHistograms {
 
     Vector<Integer> v_cutrates = new Vector<Integer>();
     Vector<Integer> v_cutrates2 = new Vector<Integer>();
-
-    double beam_energy = PhysicalConstants.eBeam;
 
     double min_p = 0.0; double max_p = beam_energy;
     double min_theta = 0.0; double max_theta = 60.5;
@@ -595,7 +599,7 @@ public class BPIDHistograms {
 	    dir.addDataSet(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
-
+	/*
 	dir.mkdir("/cutlvls/h_el_eceo/");
 	dir.cd("/cutlvls/h_el_eceo/");
 	for( H1F h_temp : h_el_eceo ){
@@ -684,7 +688,7 @@ public class BPIDHistograms {
 	    dir.addDataSet(h_temp);
 	    //ctemp.save(savepath + h_temp.getTitle() + ".png");
 	}
-
+	*/
 	dir.mkdir("/cutlvls/h2_el_etotnphe/");
 	dir.cd("/cutlvls/h2_el_etotnphe/");
 	for( H2F h2_temp : h2_el_etotnphe ){
@@ -825,7 +829,7 @@ public class BPIDHistograms {
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
 
-	dir.mkdir("/cutlvls/h2_el_edepdiff/");
+	/*dir.mkdir("/cutlvls/h2_el_edepdiff/");
 	dir.cd("/cutlvls/h2_el_edepdiff/");
 	for( H2F h2_temp : h2_el_edepdiff ){
 	    EmbeddedCanvas ctemp = new EmbeddedCanvas();
@@ -904,7 +908,7 @@ public class BPIDHistograms {
 	    //ctemp.draw(h2_temp,"colz");
 	    //ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	}
-
+	*/
 	dir.mkdir("/cutlvls/h2_el_dchit_R1_traj/");
 	dir.cd("/cutlvls/h2_el_dchit_R1_traj/");
 	for( H2F h2_temp : h2_el_dchit_R1_traj ){
@@ -1084,7 +1088,7 @@ public class BPIDHistograms {
 	    }
 	}
 
-	dir.mkdir("/cutlvls/h_el_sect_timing/");
+	/*	dir.mkdir("/cutlvls/h_el_sect_timing/");
  	dir.cd("/cutlvls/h_el_sect_timing/");              		
 	for( int i = 0; i < h_el_sect_timing.size(); i++ ){
 	    Vector<H1F> v_temp = h_el_sect_timing.get(i);       
@@ -1097,7 +1101,7 @@ public class BPIDHistograms {
 		//ctemp.save(savepath + h_temp.getTitle() + ".png");
 	    }
 	}
-
+	*/
 	dir.mkdir("/cutlvls/h_el_sect_nphe/");
  	dir.cd("/cutlvls/h_el_sect_nphe/");              		
 	for( int i = 0; i < h_el_sect_nphe.size(); i++ ){
@@ -1112,6 +1116,7 @@ public class BPIDHistograms {
 	    }
 	}
 
+	/*
 	dir.mkdir("/cutlvls/h_el_sect_pcaltot/");
  	dir.cd("/cutlvls/h_el_sect_pcaltot/");              		
 	for( int i = 0; i < h_el_sect_pcal.size(); i++ ){
@@ -1167,7 +1172,7 @@ public class BPIDHistograms {
 		//ctemp.save(savepath + h_temp.getTitle() + ".png");
 	    }
 	}
-
+	*/
 	dir.mkdir("/cutlvls/h_el_sect_w/");
  	dir.cd("/cutlvls/h_el_sect_w/");
 	System.out.println(" >> W " + h_el_sect_w.size() );
@@ -1336,7 +1341,7 @@ public class BPIDHistograms {
 		//ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	    }
 	}
-
+	/*
 	dir.mkdir("/cutlvls/h2_el_sect_phivz/");
  	dir.cd("/cutlvls/h2_el_sect_phivz/");              		
 	for( int i = 0; i < h2_el_sect_phivz.size(); i++ ){
@@ -1350,7 +1355,7 @@ public class BPIDHistograms {
 		//ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	    }
 	}
-
+	*/
 	dir.mkdir("/cutlvls/h2_el_sect_pvz/");
  	dir.cd("/cutlvls/h2_el_sect_pvz/");              		
 	for( int i = 0; i < h2_el_sect_pvz.size(); i++ ){
@@ -1392,7 +1397,7 @@ public class BPIDHistograms {
 		//ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	    }
 	}
-
+	/*
 	dir.mkdir("/cutlvls/h2_el_sect_ptime/");
  	dir.cd("/cutlvls/h2_el_sect_ptime/");              		
 	for( int i = 0; i < h2_el_sect_ptime.size(); i++ ){
@@ -1462,7 +1467,7 @@ public class BPIDHistograms {
 		//ctemp.save(savepath + h2_temp.getTitle() + ".png");
 	    }
 	}
-
+	*/
 	dir.mkdir("/cutlvls/h2_el_sect_pcalhitxy/");
  	dir.cd("/cutlvls/h2_el_sect_pcalhitxy/");              		
 	for( int i = 0; i < h2_el_sect_pcalhitxy.size(); i++ ){

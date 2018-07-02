@@ -26,7 +26,7 @@ public class VertexCutParameters{
     List<Double> vz_min_sector_5;
     List<Double> vz_min_sector_6;
 
-    public VertexCutParameters(){ //Detectors(){
+    public VertexCutParameters(){ 
 	
 	System.out.println(" VERTEX CUT PARAMETERS CONSTRUCTOR " );
 
@@ -42,9 +42,6 @@ public class VertexCutParameters{
 	cut_name = temp_name;
     }
 
-    //public String getCutForParticleType(String particle_name){
-    //	return particle_name;
-    //}
 
     //////////
     //GETTERS   

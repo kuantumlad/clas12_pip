@@ -11,7 +11,7 @@ echo " BEGIN electronPID ANALYSIS for $1 $2 $3 $4"
 # $5 = INPUT FILE PATH
 # $6 = FILE PREFIX
 
-fix_files=50
+fix_files=100
 num_jobs=$(($3/fix_files))
 min_jobs=1 
 pid_files='/home/bclary/CLAS12/pics/pid_clary/'
@@ -28,10 +28,13 @@ fi
 
 
 i=0
+j=200
 echo ">> CREATING " $num_jobs 
 while [ $i -lt $num_jobs ]
 do
-    /home/bclary/CLAS12/phi_analysis/v3/v2/v1/./electronPID $1 $2 $fix_files $4 $5 $6
+    echo " ITERATION " $i "->> SETTINGS: PROCESSING " $1 " >>  RUN " $2 " >> FIXED FILES " $fix_files " >> TYPE " $4 " >> FILE PATH " $5 " >> FILE PREFIX " $6 " >> SHIFTING BY " $j
+    /home/bclary/CLAS12/phi_analysis/v3/v2/v1/./electronPID $1 $2 $fix_files $4 $5 $6 $j
+    j=$((j+50))
     el_dir_name='h_el_'$2'_'$4'_pid_clary_job_'$i'/'
     #pr_dir_name='h_pr_'$2'_'$4'_pid_clary_job_'$i'/'
     #kp_dir_name='h_kp_'$2'_'$4'_pid_clary_job_'$i'/'
@@ -58,20 +61,4 @@ do
     i=$((i+1))
 done
 
-
-
-
-
-
-#/home/bclary/CLAS12/phi_analysis/v3/v2/v1/./electronPID $1 $2 200 $4 $5 $6
-
 echo " COMPLETE "
-
-echo " MERGING HISTOGRAMS NOW "
-#inputfile="/w/hallb-scifs17exp/clas12/bclary/pics/pid_clary/h_"$2"_"$4"_el_all.hipo"
-#outputfile="/w/hallb-scifs17exp/clas12/bclary/pics/pid_clary/h_"$2"_"$4"thread-*_el_pid_clary.hipo"
-
-#echo $inputfile
-#echo $outputfile
-
-#/w/hallb-scifs17exp/clas12/bclary/extras/coatjava_5b.3.3/bin/hadd $inputfile $outputfile

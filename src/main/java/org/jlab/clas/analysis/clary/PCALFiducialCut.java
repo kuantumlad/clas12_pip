@@ -27,7 +27,8 @@ class PCALFiducialCut implements BICandidate {
 		    
 		    if( layer == 1){
 			ArrayList<Double> v_pcal_hit = Detectors.PCALHit(event, rec_i);
-			Vector<Double> pcal_rotxy = Calculator.getRotatedCoordinates(v_pcal_hit.get(0), v_pcal_hit.get(1), sector_pcal);
+			/*
+			  Vector<Double> pcal_rotxy = Calculator.getRotatedCoordinates(v_pcal_hit.get(0), v_pcal_hit.get(1), sector_pcal);
 
 			double x_rot = pcal_rotxy.get(0);
 			double y_rot = pcal_rotxy.get(1);
@@ -40,7 +41,7 @@ class PCALFiducialCut implements BICandidate {
 			    return true;
 			}
 			
-			/*
+			*/
 
 			  ///USE THIS FOR FIDUCIAL CUT ON PCAL SURFACE
 			  //WHEN COMPARING TO STEFANS SHIT CODE
@@ -64,11 +65,11 @@ class PCALFiducialCut implements BICandidate {
 			//another 6 cm circle in the inner triangle tip to reject particles
 			//influenced by dead metarial
 
-			if(x_PCAL_rot > left_PCAL && x_PCAL_rot > right_PCAL &&	Math.pow(x_PCAL_rot,2) > radius2_PCAL && x_PCAL_rot < 371)
+			if(x_PCAL_rot > left_PCAL && x_PCAL_rot > right_PCAL &&	Math.pow(x_PCAL_rot,2) > radius2_PCAL && x_PCAL_rot < 371 )
 			    {
 				return true;
-			    }					  
-			*/
+			    }			
+			else return false;			
 		    }
 		}
 	    

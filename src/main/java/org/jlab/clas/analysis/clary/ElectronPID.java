@@ -14,6 +14,7 @@ import org.jlab.clas.analysis.clary.ECALInnerOuterCut;
 import org.jlab.clas.analysis.clary.PCALFiducialCut;
 import org.jlab.clas.analysis.clary.MinMomentumCut;
 import org.jlab.clas.analysis.clary.VertexCut;
+import org.jlab.clas.analysis.clary.MatchElectronPID;
 
 import org.jlab.io.base.DataEvent;
 import org.jlab.io.base.DataBank;
@@ -45,6 +46,7 @@ public class ElectronPID implements IParticleIdentifier{
     ECALInnerOuterCut ec_eieo_cut = new ECALInnerOuterCut();
     MinMomentumCut minmomentum_cut = new MinMomentumCut();
     VertexCut vz_cut = new VertexCut();
+    MatchElectronPID eb_pid_match = new MatchElectronPID();
 
     SchemaFactory factory;
 
@@ -80,22 +82,25 @@ public class ElectronPID implements IParticleIdentifier{
 	m_el_cut_dir.put("min_mntm", minmomentum_cut);
 	m_el_cut_dir.put("min_pcal_energy", pcalhit_cut);
 	m_el_cut_dir.put("vz_pos", vz_cut);
+	m_el_cut_dir.put("track_quality",sectormatch_cut);
+	m_el_cut_dir.put("eb_pid_match",eb_pid_match);
+
 				
     }
 
     public void initializeCuts(){
 
 	setElectronCutMap();
-	/*for( String cut_name : l_el_cut_names ){	    
+	for( String cut_name : l_el_cut_names ){	    
 	    System.out.println(" >> " + cut_name );
-	    v_el_cut_inputs.add( m_el_cut_dir.get(cut_name) );
+	    v_cuts.add( m_el_cut_dir.get(cut_name) );
 	}
 	System.out.println(" >> SIZE OF PERSONALIZED VECTOR " + v_el_cut_inputs.size() );
-	*/
+	
 
 	////////////////////
 	//GEOMETRY CUTS
-	v_cuts.add(charge_cut);
+	/*v_cuts.add(charge_cut);
 	v_cuts.add(dcr1_fiducial_cut);
 	v_cuts.add(dcr2_fiducial_cut);
 	v_cuts.add(dcr3_fiducial_cut);
@@ -113,7 +118,7 @@ public class ElectronPID implements IParticleIdentifier{
 	v_cuts.add(minmomentum_cut);
 	v_cuts.add(pcalhit_cut);
 	v_cuts.add(vz_cut);
-
+	*/
     }
 
     public boolean processCuts( DataEvent tempevent, int rec_i ){
@@ -211,10 +216,10 @@ public class ElectronPID implements IParticleIdentifier{
 	boolean final_test = false;
 	if( event.hasBank("REC::Particle")  ){		
 	    DataBank recBank = event.getBank("REC::Particle");		
-	    System.out.println(" >> NUMBER OF ROWS " + event.getBank("REC::Particle").rows());
+	    //System.out.println(" >> NUMBER OF ROWS " + event.getBank("REC::Particle").rows());
 	    for( int k = 0; k < event.getBank("REC::Particle").rows(); k++ ){ 
 		el_test = processCuts(event, k);
-		System.out.println(" >> k " + k + " " + el_test );
+		//System.out.println(" >> k " + k + " " + el_test );
 		if( el_test ){		   
 		    double energy_new = Calculator.lv_energy(recBank, k, 11 );
 		    LorentzVector lv_new = Calculator.lv_particle(recBank, k, 11 );
@@ -225,7 +230,7 @@ public class ElectronPID implements IParticleIdentifier{
 			//System.out.println(" >> " + " " + el_test + " " + fast_index  );
 			Particle final_particle = new Particle(11,lv_new.px(),lv_new.py(),lv_new.pz(),recBank.getFloat("vx",fast_index), recBank.getFloat("vy",fast_index), recBank.getFloat("vz",fast_index));
 			final_particle.setProperty("pid",11);
-			final_particle.setProperty("pindex",k );
+			final_particle.setProperty("pindex",fast_index );
 			final_particle.setProperty("px",lv_new.px());
 			final_particle.setProperty("py",lv_new.py());
 			final_particle.setProperty("pz",lv_new.pz());

@@ -20,7 +20,7 @@ class MinMomentumCut implements BICandidate {
 
 	    double momentum = Math.sqrt( rec_px*rec_px + rec_py*rec_py + rec_pz*rec_pz );
 	    
-	    if( momentum > 1.5 ){
+	    if( momentum > 0.5 ){
 		//System.out.println(" >> IN ELECTRON CHARGE CUT " + charge  );	    
 		return true;
 	    }

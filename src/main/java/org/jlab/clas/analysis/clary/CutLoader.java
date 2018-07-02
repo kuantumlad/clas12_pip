@@ -112,15 +112,16 @@ public class CutLoader{
 
 	run_number = "r" + Integer.toString(run);
 	cut_type = temp_cut_type;
-	System.out.println(">> GETTING JSON FILE FOR " + analysis_type);
+	System.out.println(">> GETTING JSON FILE FOR LOAD RUN CUTS CLASS " + analysis_type);
 
 	try{
 	    Gson gson = new Gson();
 	    
-	    URL oracle = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
-	    BufferedReader br = new BufferedReader(new InputStreamReader(oracle.openStream()));
-	    //BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
-	    //BufferedReader br = new BufferedReader( new FileReader("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json") );
+	    //URL oracle = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    //BufferedReader br = new BufferedReader(new InputStreamReader(oracle.openStream()));
+	    BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
+	    //BufferedReader br = new BufferedReader( new FileReader("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json") );	    
+	    System.out.println(" >> " + br );
 	    runinfo = gson.fromJson(br, RunInformation.class );
 	}
 	catch( IOException e ){
@@ -138,18 +139,19 @@ public class CutLoader{
 	    Gson gson = new Gson();
 	    String jsonstring = gson.toJson(runinfo);
 
-	    URL url = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    /*URL url = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
 	    URLConnection connection = url.openConnection();
 	    connection.setDoOutput(true);
 	    OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
 	    out.write(jsonstring);
 	    out.close();
-	    //FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
+	    */
+
+	    FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
 	    //FileWriter fileWriter = new FileWriter("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json");
-	    //fileWriter.write( jsonstring );
-	    //fileWriter.close();
-	   
-		}
+	    fileWriter.write( jsonstring );
+	    fileWriter.close();	   
+	}
 	catch( IOException e ){
 	    System.out.println(" >> ERROR WRITING CUT DB JSON FILE " );
 	}
@@ -232,7 +234,8 @@ public class CutLoader{
 	//List<Double> vz_min_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector1();
 	//neg_vz_sec_1.add(vz_min_1.get(0));
 
-	//System.out.println(" >> " + runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector1().get(0) );
+	//System.out.println(" >> fuck this shit " );
+	//System.out.println(" >> in vertex cut testing " + runinfo.getRunParameters().get(run_number).getCutType().get("cut_nom") );
 
 	double min1  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMinVertexSector1().get(0);
 	double max1  = (double)runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getVertexCutParameters().get("vz_cut").getMaxVertexSector1().get(0);
@@ -306,7 +309,7 @@ public class CutLoader{
 	setBetaMinSectorAllCuts();
 	
 	setVertexCut();
-
+       
     }
 
     public void printRunCuts(){

@@ -631,7 +631,7 @@ public class BHistoPlotter {
 
     public F1D FitHistogram( H1F h_temp ){
 
- 	System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
+ 	//System.out.println(" >> FITTING HISTOGRAM " + h_temp.getName() );
 	double xlow, xhigh, histmax;
 	int binlow, binhigh, binmax;
 
@@ -666,7 +666,7 @@ public class BHistoPlotter {
 	    fit = fit_temp;  
 
 	    //}
-	    System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
+	    //System.out.println(" >> PARAMETER SET " + fit_temp.getParameter(0) + " " + fit_temp.getParameter(1) + " " + fit_temp.getParameter(2) );
 
 	}
 	catch(Exception e){

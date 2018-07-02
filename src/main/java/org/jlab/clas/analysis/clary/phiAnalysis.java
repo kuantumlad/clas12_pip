@@ -146,8 +146,12 @@ public class phiAnalysis{
 	//   INIT CLASSES & CUTS
 	//
  	////////////////////////////
-	//RunPropertiesLoader run_properties = new RunPropertiesLoader(run_number,dataSim);
+	RunPropertiesLoader run_properties = new RunPropertiesLoader(run_number,dataSim);
 	//run_properties.addRun("r3050");
+
+	System.out.println(" LOADING CUTS" );
+ 	CutLoader cut_loader = new CutLoader(run_number,dataSim,"cut_nom");
+
 
 	if( run_number > 0 ){
 	    //run_properties.loadRunProperties(run_number);
@@ -237,9 +241,8 @@ public class phiAnalysis{
 	//match_el.initializeCuts();
 	//match_pr.initializeCuts();
 	//match_kp.initializeCuts();
-	System.out.println(" LOADING CUTS" );
+
 	if( run_number > 0 ){
-	    CutLoader cut_loader = new CutLoader(run_number,dataSim,"cut_nom");
 	    //System.out.println(" LOADING CUTS 2" );
  	    //cut_loader.loadRunCuts(run_number,"cut_nom");
 	    //System.out.println(" LOADING CUTS 3" );		
@@ -305,7 +308,7 @@ public class phiAnalysis{
 	    System.out.println(">> PROCESSING FROM FILE LOCATION " + f_prefix);
 	    if( max_files == 1 ){ n_threads = 1; }
 	    int nfiles_thread = max_files/n_threads;
-	    int shift = 0;
+	    int shift = Integer.valueOf(analysisInfo[6]);
 	    for( int n = 0;  n < n_threads; n++ ){
 		el_threads.add( new ParallelElectron(simOrdata+"_thread-"+Integer.toString(n),s_run_number,f_prefix,singleMultiFile,simOrdata) );
 		System.out.println(">> THREAD PROCESSING FILES FROM " + Integer.toString(n*nfiles_thread) + " " + Integer.toString((n+1)*nfiles_thread) );

@@ -19,6 +19,7 @@ public class RunPropertiesLoader{
 	analysis_type = analy_type;
 	loadRunProperties(run);
 	setRunProperties();       
+	writeRunProperties();
 	
     }
 
@@ -28,11 +29,11 @@ public class RunPropertiesLoader{
 	try{
 	    Gson gson = new Gson();
 
-	    URL oracle = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
-	    URLConnection yc = oracle.openConnection();
+	    //URL oracle = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    //URLConnection yc = oracle.openConnection();
 	    //BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
-	    BufferedReader br = new BufferedReader(new InputStreamReader(oracle.openStream()));
-	    //BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
+	    //BufferedReader br = new BufferedReader(new InputStreamReader(oracle.openStream()));
+	    BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json") );
 	    //BufferedReader br = new BufferedReader( new FileReader("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json") );
 	    runinfo = gson.fromJson(br, RunInformation.class );
 	}
@@ -47,16 +48,18 @@ public class RunPropertiesLoader{
 	try{
 	    Gson gson = new Gson();
 	    String jsonstring = gson.toJson(runinfo);
-	    //FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
+	    FileWriter fileWriter = new FileWriter("/home/bclary/CLAS12/phi_analysis/v2/v1/run_db/CutDB_"+analysis_type+"_v3.json");
 	    //FileWriter fileWriter = new FileWriter("/w/hallb-scifs17exp/clas12/bclary/CutDB_v3.json");
-	    //fileWriter.write(jsonstring);
-	    //fileWriter.close();
-	    URL url = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
-	    URLConnection connection = url.openConnection();
-	    connection.setDoOutput(true);
-	    OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
-	    out.write(jsonstring);
-	    out.close();
+	    fileWriter.write(jsonstring);
+	    fileWriter.close();
+	    //URL url = new URL("https://userweb.jlab.org/~bclary/clas12_rundb/CutDB_"+analysis_type+"_v3.json");
+	    ////URLConnection connection = url.openConnection();
+	    //connection.setDoOutput(true);
+	    //OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
+	    
+	    //System.out.println(">> " + jsonstring );
+	    //out.write(jsonstring);
+	    //out.close();
 
 	}
 	catch( IOException e ){
