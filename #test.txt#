@@ -1,0 +1,2761 @@
+ BEGIN electronPID ANALYSIS for MACHINE 4013 650 DATA
+6   1
+>> CREATING  6
+ ITERATION  0 ->> SETTINGS: PROCESSING  MACHINE  >>  RUN  4013  >> FIXED FILES  100  >> TYPE  DATA  >> FILE PATH  /run/media/sdiehl/easystore1/brandon/  >> FILE PREFIX  skim_clas_004013.evio.  >> SHIFTING BY  100
+[31m>> STARTING 100 ANALYSIS FOR RUN 4013 TYPE MACHINE[0m
+>> SIM OR DATA? DATA
+ >> LOADING JSON FILE FOR DATA ANALYSIS 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+>> BEAM ENERGY SET TO: 10.6
+ >> WRITING TO JSON FILE FOR DATA ANALYSIS 
+ LOADING CUTS
+>> GETTING JSON FILE FOR LOAD RUN CUTS CLASS DATA
+ >> java.io.BufferedReader@6659c656
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> TESTING [12.0]
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+EC Sampling Fraction MAX: S1: 0.2616437227119228 S2: 0.2616437227119228 S3: 0.2616437227119228 S4: 0.2616437227119228 S5 0.2616437227119228 S6: 0.2616437227119228
+EC Sampling Fraction MAX: S1: -0.011071001154911442 S2: -0.011071001154911442 S3: -0.011071001154911442 S4: -0.011071001154911442 S5 -0.011071001154911442 S6: -0.011071001154911442
+EC Sampling Fraction MAX: S1: -0.02631447634224248 S2: -0.02631447634224248 S3: -0.02631447634224248 S4: -0.02631447634224248 S5 -0.02631447634224248 S6: -0.02631447634224248
+EC Sampling Fraction MAX: S1: 0.3135422302459162 S2: 0.3135422302459162 S3: 0.3135422302459162 S4: 0.3135422302459162 S5 0.3135422302459162 S6: 0.3135422302459162
+EC Sampling Fraction MAX: S1: -0.2921953014805113 S2: -0.2921953014805113 S3: -0.2921953014805113 S4: -0.2921953014805113 S5 -0.2921953014805113 S6: -0.2921953014805113
+EC Sampling Fraction MIN: S1: 0.2616437227119228 S2: 0.2616437227119228 S3: 0.2616437227119228 S4: 0.2616437227119228 S5 0.2616437227119228 S6: 0.2616437227119228
+EC Sampling Fraction MIN: S1: -0.011071001154911442 S2: -0.011071001154911442 S3: -0.011071001154911442 S4: -0.011071001154911442 S5 -0.011071001154911442 S6: -0.011071001154911442
+EC Sampling Fraction MIN: S1: -0.02631447634224248 S2: -0.02631447634224248 S3: -0.02631447634224248 S4: -0.02631447634224248 S5 -0.02631447634224248 S6: -0.02631447634224248
+EC Sampling Fraction MIN: S1: 0.3135422302459162 S2: 0.3135422302459162 S3: 0.3135422302459162 S4: 0.3135422302459162 S5 0.3135422302459162 S6: 0.3135422302459162
+EC Sampling Fraction MIN: S1: -0.2921953014805113 S2: -0.2921953014805113 S3: -0.2921953014805113 S4: -0.2921953014805113 S5 -0.2921953014805113 S6: -0.2921953014805113
+>> PROTON BETA FTOF L2 MAX: S1 -0.0017970191303495198 S2 -0.0017970191303495198 S3 -0.0017970191303495198 S4 -0.0017970191303495198 S5 0.991270147633406 S6 -0.0017970191303495198
+>> PROTON BETA FTOF L2 MAX: S1 0.040243480932776854 S2 0.040243480932776854 S3 0.040243480932776854 S4 0.040243480932776854 S5 0.93827 S6 0.040243480932776854
+>> PROTON BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PROTON BETA FTOF L2 MIN : S1 0.991270147633406 S2 0.991270147633406 S3 0.991270147633406 S4 0.991270147633406 S5 0.991270147633406 S6 -0.0017970191303495198
+>> PROTON BETA FTOF L2 MIN : S1 0.93827 S2 0.93827 S3 0.93827 S4 0.93827 S5 0.93827 S6 0.040243480932776854
+>> PROTON BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PION PLUS BETA FTOF L2 MAX: S1 0.0015984924246398302 S2 0.0015984924246398302 S3 0.0015984924246398302 S4 0.0015984924246398302 S5 0.9995849668602249 S6 0.0015984924246398302
+>> PION PLUS BETA FTOF L2 MAX: S1 0.04253081500310177 S2 0.04253081500310177 S3 0.04253081500310177 S4 0.04253081500310177 S5 0.1395 S6 0.04253081500310177
+>> PION PLUS BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PION PLUS BETA FTOF L2 MIN : S1 0.9995849668602249 S2 0.9995849668602249 S3 0.9995849668602249 S4 0.9995849668602249 S5 0.9995849668602249 S6 0.0015984924246398302
+>> PION PLUS BETA FTOF L2 MIN : S1 0.1395 S2 0.1395 S3 0.1395 S4 0.1395 S5 0.1395 S6 0.04253081500310177
+>> PION PLUS BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> KAON PLUS BETA FTOF L2 MAX: S1 -0.0035418849098968197 S2 -0.0035418849098968197 S3 -0.0035418849098968197 S4 -0.0035418849098968197 S5 0.998635061351878 S6 -0.0035418849098968197
+>> KAON PLUS BETA FTOF L2 MAX: S1 0.03354459041256075 S2 0.03354459041256075 S3 0.03354459041256075 S4 0.03354459041256075 S5 0.49368 S6 0.03354459041256075
+>> KAON PLUS BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> KAON PLUS BETA FTOF L2 MIN : S1 0.998635061351878 S2 0.998635061351878 S3 0.998635061351878 S4 0.998635061351878 S5 0.998635061351878 S6 -0.0035418849098968197
+>> KAON PLUS BETA FTOF L2 MIN : S1 0.49368 S2 0.49368 S3 0.49368 S4 0.49368 S5 0.49368 S6 0.03354459041256075
+>> KAON PLUS BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+ >> PRINTING VERTEX CUTS 
+ >> VERTEX CUT SECTOR 1 [-8.0, 12.0]
+ >> VERTEX CUT SECTOR 2 [-8.0, 12.0]
+ >> VERTEX CUT SECTOR 3 [-8.0, 12.0]
+ >> VERTEX CUT SECTOR 4 [-10.0, 9.0]
+ >> VERTEX CUT SECTOR 5 [-7.0, 13.0]
+ >> VERTEX CUT SECTOR 6 [-7.0, 14.0]
+ >> [negative_charge, pcal_fiducial, dcr1_fiducial, dcr2_fiducial, dcr3_fiducial, ecsf, ftof_hit, min_pcal_energy]
+ >> [positive_charge]
+>> STUCK HERE 
+>> STUCK HERE 
+>> STUCK HERE 
+>> STUCK HERE 
+>> STUCK HERE 
+ >> negative_charge
+ >> pcal_fiducial
+ >> dcr1_fiducial
+ >> dcr2_fiducial
+ >> dcr3_fiducial
+ >> ecsf
+ >> ftof_hit
+ >> min_pcal_energy
+ >> SIZE OF PERSONALIZED VECTOR 0
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+>> STUCK HERE 
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+ >> INIT MLE CUTS 
+>> STUCK HERE 
+ >> negative_charge
+ >> pcal_fiducial
+ >> dcr1_fiducial
+ >> dcr2_fiducial
+ >> dcr3_fiducial
+ >> ecsf
+ >> ftof_hit
+ >> min_pcal_energy
+ >> SIZE OF PERSONALIZED VECTOR 0
+>> PROCESSING FROM FILE LOCATION /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.
+Creating DATA_thread-0
+ >> LOADING JSON FILE FOR DATA ANALYSIS 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+>> BEAM ENERGY SET TO: 10.6
+ >> WRITING TO JSON FILE FOR DATA ANALYSIS 
+[SystemFonts] ---> set size = 25, available 3
+ >> 1
+ >> 2
+ >> 3
+ >> 4
+ >> 5
+ >> 6
+ >> 7
+>> USED IN bytes 2558050800
+ >> [negative_charge, dcr1_fiducial, dcr2_fiducial, dcr3_fiducial, pcal_fiducial, ftof_hit, ecsf, htcc_nphe, min_mntm, min_pcal_energy, vz_pos]
+ >> [positive_charge]
+ >> negative_charge
+ >> dcr1_fiducial
+ >> dcr2_fiducial
+ >> dcr3_fiducial
+ >> pcal_fiducial
+ >> ftof_hit
+ >> ecsf
+ >> htcc_nphe
+ >> min_mntm
+ >> min_pcal_energy
+ >> vz_pos
+ >> SIZE OF PERSONALIZED VECTOR 0
+ >> INIT MLE CUTS 
+>> THREAD PROCESSING FILES FROM 0 25
+Creating DATA_thread-1
+ >> LOADING JSON FILE FOR DATA ANALYSIS 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+>> BEAM ENERGY SET TO: 10.6
+ >> WRITING TO JSON FILE FOR DATA ANALYSIS 
+ >> 1
+ >> 2
+ >> 3
+ >> 4
+ >> 5
+ >> 6
+ >> 7
+>> USED IN bytes 5114231384
+ >> [negative_charge, dcr1_fiducial, dcr2_fiducial, dcr3_fiducial, pcal_fiducial, ftof_hit, ecsf, htcc_nphe, min_mntm, min_pcal_energy, vz_pos]
+ >> [positive_charge]
+ >> negative_charge
+ >> dcr1_fiducial
+ >> dcr2_fiducial
+ >> dcr3_fiducial
+ >> pcal_fiducial
+ >> ftof_hit
+ >> ecsf
+ >> htcc_nphe
+ >> min_mntm
+ >> min_pcal_energy
+ >> vz_pos
+ >> SIZE OF PERSONALIZED VECTOR 0
+ >> INIT MLE CUTS 
+>> THREAD PROCESSING FILES FROM 25 50
+Creating DATA_thread-2
+ >> LOADING JSON FILE FOR DATA ANALYSIS 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+>> BEAM ENERGY SET TO: 10.6
+ >> WRITING TO JSON FILE FOR DATA ANALYSIS 
+ >> 1
+ >> 2
+ >> 3
+ >> 4
+ >> 5
+ >> 6
+ >> 7
+>> USED IN bytes 7670412712
+ >> [negative_charge, dcr1_fiducial, dcr2_fiducial, dcr3_fiducial, pcal_fiducial, ftof_hit, ecsf, htcc_nphe, min_mntm, min_pcal_energy, vz_pos]
+ >> [positive_charge]
+ >> negative_charge
+ >> dcr1_fiducial
+ >> dcr2_fiducial
+ >> dcr3_fiducial
+ >> pcal_fiducial
+ >> ftof_hit
+ >> ecsf
+ >> htcc_nphe
+ >> min_mntm
+ >> min_pcal_energy
+ >> vz_pos
+ >> SIZE OF PERSONALIZED VECTOR 0
+ >> INIT MLE CUTS 
+>> THREAD PROCESSING FILES FROM 50 75
+Creating DATA_thread-3
+ >> LOADING JSON FILE FOR DATA ANALYSIS 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+>> BEAM ENERGY SET TO: 10.6
+ >> WRITING TO JSON FILE FOR DATA ANALYSIS 
+ >> 1
+ >> 2
+ >> 3
+ >> 4
+ >> 5
+ >> 6
+ >> 7
+>> USED IN bytes 10226593264
+ >> [negative_charge, dcr1_fiducial, dcr2_fiducial, dcr3_fiducial, pcal_fiducial, ftof_hit, ecsf, htcc_nphe, min_mntm, min_pcal_energy, vz_pos]
+ >> [positive_charge]
+ >> negative_charge
+ >> dcr1_fiducial
+ >> dcr2_fiducial
+ >> dcr3_fiducial
+ >> pcal_fiducial
+ >> ftof_hit
+ >> ecsf
+ >> htcc_nphe
+ >> min_mntm
+ >> min_pcal_energy
+ >> vz_pos
+ >> SIZE OF PERSONALIZED VECTOR 0
+ >> INIT MLE CUTS 
+>> THREAD PROCESSING FILES FROM 75 100
+Starting DATA_thread-0
+Starting DATA_thread-1
+Starting DATA_thread-2
+>> MULTI FILE ANALYSIS 
+>> MULTI FILE ANALYSIS 
+Running DATA_thread-0
+Starting DATA_thread-3
+Running DATA_thread-1
+>> PROCESSING FILES BETWEEN 125 150
+>> PROCESSING FILES BETWEEN 100 125
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.125.hipo
+>> MULTI FILE ANALYSIS 
+Running DATA_thread-2
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.100.hipo
+>> PROCESSING FILES BETWEEN 150 175
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.150.hipo
+>> MULTI FILE ANALYSIS 
+Running DATA_thread-3
+>> PROCESSING FILES BETWEEN 175 200
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.175.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+[HipoDataSync] ---> dictionary size = 0
+[HipoDataSync] ---> dictionary size = 0
+[HipoDataSync] ---> dictionary size = 0
+>> FILE DOES NOT EXISTS /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.100.hipo
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.101.hipo
+>> USED IN bytes 10321556664
+>> USED IN bytes 10579926000
+>> USED IN bytes 10329945432
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10347675808
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.101.hipo
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.125.hipo
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.175.hipo
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.150.hipo
+[READER] ---> open successful, size : 642914816
+[READER] ---> open successful, size : 638892420
+[READER] ---> open successful, size : 628982256
+[READER] ---> open successful, size : 644009340
+  27996  56  0
+  27996  56  0
+  27996  56  0
+  27996  56  0
+** reader-open ** records = 164, events = 14175, schemas = 117, time = 111 ms
+** reader-open ** records = 165, events = 14123, schemas = 117, time = 111 ms
+[DataSourceDump] --> opened file with events # 14175
+[DataSourceDump] --> opened file with events # 14123
+>> EVENTS TO PROCESS 14175
+>> EVENTS TO PROCESS 14123
+** reader-open ** records = 161, events = 14006, schemas = 117, time = 112 ms
+[DataSourceDump] --> opened file with events # 14006
+>> EVENTS TO PROCESS 14006
+** reader-open ** records = 165, events = 14175, schemas = 117, time = 10 ms
+[DataSourceDump] --> opened file with events # 14175
+>> EVENTS TO PROCESS 14175
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-0 10% @ CURRENT EVENT 1417
+>> DATA_thread-3 10% @ CURRENT EVENT 1417
+>> DATA_thread-2 10% @ CURRENT EVENT 1412
+>> DATA_thread-1 10% @ CURRENT EVENT 1400
+>> DATA_thread-2 20% @ CURRENT EVENT 2824
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2834
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2800
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2834
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4236
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4251
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4200
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4251
+>> DATA_thread-2 39.99% @ CURRENT EVENT 5648
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5668
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5668
+>> DATA_thread-1 39.98% @ CURRENT EVENT 5600
+>> DATA_thread-2 49.99% @ CURRENT EVENT 7060
+>> DATA_thread-0 49.98% @ CURRENT EVENT 7085
+>> DATA_thread-1 49.98% @ CURRENT EVENT 7000
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7085
+>> DATA_thread-2 59.99% @ CURRENT EVENT 8472
+>> DATA_thread-0 59.98% @ CURRENT EVENT 8502
+>> DATA_thread-1 59.97% @ CURRENT EVENT 8400
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8502
+>> DATA_thread-2 69.99% @ CURRENT EVENT 9884
+>> DATA_thread-0 69.98% @ CURRENT EVENT 9919
+>> DATA_thread-1 69.97% @ CURRENT EVENT 9800
+>> DATA_thread-3 69.98% @ CURRENT EVENT 9919
+>> DATA_thread-2 79.98% @ CURRENT EVENT 11296
+>> DATA_thread-0 79.97% @ CURRENT EVENT 11336
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11200
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11336
+>> DATA_thread-2 89.98% @ CURRENT EVENT 12708
+>> DATA_thread-0 89.97% @ CURRENT EVENT 12753
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12753
+>> DATA_thread-1 89.96% @ CURRENT EVENT 12600
+>> DATA_thread-2 99.98% @ CURRENT EVENT 14120
+>> DATA_thread-2 COMPLETED 150 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.151.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10309106776
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.151.hipo
+[READER] ---> open successful, size : 635508264
+  27996  56  0
+** reader-open ** records = 163, events = 13971, schemas = 117, time = 604 ms
+[DataSourceDump] --> opened file with events # 13971
+>> EVENTS TO PROCESS 13971
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-0 99.96% @ CURRENT EVENT 14170
+>> DATA_thread-0 COMPLETED 101 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.102.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10357396912
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.102.hipo
+[READER] ---> open successful, size : 639937812
+>> DATA_thread-3 99.96% @ CURRENT EVENT 14170
+>> DATA_thread-3 COMPLETED 175 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.176.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10374457816
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.176.hipo
+>> DATA_thread-1 99.96% @ CURRENT EVENT 14000
+[READER] ---> open successful, size : 633179784
+>> DATA_thread-1 COMPLETED 125 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.126.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10382908744
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.126.hipo
+[READER] ---> open successful, size : 642360368
+  27996  56  0
+** reader-open ** records = 164, events = 14182, schemas = 117, time = 4155 ms
+[DataSourceDump] --> opened file with events # 14182
+>> EVENTS TO PROCESS 14182
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+  27996  56  0
+** reader-open ** records = 162, events = 13925, schemas = 117, time = 3641 ms
+[DataSourceDump] --> opened file with events # 13925
+>> EVENTS TO PROCESS 13925
+  27996  56  0
+** reader-open ** records = 164, events = 14318, schemas = 117, time = 3625 ms
+[DataSourceDump] --> opened file with events # 14318
+>> EVENTS TO PROCESS 14318
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1397
+>> DATA_thread-0 10% @ CURRENT EVENT 1418
+>> DATA_thread-3 10% @ CURRENT EVENT 1392
+>> DATA_thread-1 9.99% @ CURRENT EVENT 1431
+>> DATA_thread-2 20% @ CURRENT EVENT 2794
+>> DATA_thread-0 20% @ CURRENT EVENT 2836
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2784
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2862
+>> DATA_thread-2 30% @ CURRENT EVENT 4191
+>> DATA_thread-0 30% @ CURRENT EVENT 4254
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4176
+>> DATA_thread-1 29.98% @ CURRENT EVENT 4293
+>> DATA_thread-2 40% @ CURRENT EVENT 5588
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5672
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5568
+>> DATA_thread-1 39.98% @ CURRENT EVENT 5724
+>> DATA_thread-2 50% @ CURRENT EVENT 6985
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7090
+>> DATA_thread-3 49.98% @ CURRENT EVENT 6960
+>> DATA_thread-1 49.97% @ CURRENT EVENT 7155
+>> DATA_thread-2 60% @ CURRENT EVENT 8382
+>> DATA_thread-0 59.99% @ CURRENT EVENT 8508
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8352
+>> DATA_thread-1 59.97% @ CURRENT EVENT 8586
+>> DATA_thread-2 69.99% @ CURRENT EVENT 9779
+>> DATA_thread-0 69.99% @ CURRENT EVENT 9926
+>> DATA_thread-3 69.97% @ CURRENT EVENT 9744
+>> DATA_thread-1 69.96% @ CURRENT EVENT 10017
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11176
+>> DATA_thread-0 79.99% @ CURRENT EVENT 11344
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11136
+>> DATA_thread-1 79.96% @ CURRENT EVENT 11448
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12573
+>> DATA_thread-0 89.99% @ CURRENT EVENT 12762
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12528
+>> DATA_thread-1 89.95% @ CURRENT EVENT 12879
+>> DATA_thread-2 99.99% @ CURRENT EVENT 13970
+>> DATA_thread-2 COMPLETED 151 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.152.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278589256
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.152.hipo
+[READER] ---> open successful, size : 641919792
+  27996  56  0
+** reader-open ** records = 164, events = 14210, schemas = 117, time = 581 ms
+[DataSourceDump] --> opened file with events # 14210
+>> EVENTS TO PROCESS 14210
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-0 99.99% @ CURRENT EVENT 14180
+>> DATA_thread-0 COMPLETED 102 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.103.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278801592
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.103.hipo
+[READER] ---> open successful, size : 635454240
+>> DATA_thread-3 99.96% @ CURRENT EVENT 13920
+  27996  56  0
+>> DATA_thread-3 COMPLETED 176 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.177.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10330397408
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.177.hipo
+[READER] ---> open successful, size : 642392412
+** reader-open ** records = 163, events = 14139, schemas = 117, time = 1040 ms
+[DataSourceDump] --> opened file with events # 14139
+>> EVENTS TO PROCESS 14139
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+  27996  56  0
+** reader-open ** records = 165, events = 14184, schemas = 117, time = 1067 ms
+[DataSourceDump] --> opened file with events # 14184
+>> EVENTS TO PROCESS 14184
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 99.94% @ CURRENT EVENT 14310
+>> DATA_thread-1 COMPLETED 126 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.127.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10331593592
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.127.hipo
+[READER] ---> open successful, size : 631815348
+  27996  56  0
+** reader-open ** records = 162, events = 13950, schemas = 117, time = 800 ms
+[DataSourceDump] --> opened file with events # 13950
+>> EVENTS TO PROCESS 13950
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1421
+>> DATA_thread-0 9.99% @ CURRENT EVENT 1413
+>> DATA_thread-3 10% @ CURRENT EVENT 1418
+>> DATA_thread-2 20% @ CURRENT EVENT 2842
+>> DATA_thread-1 10% @ CURRENT EVENT 1395
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2826
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2836
+>> DATA_thread-1 20% @ CURRENT EVENT 2790
+>> DATA_thread-2 30% @ CURRENT EVENT 4263
+>> DATA_thread-0 29.98% @ CURRENT EVENT 4239
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4254
+>> DATA_thread-1 30% @ CURRENT EVENT 4185
+>> DATA_thread-2 40% @ CURRENT EVENT 5684
+>> DATA_thread-0 39.97% @ CURRENT EVENT 5652
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5672
+>> DATA_thread-2 50% @ CURRENT EVENT 7105
+>> DATA_thread-1 40% @ CURRENT EVENT 5580
+>> DATA_thread-0 49.97% @ CURRENT EVENT 7065
+>> DATA_thread-3 49.99% @ CURRENT EVENT 7090
+>> DATA_thread-2 60% @ CURRENT EVENT 8526
+>> DATA_thread-1 50% @ CURRENT EVENT 6975
+>> DATA_thread-0 59.96% @ CURRENT EVENT 8478
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8508
+>> DATA_thread-2 70% @ CURRENT EVENT 9947
+>> DATA_thread-1 60% @ CURRENT EVENT 8370
+>> DATA_thread-0 69.96% @ CURRENT EVENT 9891
+>> DATA_thread-3 69.98% @ CURRENT EVENT 9926
+>> DATA_thread-2 80% @ CURRENT EVENT 11368
+>> DATA_thread-1 70% @ CURRENT EVENT 9765
+>> DATA_thread-0 79.95% @ CURRENT EVENT 11304
+>> DATA_thread-2 90% @ CURRENT EVENT 12789
+>> DATA_thread-3 79.98% @ CURRENT EVENT 11344
+>> DATA_thread-1 80% @ CURRENT EVENT 11160
+>> DATA_thread-0 89.94% @ CURRENT EVENT 12717
+>> DATA_thread-2 COMPLETED 152 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.153.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> FILE DOES NOT EXISTS /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.153.hipo
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.154.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298858184
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.154.hipo
+[READER] ---> open successful, size : 637414232
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12762
+  27996  56  0
+** reader-open ** records = 163, events = 14131, schemas = 117, time = 973 ms
+[DataSourceDump] --> opened file with events # 14131
+>> EVENTS TO PROCESS 14131
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-1 90% @ CURRENT EVENT 12555
+>> DATA_thread-0 99.94% @ CURRENT EVENT 14130
+>> DATA_thread-0 COMPLETED 103 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.104.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10338749536
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.104.hipo
+[READER] ---> open successful, size : 642696872
+  27996  56  0
+** reader-open ** records = 164, events = 14212, schemas = 117, time = 1187 ms
+[DataSourceDump] --> opened file with events # 14212
+>> EVENTS TO PROCESS 14212
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1413
+>> DATA_thread-3 99.97% @ CURRENT EVENT 14180
+>> DATA_thread-3 COMPLETED 177 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.178.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10317184024
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.178.hipo
+[READER] ---> open successful, size : 638944040
+>> DATA_thread-1 COMPLETED 127 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.128.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278078000
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.128.hipo
+[READER] ---> open successful, size : 639593308
+  27996  56  0
+** reader-open ** records = 164, events = 14266, schemas = 117, time = 1893 ms
+[DataSourceDump] --> opened file with events # 14266
+>> EVENTS TO PROCESS 14266
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+  27996  56  0
+** reader-open ** records = 164, events = 14164, schemas = 117, time = 2228 ms
+[DataSourceDump] --> opened file with events # 14164
+>> EVENTS TO PROCESS 14164
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-0 10% @ CURRENT EVENT 1421
+>> DATA_thread-2 20% @ CURRENT EVENT 2826
+>> DATA_thread-3 10% @ CURRENT EVENT 1426
+>> DATA_thread-1 10% @ CURRENT EVENT 1416
+>> DATA_thread-0 20% @ CURRENT EVENT 2842
+>> DATA_thread-2 30% @ CURRENT EVENT 4239
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2852
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2832
+>> DATA_thread-0 30% @ CURRENT EVENT 4263
+>> DATA_thread-2 40% @ CURRENT EVENT 5652
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4278
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4248
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5684
+>> DATA_thread-2 50% @ CURRENT EVENT 7065
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5704
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5664
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7105
+>> DATA_thread-2 60% @ CURRENT EVENT 8478
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7130
+>> DATA_thread-1 49.99% @ CURRENT EVENT 7080
+>> DATA_thread-0 59.99% @ CURRENT EVENT 8526
+>> DATA_thread-2 70% @ CURRENT EVENT 9891
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8556
+>> DATA_thread-1 59.98% @ CURRENT EVENT 8496
+>> DATA_thread-0 69.99% @ CURRENT EVENT 9947
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11304
+>> DATA_thread-3 69.97% @ CURRENT EVENT 9982
+>> DATA_thread-1 69.98% @ CURRENT EVENT 9912
+>> DATA_thread-0 79.99% @ CURRENT EVENT 11368
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12717
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11408
+>> DATA_thread-1 79.98% @ CURRENT EVENT 11328
+>> DATA_thread-0 89.99% @ CURRENT EVENT 12789
+>> DATA_thread-2 99.99% @ CURRENT EVENT 14130
+>> DATA_thread-2 COMPLETED 154 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.155.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299014840
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.155.hipo
+[READER] ---> open successful, size : 634555072
+  27996  56  0
+** reader-open ** records = 163, events = 14016, schemas = 117, time = 1181 ms
+[DataSourceDump] --> opened file with events # 14016
+>> EVENTS TO PROCESS 14016
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 89.96% @ CURRENT EVENT 12834
+>> DATA_thread-1 89.97% @ CURRENT EVENT 12744
+>> DATA_thread-0 99.99% @ CURRENT EVENT 14210
+>> DATA_thread-0 COMPLETED 104 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.105.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298016912
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.105.hipo
+[READER] ---> open successful, size : 639579060
+  27996  56  0
+** reader-open ** records = 164, events = 14174, schemas = 117, time = 798 ms
+[DataSourceDump] --> opened file with events # 14174
+>> EVENTS TO PROCESS 14174
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1401
+>> DATA_thread-3 99.96% @ CURRENT EVENT 14260
+>> DATA_thread-3 COMPLETED 178 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.179.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10296847296
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.179.hipo
+[READER] ---> open successful, size : 632772572
+  27996  56  0
+** reader-open ** records = 162, events = 14016, schemas = 117, time = 1265 ms
+[DataSourceDump] --> opened file with events # 14016
+>> EVENTS TO PROCESS 14016
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 99.97% @ CURRENT EVENT 14160
+>> DATA_thread-1 COMPLETED 128 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.129.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278636016
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.129.hipo
+[READER] ---> open successful, size : 637925968
+  27996  56  0
+** reader-open ** records = 163, events = 14144, schemas = 117, time = 1241 ms
+[DataSourceDump] --> opened file with events # 14144
+>> EVENTS TO PROCESS 14144
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-0 10% @ CURRENT EVENT 1417
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2802
+>> DATA_thread-3 10% @ CURRENT EVENT 1401
+>> DATA_thread-1 10% @ CURRENT EVENT 1414
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2834
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4203
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2802
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2828
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4251
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5604
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4203
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4242
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5668
+>> DATA_thread-2 49.98% @ CURRENT EVENT 7005
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5604
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5656
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8406
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7085
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7005
+>> DATA_thread-1 49.99% @ CURRENT EVENT 7070
+>> DATA_thread-2 69.97% @ CURRENT EVENT 9807
+>> DATA_thread-0 59.98% @ CURRENT EVENT 8502
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8406
+>> DATA_thread-1 59.98% @ CURRENT EVENT 8484
+>> DATA_thread-2 79.97% @ CURRENT EVENT 11208
+>> DATA_thread-0 69.98% @ CURRENT EVENT 9919
+>> DATA_thread-3 69.97% @ CURRENT EVENT 9807
+>> DATA_thread-1 69.98% @ CURRENT EVENT 9898
+>> DATA_thread-2 89.96% @ CURRENT EVENT 12609
+>> DATA_thread-0 79.98% @ CURRENT EVENT 11336
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11208
+>> DATA_thread-2 99.96% @ CURRENT EVENT 14010
+>> DATA_thread-2 COMPLETED 155 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.156.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298101744
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.156.hipo
+[READER] ---> open successful, size : 636680036
+>> DATA_thread-1 79.98% @ CURRENT EVENT 11312
+  27996  56  0
+** reader-open ** records = 163, events = 14031, schemas = 117, time = 692 ms
+[DataSourceDump] --> opened file with events # 14031
+>> EVENTS TO PROCESS 14031
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-0 89.97% @ CURRENT EVENT 12753
+>> DATA_thread-3 89.96% @ CURRENT EVENT 12609
+>> DATA_thread-1 89.97% @ CURRENT EVENT 12726
+>> DATA_thread-2 10% @ CURRENT EVENT 1403
+>> DATA_thread-0 99.97% @ CURRENT EVENT 14170
+>> DATA_thread-0 COMPLETED 105 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.106.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278915272
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.106.hipo
+[READER] ---> open successful, size : 634293120
+  27996  56  0
+** reader-open ** records = 162, events = 14114, schemas = 117, time = 930 ms
+[DataSourceDump] --> opened file with events # 14114
+>> EVENTS TO PROCESS 14114
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-3 99.96% @ CURRENT EVENT 14010
+>> DATA_thread-3 COMPLETED 179 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.180.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278643904
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.180.hipo
+[READER] ---> open successful, size : 637604072
+  27996  56  0
+** reader-open ** records = 163, events = 14115, schemas = 117, time = 1127 ms
+[DataSourceDump] --> opened file with events # 14115
+>> EVENTS TO PROCESS 14115
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 99.97% @ CURRENT EVENT 14140
+>> DATA_thread-1 COMPLETED 129 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.130.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> FILE DOES NOT EXISTS /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.130.hipo
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.131.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10319191280
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.131.hipo
+[READER] ---> open successful, size : 634922552
+>> DATA_thread-2 20% @ CURRENT EVENT 2806
+  27996  56  0
+** reader-open ** records = 163, events = 14075, schemas = 117, time = 852 ms
+[DataSourceDump] --> opened file with events # 14075
+>> EVENTS TO PROCESS 14075
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-0 10% @ CURRENT EVENT 1411
+>> DATA_thread-3 10% @ CURRENT EVENT 1411
+>> DATA_thread-2 30% @ CURRENT EVENT 4209
+>> DATA_thread-1 10% @ CURRENT EVENT 1407
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2822
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2822
+>> DATA_thread-2 40% @ CURRENT EVENT 5612
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2814
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4233
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4233
+>> DATA_thread-2 50% @ CURRENT EVENT 7015
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5644
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4221
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5644
+>> DATA_thread-2 60% @ CURRENT EVENT 8418
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7055
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5628
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7055
+>> DATA_thread-2 70% @ CURRENT EVENT 9821
+>> DATA_thread-0 59.98% @ CURRENT EVENT 8466
+>> DATA_thread-1 49.98% @ CURRENT EVENT 7035
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8466
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11224
+>> DATA_thread-0 69.98% @ CURRENT EVENT 9877
+>> DATA_thread-1 59.98% @ CURRENT EVENT 8442
+>> DATA_thread-3 69.98% @ CURRENT EVENT 9877
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12627
+>> DATA_thread-0 79.98% @ CURRENT EVENT 11288
+>> DATA_thread-1 69.98% @ CURRENT EVENT 9849
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11288
+>> DATA_thread-2 99.99% @ CURRENT EVENT 14030
+>> DATA_thread-2 COMPLETED 156 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.157.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278806000
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.157.hipo
+[READER] ---> open successful, size : 635905184
+  27996  56  0
+** reader-open ** records = 163, events = 14028, schemas = 117, time = 885 ms
+[DataSourceDump] --> opened file with events # 14028
+>> EVENTS TO PROCESS 14028
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-0 89.97% @ CURRENT EVENT 12699
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11256
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12699
+>> DATA_thread-2 9.99% @ CURRENT EVENT 1402
+>> DATA_thread-0 99.97% @ CURRENT EVENT 14110
+>> DATA_thread-0 COMPLETED 106 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.107.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278659560
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.107.hipo
+[READER] ---> open successful, size : 635788736
+  27996  56  0
+** reader-open ** records = 163, events = 14112, schemas = 117, time = 1487 ms
+[DataSourceDump] --> opened file with events # 14112
+>> EVENTS TO PROCESS 14112
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 89.97% @ CURRENT EVENT 12663
+>> DATA_thread-3 99.96% @ CURRENT EVENT 14110
+>> DATA_thread-3 COMPLETED 180 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.181.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10321159672
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.181.hipo
+[READER] ---> open successful, size : 636585868
+  27996  56  0
+** reader-open ** records = 163, events = 14163, schemas = 117, time = 801 ms
+[DataSourceDump] --> opened file with events # 14163
+>> EVENTS TO PROCESS 14163
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2804
+>> DATA_thread-0 10% @ CURRENT EVENT 1411
+>> DATA_thread-1 99.96% @ CURRENT EVENT 14070
+>> DATA_thread-1 COMPLETED 131 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.132.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278604808
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.132.hipo
+[READER] ---> open successful, size : 646175312
+  27996  56  0
+** reader-open ** records = 165, events = 14376, schemas = 117, time = 873 ms
+[DataSourceDump] --> opened file with events # 14376
+>> EVENTS TO PROCESS 14376
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 10% @ CURRENT EVENT 1416
+>> DATA_thread-2 29.98% @ CURRENT EVENT 4206
+>> DATA_thread-0 20% @ CURRENT EVENT 2822
+>> DATA_thread-1 10% @ CURRENT EVENT 1437
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5608
+>> DATA_thread-3 20% @ CURRENT EVENT 2832
+>> DATA_thread-0 30% @ CURRENT EVENT 4233
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2874
+>> DATA_thread-2 49.97% @ CURRENT EVENT 7010
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4248
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5644
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4311
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8412
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5664
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7055
+>> DATA_thread-2 69.96% @ CURRENT EVENT 9814
+>> DATA_thread-1 39.98% @ CURRENT EVENT 5748
+>> DATA_thread-3 49.99% @ CURRENT EVENT 7080
+>> DATA_thread-0 59.99% @ CURRENT EVENT 8466
+>> DATA_thread-2 79.95% @ CURRENT EVENT 11216
+>> DATA_thread-1 49.98% @ CURRENT EVENT 7185
+>> DATA_thread-3 59.99% @ CURRENT EVENT 8496
+>> DATA_thread-0 69.99% @ CURRENT EVENT 9877
+>> DATA_thread-2 89.95% @ CURRENT EVENT 12618
+>> DATA_thread-1 59.97% @ CURRENT EVENT 8622
+>> DATA_thread-3 69.99% @ CURRENT EVENT 9912
+>> DATA_thread-0 79.99% @ CURRENT EVENT 11288
+>> DATA_thread-2 99.94% @ CURRENT EVENT 14020
+>> DATA_thread-2 COMPLETED 157 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.158.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299690808
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.158.hipo
+[READER] ---> open successful, size : 646371064
+  27996  56  0
+** reader-open ** records = 165, events = 14374, schemas = 117, time = 1120 ms
+[DataSourceDump] --> opened file with events # 14374
+>> EVENTS TO PROCESS 14374
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-1 69.97% @ CURRENT EVENT 10059
+>> DATA_thread-3 79.98% @ CURRENT EVENT 11328
+>> DATA_thread-0 89.99% @ CURRENT EVENT 12699
+>> DATA_thread-2 10% @ CURRENT EVENT 1437
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11496
+>> DATA_thread-3 89.98% @ CURRENT EVENT 12744
+>> DATA_thread-0 99.99% @ CURRENT EVENT 14110
+>> DATA_thread-0 COMPLETED 107 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.108.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299214256
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.108.hipo
+[READER] ---> open successful, size : 638677284
+  27996  56  0
+** reader-open ** records = 164, events = 14058, schemas = 117, time = 1532 ms
+[DataSourceDump] --> opened file with events # 14058
+>> EVENTS TO PROCESS 14058
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2874
+>> DATA_thread-1 89.96% @ CURRENT EVENT 12933
+>> DATA_thread-3 99.98% @ CURRENT EVENT 14160
+>> DATA_thread-3 COMPLETED 181 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.182.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278866360
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.182.hipo
+[READER] ---> open successful, size : 644767296
+  27996  56  0
+** reader-open ** records = 165, events = 14168, schemas = 117, time = 1132 ms
+[DataSourceDump] --> opened file with events # 14168
+>> EVENTS TO PROCESS 14168
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 9.99% @ CURRENT EVENT 1405
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4311
+>> DATA_thread-1 99.96% @ CURRENT EVENT 14370
+>> DATA_thread-1 COMPLETED 132 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.133.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278647848
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.133.hipo
+[READER] ---> open successful, size : 644102748
+  27996  56  0
+** reader-open ** records = 165, events = 14255, schemas = 117, time = 684 ms
+[DataSourceDump] --> opened file with events # 14255
+>> EVENTS TO PROCESS 14255
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1416
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2810
+>> DATA_thread-2 39.99% @ CURRENT EVENT 5748
+>> DATA_thread-0 29.98% @ CURRENT EVENT 4215
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2832
+>> DATA_thread-1 10% @ CURRENT EVENT 1425
+>> DATA_thread-2 49.99% @ CURRENT EVENT 7185
+>> DATA_thread-0 39.98% @ CURRENT EVENT 5620
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4248
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2850
+>> DATA_thread-2 59.98% @ CURRENT EVENT 8622
+>> DATA_thread-0 49.97% @ CURRENT EVENT 7025
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5664
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4275
+>> DATA_thread-2 69.98% @ CURRENT EVENT 10059
+>> DATA_thread-0 59.97% @ CURRENT EVENT 8430
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7080
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5700
+>> DATA_thread-2 79.98% @ CURRENT EVENT 11496
+>> DATA_thread-0 69.96% @ CURRENT EVENT 9835
+>> DATA_thread-1 49.98% @ CURRENT EVENT 7125
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8496
+>> DATA_thread-2 89.97% @ CURRENT EVENT 12933
+>> DATA_thread-0 79.95% @ CURRENT EVENT 11240
+>> DATA_thread-1 59.98% @ CURRENT EVENT 8550
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9912
+>> DATA_thread-2 99.97% @ CURRENT EVENT 14370
+>> DATA_thread-2 COMPLETED 158 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.159.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278842248
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.159.hipo
+[READER] ---> open successful, size : 639044448
+  27996  56  0
+** reader-open ** records = 164, events = 14031, schemas = 117, time = 545 ms
+[DataSourceDump] --> opened file with events # 14031
+>> EVENTS TO PROCESS 14031
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-0 89.95% @ CURRENT EVENT 12645
+>> DATA_thread-1 69.98% @ CURRENT EVENT 9975
+>> DATA_thread-3 79.95% @ CURRENT EVENT 11328
+>> DATA_thread-2 10% @ CURRENT EVENT 1403
+>> DATA_thread-0 99.94% @ CURRENT EVENT 14050
+>> DATA_thread-0 COMPLETED 108 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.109.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298244216
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.109.hipo
+[READER] ---> open successful, size : 638994076
+  27996  56  0
+** reader-open ** records = 164, events = 14017, schemas = 117, time = 1000 ms
+[DataSourceDump] --> opened file with events # 14017
+>> EVENTS TO PROCESS 14017
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11400
+>> DATA_thread-3 89.95% @ CURRENT EVENT 12744
+>> DATA_thread-2 20% @ CURRENT EVENT 2806
+>> DATA_thread-0 10% @ CURRENT EVENT 1401
+>> DATA_thread-1 89.97% @ CURRENT EVENT 12825
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14160
+>> DATA_thread-3 COMPLETED 182 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.183.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278819232
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.183.hipo
+[READER] ---> open successful, size : 645218884
+  27996  56  0
+** reader-open ** records = 165, events = 14375, schemas = 117, time = 1548 ms
+[DataSourceDump] --> opened file with events # 14375
+>> EVENTS TO PROCESS 14375
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-2 30% @ CURRENT EVENT 4209
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2802
+>> DATA_thread-1 99.96% @ CURRENT EVENT 14250
+>> DATA_thread-1 COMPLETED 133 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.134.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10300730616
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.134.hipo
+[READER] ---> open successful, size : 636011688
+  27996  56  0
+** reader-open ** records = 163, events = 14049, schemas = 117, time = 701 ms
+[DataSourceDump] --> opened file with events # 14049
+>> EVENTS TO PROCESS 14049
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 10% @ CURRENT EVENT 1437
+>> DATA_thread-2 40% @ CURRENT EVENT 5612
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4203
+>> DATA_thread-1 9.99% @ CURRENT EVENT 1404
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2874
+>> DATA_thread-2 50% @ CURRENT EVENT 7015
+>> DATA_thread-0 39.98% @ CURRENT EVENT 5604
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2808
+>> DATA_thread-2 60% @ CURRENT EVENT 8418
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4311
+>> DATA_thread-0 49.98% @ CURRENT EVENT 7005
+>> DATA_thread-1 29.98% @ CURRENT EVENT 4212
+>> DATA_thread-2 70% @ CURRENT EVENT 9821
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5748
+>> DATA_thread-0 59.97% @ CURRENT EVENT 8406
+>> DATA_thread-1 39.97% @ CURRENT EVENT 5616
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11224
+>> DATA_thread-0 69.97% @ CURRENT EVENT 9807
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7185
+>> DATA_thread-1 49.97% @ CURRENT EVENT 7020
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12627
+>> DATA_thread-0 79.96% @ CURRENT EVENT 11208
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8622
+>> DATA_thread-1 59.96% @ CURRENT EVENT 8424
+>> DATA_thread-2 99.99% @ CURRENT EVENT 14030
+>> DATA_thread-2 COMPLETED 159 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.160.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299004336
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.160.hipo
+[READER] ---> open successful, size : 646565968
+>> DATA_thread-0 89.96% @ CURRENT EVENT 12609
+  27996  56  0
+** reader-open ** records = 166, events = 14289, schemas = 117, time = 1159 ms
+[DataSourceDump] --> opened file with events # 14289
+>> EVENTS TO PROCESS 14289
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 69.98% @ CURRENT EVENT 10059
+>> DATA_thread-1 69.96% @ CURRENT EVENT 9828
+>> DATA_thread-0 99.95% @ CURRENT EVENT 14010
+>> DATA_thread-0 COMPLETED 109 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.110.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10300842808
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.110.hipo
+[READER] ---> open successful, size : 631491296
+>> DATA_thread-2 9.99% @ CURRENT EVENT 1428
+  27996  56  0
+** reader-open ** records = 162, events = 13859, schemas = 117, time = 975 ms
+[DataSourceDump] --> opened file with events # 13859
+>> EVENTS TO PROCESS 13859
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11496
+>> DATA_thread-1 79.95% @ CURRENT EVENT 11232
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2856
+>> DATA_thread-0 9.99% @ CURRENT EVENT 1385
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12933
+>> DATA_thread-1 89.94% @ CURRENT EVENT 12636
+>> DATA_thread-2 29.98% @ CURRENT EVENT 4284
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2770
+>> DATA_thread-3 99.97% @ CURRENT EVENT 14370
+>> DATA_thread-3 COMPLETED 183 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.184.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10320942640
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.184.hipo
+[READER] ---> open successful, size : 640877776
+  27996  56  0
+** reader-open ** records = 164, events = 14118, schemas = 117, time = 1046 ms
+[DataSourceDump] --> opened file with events # 14118
+>> EVENTS TO PROCESS 14118
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-2 39.97% @ CURRENT EVENT 5712
+>> DATA_thread-1 99.94% @ CURRENT EVENT 14040
+>> DATA_thread-1 COMPLETED 134 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.135.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299554192
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.135.hipo
+[READER] ---> open successful, size : 637060428
+>> DATA_thread-0 29.98% @ CURRENT EVENT 4155
+  27996  56  0
+** reader-open ** records = 163, events = 14143, schemas = 117, time = 1094 ms
+[DataSourceDump] --> opened file with events # 14143
+>> EVENTS TO PROCESS 14143
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1411
+>> DATA_thread-2 49.97% @ CURRENT EVENT 7140
+>> DATA_thread-0 39.97% @ CURRENT EVENT 5540
+>> DATA_thread-1 10% @ CURRENT EVENT 1414
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2822
+>> DATA_thread-2 59.96% @ CURRENT EVENT 8568
+>> DATA_thread-0 49.97% @ CURRENT EVENT 6925
+>> DATA_thread-1 20% @ CURRENT EVENT 2828
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4233
+>> DATA_thread-0 59.96% @ CURRENT EVENT 8310
+>> DATA_thread-2 69.96% @ CURRENT EVENT 9996
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4242
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5644
+>> DATA_thread-0 69.95% @ CURRENT EVENT 9695
+>> DATA_thread-2 79.95% @ CURRENT EVENT 11424
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5656
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7055
+>> DATA_thread-0 79.95% @ CURRENT EVENT 11080
+>> DATA_thread-2 89.94% @ CURRENT EVENT 12852
+>> DATA_thread-1 49.99% @ CURRENT EVENT 7070
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8466
+>> DATA_thread-0 89.94% @ CURRENT EVENT 12465
+>> DATA_thread-2 99.94% @ CURRENT EVENT 14280
+>> DATA_thread-2 COMPLETED 160 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.161.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10300369824
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.161.hipo
+[READER] ---> open successful, size : 637725544
+  27996  56  0
+** reader-open ** records = 163, events = 14096, schemas = 117, time = 855 ms
+[DataSourceDump] --> opened file with events # 14096
+>> EVENTS TO PROCESS 14096
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-1 59.99% @ CURRENT EVENT 8484
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9877
+>> DATA_thread-0 99.94% @ CURRENT EVENT 13850
+>> DATA_thread-0 COMPLETED 110 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.111.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298714816
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.111.hipo
+[READER] ---> open successful, size : 640067864
+  27996  56  0
+** reader-open ** records = 164, events = 14139, schemas = 117, time = 1557 ms
+[DataSourceDump] --> opened file with events # 14139
+>> EVENTS TO PROCESS 14139
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1409
+>> DATA_thread-1 69.99% @ CURRENT EVENT 9898
+>> DATA_thread-3 79.95% @ CURRENT EVENT 11288
+>> DATA_thread-0 9.99% @ CURRENT EVENT 1413
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2818
+>> DATA_thread-1 79.98% @ CURRENT EVENT 11312
+>> DATA_thread-3 89.95% @ CURRENT EVENT 12699
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2826
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4227
+>> DATA_thread-1 89.98% @ CURRENT EVENT 12726
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14110
+>> DATA_thread-3 COMPLETED 184 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.185.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 13919793120
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.185.hipo
+[READER] ---> open successful, size : 640765616
+  27996  56  0
+** reader-open ** records = 164, events = 14215, schemas = 117, time = 918 ms
+[DataSourceDump] --> opened file with events # 14215
+>> EVENTS TO PROCESS 14215
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 29.98% @ CURRENT EVENT 4239
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5636
+>> DATA_thread-1 99.98% @ CURRENT EVENT 14140
+>> DATA_thread-1 COMPLETED 135 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.136.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278639624
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.136.hipo
+[READER] ---> open successful, size : 633658644
+  27996  56  0
+** reader-open ** records = 162, events = 13987, schemas = 117, time = 944 ms
+[DataSourceDump] --> opened file with events # 13987
+>> EVENTS TO PROCESS 13987
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 10% @ CURRENT EVENT 1421
+>> DATA_thread-0 39.97% @ CURRENT EVENT 5652
+>> DATA_thread-2 49.98% @ CURRENT EVENT 7045
+>> DATA_thread-1 9.99% @ CURRENT EVENT 1398
+>> DATA_thread-0 49.97% @ CURRENT EVENT 7065
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2842
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8454
+>> DATA_thread-0 59.96% @ CURRENT EVENT 8478
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2796
+>> DATA_thread-2 69.97% @ CURRENT EVENT 9863
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4263
+>> DATA_thread-0 69.96% @ CURRENT EVENT 9891
+>> DATA_thread-1 29.98% @ CURRENT EVENT 4194
+>> DATA_thread-2 79.97% @ CURRENT EVENT 11272
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5684
+>> DATA_thread-0 79.95% @ CURRENT EVENT 11304
+>> DATA_thread-1 39.98% @ CURRENT EVENT 5592
+>> DATA_thread-2 89.96% @ CURRENT EVENT 12681
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7105
+>> DATA_thread-0 89.94% @ CURRENT EVENT 12717
+>> DATA_thread-2 99.96% @ CURRENT EVENT 14090
+>> DATA_thread-2 COMPLETED 161 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.162.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278880440
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.162.hipo
+[READER] ---> open successful, size : 640378824
+>> DATA_thread-1 49.97% @ CURRENT EVENT 6990
+  27996  56  0
+** reader-open ** records = 164, events = 14168, schemas = 117, time = 774 ms
+[DataSourceDump] --> opened file with events # 14168
+>> EVENTS TO PROCESS 14168
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8526
+>> DATA_thread-0 99.94% @ CURRENT EVENT 14130
+>> DATA_thread-0 COMPLETED 111 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.112.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298564744
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.112.hipo
+[READER] ---> open successful, size : 644669072
+  27996  56  0
+** reader-open ** records = 165, events = 14240, schemas = 117, time = 894 ms
+[DataSourceDump] --> opened file with events # 14240
+>> EVENTS TO PROCESS 14240
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 9.99% @ CURRENT EVENT 1416
+>> DATA_thread-1 59.97% @ CURRENT EVENT 8388
+>> DATA_thread-3 69.98% @ CURRENT EVENT 9947
+>> DATA_thread-0 10% @ CURRENT EVENT 1424
+>> DATA_thread-1 69.96% @ CURRENT EVENT 9786
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2832
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11368
+>> DATA_thread-0 20% @ CURRENT EVENT 2848
+>> DATA_thread-2 29.98% @ CURRENT EVENT 4248
+>> DATA_thread-1 79.96% @ CURRENT EVENT 11184
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12789
+>> DATA_thread-0 30% @ CURRENT EVENT 4272
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5664
+>> DATA_thread-1 89.95% @ CURRENT EVENT 12582
+>> DATA_thread-3 99.96% @ CURRENT EVENT 14210
+>> DATA_thread-3 COMPLETED 185 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.186.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278828048
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.186.hipo
+[READER] ---> open successful, size : 634953868
+  27996  56  0
+** reader-open ** records = 163, events = 14075, schemas = 117, time = 1194 ms
+[DataSourceDump] --> opened file with events # 14075
+>> EVENTS TO PROCESS 14075
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 40% @ CURRENT EVENT 5696
+>> DATA_thread-1 99.95% @ CURRENT EVENT 13980
+>> DATA_thread-1 COMPLETED 136 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.137.hipo
+>> DATA_thread-2 49.97% @ CURRENT EVENT 7080
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298831576
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.137.hipo
+[READER] ---> open successful, size : 643669036
+  27996  56  0
+** reader-open ** records = 165, events = 14333, schemas = 117, time = 1279 ms
+[DataSourceDump] --> opened file with events # 14333
+>> EVENTS TO PROCESS 14333
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 10% @ CURRENT EVENT 1407
+>> DATA_thread-0 50% @ CURRENT EVENT 7120
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8496
+>> DATA_thread-1 10% @ CURRENT EVENT 1433
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2814
+>> DATA_thread-0 60% @ CURRENT EVENT 8544
+>> DATA_thread-2 69.96% @ CURRENT EVENT 9912
+>> DATA_thread-1 20% @ CURRENT EVENT 2866
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4221
+>> DATA_thread-0 70% @ CURRENT EVENT 9968
+>> DATA_thread-2 79.95% @ CURRENT EVENT 11328
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4299
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5628
+>> DATA_thread-0 80% @ CURRENT EVENT 11392
+>> DATA_thread-2 89.95% @ CURRENT EVENT 12744
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5732
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7035
+>> DATA_thread-0 90% @ CURRENT EVENT 12816
+>> DATA_thread-2 99.94% @ CURRENT EVENT 14160
+>> DATA_thread-2 COMPLETED 162 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.163.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10339203152
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.163.hipo
+[READER] ---> open successful, size : 641814004
+  27996  56  0
+** reader-open ** records = 165, events = 14157, schemas = 117, time = 953 ms
+[DataSourceDump] --> opened file with events # 14157
+>> EVENTS TO PROCESS 14157
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-1 49.99% @ CURRENT EVENT 7165
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8442
+>> DATA_thread-0 COMPLETED 112 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.113.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10318438904
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.113.hipo
+[READER] ---> open successful, size : 639323348
+  27996  56  0
+** reader-open ** records = 164, events = 14148, schemas = 117, time = 1032 ms
+[DataSourceDump] --> opened file with events # 14148
+clear>> EVENTS TO PROCESS 14148
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1415
+>> DATA_thread-1 59.99% @ CURRENT EVENT 8598
+>> DATA_thread-3 69.98% @ CURRENT EVENT 9849
+>> DATA_thread-0 9.99% @ CURRENT EVENT 1414
+>> DATA_thread-1 69.99% @ CURRENT EVENT 10031
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2830
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11256
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2828
+>> DATA_thread-1 79.98% @ CURRENT EVENT 11464
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4245
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12663
+>> DATA_thread-0 29.98% @ CURRENT EVENT 4242
+>> DATA_thread-1 89.98% @ CURRENT EVENT 12897
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5660
+>> DATA_thread-3 99.96% @ CURRENT EVENT 14070
+>> DATA_thread-3 COMPLETED 186 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.187.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298294832
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.187.hipo
+[READER] ---> open successful, size : 635546228
+  27996  56  0
+** reader-open ** records = 163, events = 14053, schemas = 117, time = 804 ms
+[DataSourceDump] --> opened file with events # 14053
+>> EVENTS TO PROCESS 14053
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 39.98% @ CURRENT EVENT 5656
+>> DATA_thread-1 99.98% @ CURRENT EVENT 14330
+>> DATA_thread-2 49.98% @ CURRENT EVENT 7075
+>> DATA_thread-1 COMPLETED 137 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.138.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278841784
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.138.hipo
+[READER] ---> open successful, size : 633618616
+  27996  56  0
+** reader-open ** records = 162, events = 14033, schemas = 117, time = 1140 ms
+[DataSourceDump] --> opened file with events # 14033
+>> EVENTS TO PROCESS 14033
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 10% @ CURRENT EVENT 1405
+>> DATA_thread-0 49.97% @ CURRENT EVENT 7070
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8490
+>> DATA_thread-1 10% @ CURRENT EVENT 1403
+>> DATA_thread-3 20% @ CURRENT EVENT 2810
+>> DATA_thread-0 59.97% @ CURRENT EVENT 8484
+>> DATA_thread-2 69.97% @ CURRENT EVENT 9905
+>> DATA_thread-1 20% @ CURRENT EVENT 2806
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4215
+>> DATA_thread-0 69.96% @ CURRENT EVENT 9898
+>> DATA_thread-2 79.96% @ CURRENT EVENT 11320
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4209
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5620
+>> DATA_thread-0 79.95% @ CURRENT EVENT 11312
+>> DATA_thread-2 89.96% @ CURRENT EVENT 12735
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5612
+>> DATA_thread-3 49.99% @ CURRENT EVENT 7025
+>> DATA_thread-0 89.95% @ CURRENT EVENT 12726
+>> DATA_thread-2 99.95% @ CURRENT EVENT 14150
+>> DATA_thread-2 COMPLETED 163 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.164.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 13812531448
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.164.hipo
+[READER] ---> open successful, size : 641626536
+>> DATA_thread-1 49.99% @ CURRENT EVENT 7015
+  27996  56  0
+** reader-open ** records = 164, events = 14171, schemas = 117, time = 780 ms
+[DataSourceDump] --> opened file with events # 14171
+>> EVENTS TO PROCESS 14171
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 59.99% @ CURRENT EVENT 8430
+>> DATA_thread-0 99.94% @ CURRENT EVENT 14140
+>> DATA_thread-0 COMPLETED 113 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.114.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299200264
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.114.hipo
+[READER] ---> open successful, size : 640270152
+  27996  56  0
+** reader-open ** records = 164, events = 14144, schemas = 117, time = 881 ms
+[DataSourceDump] --> opened file with events # 14144
+>> EVENTS TO PROCESS 14144
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 59.99% @ CURRENT EVENT 8418
+>> DATA_thread-2 10% @ CURRENT EVENT 1417
+>> DATA_thread-3 69.99% @ CURRENT EVENT 9835
+>> DATA_thread-0 10% @ CURRENT EVENT 1414
+>> DATA_thread-1 69.99% @ CURRENT EVENT 9821
+>> DATA_thread-2 20% @ CURRENT EVENT 2834
+>> DATA_thread-3 79.98% @ CURRENT EVENT 11240
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2828
+>> DATA_thread-1 79.98% @ CURRENT EVENT 11224
+>> DATA_thread-2 30% @ CURRENT EVENT 4251
+>> DATA_thread-3 89.98% @ CURRENT EVENT 12645
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4242
+>> DATA_thread-1 89.98% @ CURRENT EVENT 12627
+>> DATA_thread-2 40% @ CURRENT EVENT 5668
+>> DATA_thread-3 99.98% @ CURRENT EVENT 14050
+>> DATA_thread-3 COMPLETED 187 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.188.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298908080
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.188.hipo
+[READER] ---> open successful, size : 640389944
+  27996  56  0
+** reader-open ** records = 164, events = 14219, schemas = 117, time = 1146 ms
+[DataSourceDump] --> opened file with events # 14219
+>> EVENTS TO PROCESS 14219
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5656
+>> DATA_thread-1 99.98% @ CURRENT EVENT 14030
+>> DATA_thread-1 COMPLETED 138 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.139.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278884824
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.139.hipo
+[READER] ---> open successful, size : 635460292
+  27996  56  0
+** reader-open ** records = 163, events = 13963, schemas = 117, time = 781 ms
+[DataSourceDump] --> opened file with events # 13963
+>> EVENTS TO PROCESS 13963
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 50% @ CURRENT EVENT 7085
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1421
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7070
+>> DATA_thread-1 10% @ CURRENT EVENT 1396
+>> DATA_thread-2 60% @ CURRENT EVENT 8502
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2842
+>> DATA_thread-0 59.98% @ CURRENT EVENT 8484
+>> DATA_thread-1 20% @ CURRENT EVENT 2792
+>> DATA_thread-2 70% @ CURRENT EVENT 9919
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4263
+>> DATA_thread-0 69.98% @ CURRENT EVENT 9898
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4188
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11336
+>> DATA_thread-3 39.97% @ CURRENT EVENT 5684
+>> DATA_thread-0 79.98% @ CURRENT EVENT 11312
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5584
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12753
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7105
+>> DATA_thread-0 89.97% @ CURRENT EVENT 12726
+>> DATA_thread-1 49.99% @ CURRENT EVENT 6980
+>> DATA_thread-2 99.99% @ CURRENT EVENT 14170
+>> DATA_thread-2 COMPLETED 164 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.165.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 12443758152
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.165.hipo
+[READER] ---> open successful, size : 641395332
+  27996  56  0
+** reader-open ** records = 164, events = 14125, schemas = 117, time = 2465 ms
+[DataSourceDump] --> opened file with events # 14125
+>> EVENTS TO PROCESS 14125
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 59.96% @ CURRENT EVENT 8526
+>> DATA_thread-0 99.97% @ CURRENT EVENT 14140
+>> DATA_thread-0 COMPLETED 114 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.115.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278813136
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.115.hipo
+[READER] ---> open successful, size : 638146304
+  27996  56  0
+** reader-open ** records = 164, events = 14124, schemas = 117, time = 1445 ms
+[DataSourceDump] --> opened file with events # 14124
+>> EVENTS TO PROCESS 14124
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 59.99% @ CURRENT EVENT 8376
+>> DATA_thread-2 10% @ CURRENT EVENT 1412
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9947
+>> DATA_thread-0 10% @ CURRENT EVENT 1412
+>> DATA_thread-1 69.98% @ CURRENT EVENT 9772
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2824
+>> DATA_thread-3 79.95% @ CURRENT EVENT 11368
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2824
+>> DATA_thread-1 79.98% @ CURRENT EVENT 11168
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4236
+>> DATA_thread-3 89.94% @ CURRENT EVENT 12789
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4236
+>> DATA_thread-1 89.98% @ CURRENT EVENT 12564
+>> DATA_thread-2 39.99% @ CURRENT EVENT 5648
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14210
+>> DATA_thread-3 COMPLETED 188 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.189.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10297782040
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.189.hipo
+[READER] ---> open successful, size : 639423360
+  27996  56  0
+** reader-open ** records = 164, events = 14215, schemas = 117, time = 833 ms
+[DataSourceDump] --> opened file with events # 14215
+>> EVENTS TO PROCESS 14215
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5648
+>> DATA_thread-1 99.98% @ CURRENT EVENT 13960
+>> DATA_thread-1 COMPLETED 139 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.140.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278808776
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.140.hipo
+[READER] ---> open successful, size : 632192440
+>> DATA_thread-2 49.98% @ CURRENT EVENT 7060
+  27996  56  0
+** reader-open ** records = 162, events = 13985, schemas = 117, time = 1161 ms
+[DataSourceDump] --> opened file with events # 13985
+>> EVENTS TO PROCESS 13985
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 10% @ CURRENT EVENT 1421
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7060
+>> DATA_thread-2 59.98% @ CURRENT EVENT 8472
+>> DATA_thread-1 10% @ CURRENT EVENT 1398
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2842
+>> DATA_thread-0 59.98% @ CURRENT EVENT 8472
+>> DATA_thread-2 69.98% @ CURRENT EVENT 9884
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2796
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4263
+>> DATA_thread-0 69.98% @ CURRENT EVENT 9884
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4194
+>> DATA_thread-2 79.97% @ CURRENT EVENT 11296
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5684
+>> DATA_thread-0 79.98% @ CURRENT EVENT 11296
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5592
+>> DATA_thread-2 89.97% @ CURRENT EVENT 12708
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7105
+>> DATA_thread-0 89.97% @ CURRENT EVENT 12708
+>> DATA_thread-1 49.98% @ CURRENT EVENT 6990
+>> DATA_thread-2 99.96% @ CURRENT EVENT 14120
+>> DATA_thread-2 COMPLETED 165 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.166.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278640280
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.166.hipo
+[READER] ---> open successful, size : 632552160
+  27996  56  0
+** reader-open ** records = 162, events = 13999, schemas = 117, time = 861 ms
+[DataSourceDump] --> opened file with events # 13999
+>> EVENTS TO PROCESS 13999
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8526
+>> DATA_thread-0 99.97% @ CURRENT EVENT 14120
+>> DATA_thread-0 COMPLETED 115 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.116.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10775751944
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.116.hipo
+[READER] ---> open successful, size : 637163852
+>> DATA_thread-1 59.98% @ CURRENT EVENT 8388
+  27996  56  0
+** reader-open ** records = 163, events = 14120, schemas = 117, time = 1287 ms
+[DataSourceDump] --> opened file with events # 14120
+>> EVENTS TO PROCESS 14120
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 9.99% @ CURRENT EVENT 1399
+>> DATA_thread-3 69.98% @ CURRENT EVENT 9947
+>> DATA_thread-1 69.97% @ CURRENT EVENT 9786
+>> DATA_thread-0 10% @ CURRENT EVENT 1412
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2798
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11368
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11184
+>> DATA_thread-0 20% @ CURRENT EVENT 2824
+>> DATA_thread-2 29.98% @ CURRENT EVENT 4197
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12789
+>> DATA_thread-1 89.97% @ CURRENT EVENT 12582
+>> DATA_thread-0 30% @ CURRENT EVENT 4236
+>> DATA_thread-2 39.97% @ CURRENT EVENT 5596
+>> DATA_thread-3 99.96% @ CURRENT EVENT 14210
+>> DATA_thread-3 COMPLETED 189 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.190.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278806248
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.190.hipo
+[READER] ---> open successful, size : 641294060
+  27996  56  0
+** reader-open ** records = 164, events = 14248, schemas = 117, time = 1155 ms
+[DataSourceDump] --> opened file with events # 14248
+>> EVENTS TO PROCESS 14248
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 99.96% @ CURRENT EVENT 13980
+>> DATA_thread-1 COMPLETED 140 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.141.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278833496
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.141.hipo
+[READER] ---> open successful, size : 630852324
+  27996  56  0
+** reader-open ** records = 162, events = 13991, schemas = 117, time = 944 ms
+[DataSourceDump] --> opened file with events # 13991
+>> EVENTS TO PROCESS 13991
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-0 40% @ CURRENT EVENT 5648
+>> DATA_thread-2 49.97% @ CURRENT EVENT 6995
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1424
+>> DATA_thread-1 10% @ CURRENT EVENT 1399
+>> DATA_thread-0 50% @ CURRENT EVENT 7060
+>> DATA_thread-2 59.96% @ CURRENT EVENT 8394
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2848
+>> DATA_thread-1 20% @ CURRENT EVENT 2798
+>> DATA_thread-0 60% @ CURRENT EVENT 8472
+>> DATA_thread-2 69.95% @ CURRENT EVENT 9793
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4272
+>> DATA_thread-1 30% @ CURRENT EVENT 4197
+>> DATA_thread-0 70% @ CURRENT EVENT 9884
+>> DATA_thread-2 79.95% @ CURRENT EVENT 11192
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5696
+>> DATA_thread-1 40% @ CURRENT EVENT 5596
+>> DATA_thread-0 80% @ CURRENT EVENT 11296
+>> DATA_thread-2 89.94% @ CURRENT EVENT 12591
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7120
+>> DATA_thread-1 50% @ CURRENT EVENT 6995
+>> DATA_thread-0 90% @ CURRENT EVENT 12708
+>> DATA_thread-2 99.94% @ CURRENT EVENT 13990
+>> DATA_thread-2 COMPLETED 166 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.167.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278813008
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.167.hipo
+[READER] ---> open successful, size : 638086440
+  27996  56  0
+** reader-open ** records = 163, events = 14132, schemas = 117, time = 1050 ms
+[DataSourceDump] --> opened file with events # 14132
+>> EVENTS TO PROCESS 14132
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8544
+>> DATA_thread-0 COMPLETED 116 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.117.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10338616840
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.117.hipo
+[READER] ---> open successful, size : 638885820
+>> DATA_thread-1 60% @ CURRENT EVENT 8394
+  27996  56  0
+** reader-open ** records = 164, events = 14142, schemas = 117, time = 1230 ms
+[DataSourceDump] --> opened file with events # 14142
+>> EVENTS TO PROCESS 14142
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1413
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9968
+>> DATA_thread-1 69.99% @ CURRENT EVENT 9793
+>> DATA_thread-0 10% @ CURRENT EVENT 1414
+>> DATA_thread-2 20% @ CURRENT EVENT 2826
+>> DATA_thread-3 79.96% @ CURRENT EVENT 11392
+>> DATA_thread-1 79.99% @ CURRENT EVENT 11192
+>> DATA_thread-0 20% @ CURRENT EVENT 2828
+>> DATA_thread-2 30% @ CURRENT EVENT 4239
+>> DATA_thread-3 89.95% @ CURRENT EVENT 12816
+>> DATA_thread-0 30% @ CURRENT EVENT 4242
+>> DATA_thread-1 89.99% @ CURRENT EVENT 12591
+>> DATA_thread-2 39.99% @ CURRENT EVENT 5652
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14240
+>> DATA_thread-3 COMPLETED 190 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.191.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299443560
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.191.hipo
+[READER] ---> open successful, size : 643930548
+  27996  56  0
+** reader-open ** records = 165, events = 14273, schemas = 117, time = 1220 ms
+[DataSourceDump] --> opened file with events # 14273
+>> EVENTS TO PROCESS 14273
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 99.99% @ CURRENT EVENT 13990
+>> DATA_thread-1 COMPLETED 141 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.142.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278604408
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.142.hipo
+[READER] ---> open successful, size : 638317248
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5656
+  27996  56  0
+** reader-open ** records = 164, events = 14076, schemas = 117, time = 775 ms
+[DataSourceDump] --> opened file with events # 14076
+>> EVENTS TO PROCESS 14076
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 49.99% @ CURRENT EVENT 7065
+>> DATA_thread-3 10% @ CURRENT EVENT 1427
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7070
+>> DATA_thread-1 10% @ CURRENT EVENT 1407
+>> DATA_thread-2 59.99% @ CURRENT EVENT 8478
+>> DATA_thread-3 20% @ CURRENT EVENT 2854
+>> DATA_thread-0 59.99% @ CURRENT EVENT 8484
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2814
+>> DATA_thread-2 69.99% @ CURRENT EVENT 9891
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4281
+>> DATA_thread-0 69.99% @ CURRENT EVENT 9898
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4221
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11304
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5708
+>> DATA_thread-0 79.99% @ CURRENT EVENT 11312
+>> DATA_thread-1 39.98% @ CURRENT EVENT 5628
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12717
+>> DATA_thread-3 49.99% @ CURRENT EVENT 7135
+>> DATA_thread-0 89.99% @ CURRENT EVENT 12726
+>> DATA_thread-1 49.98% @ CURRENT EVENT 7035
+>> DATA_thread-2 99.99% @ CURRENT EVENT 14130
+>> DATA_thread-2 COMPLETED 167 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.168.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278783752
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.168.hipo
+[READER] ---> open successful, size : 647346100
+  27996  56  0
+** reader-open ** records = 166, events = 14298, schemas = 117, time = 1086 ms
+[DataSourceDump] --> opened file with events # 14298
+>> EVENTS TO PROCESS 14298
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 59.99% @ CURRENT EVENT 8562
+>> DATA_thread-0 99.99% @ CURRENT EVENT 14140
+>> DATA_thread-0 COMPLETED 117 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.118.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10318700952
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.118.hipo
+[READER] ---> open successful, size : 639441492
+  27996  56  0
+** reader-open ** records = 164, events = 14055, schemas = 117, time = 876 ms
+[DataSourceDump] --> opened file with events # 14055
+>> EVENTS TO PROCESS 14055
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 59.97% @ CURRENT EVENT 8442
+>> DATA_thread-2 9.99% @ CURRENT EVENT 1429
+>> DATA_thread-3 69.99% @ CURRENT EVENT 9989
+>> DATA_thread-0 10% @ CURRENT EVENT 1405
+>> DATA_thread-1 69.97% @ CURRENT EVENT 9849
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2858
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2810
+>> DATA_thread-3 79.98% @ CURRENT EVENT 11416
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11256
+>> DATA_thread-2 29.98% @ CURRENT EVENT 4287
+>> DATA_thread-3 89.98% @ CURRENT EVENT 12843
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4215
+>> DATA_thread-1 89.96% @ CURRENT EVENT 12663
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5716
+>> DATA_thread-3 99.98% @ CURRENT EVENT 14270
+>> DATA_thread-3 COMPLETED 191 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.192.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278720096
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.192.hipo
+[READER] ---> open successful, size : 641029624
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5620
+  27996  56  0
+** reader-open ** records = 164, events = 14174, schemas = 117, time = 1292 ms
+[DataSourceDump] --> opened file with events # 14174
+>> EVENTS TO PROCESS 14174
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 99.96% @ CURRENT EVENT 14070
+>> DATA_thread-1 COMPLETED 142 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.143.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278893984
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.143.hipo
+[READER] ---> open successful, size : 641657876
+  27996  56  0
+** reader-open ** records = 164, events = 14165, schemas = 117, time = 585 ms
+[DataSourceDump] --> opened file with events # 14165
+>> EVENTS TO PROCESS 14165
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 49.97% @ CURRENT EVENT 7145
+>> DATA_thread-0 49.98% @ CURRENT EVENT 7025
+>> DATA_thread-3 10% @ CURRENT EVENT 1417
+>> DATA_thread-1 10% @ CURRENT EVENT 1416
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8574
+>> DATA_thread-0 59.98% @ CURRENT EVENT 8430
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2834
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2832
+>> DATA_thread-2 69.96% @ CURRENT EVENT 10003
+>> DATA_thread-0 69.98% @ CURRENT EVENT 9835
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4251
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4248
+>> DATA_thread-2 79.96% @ CURRENT EVENT 11432
+>> DATA_thread-0 79.97% @ CURRENT EVENT 11240
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5668
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5664
+>> DATA_thread-2 89.95% @ CURRENT EVENT 12861
+>> DATA_thread-0 89.97% @ CURRENT EVENT 12645
+>> DATA_thread-3 49.99% @ CURRENT EVENT 7085
+>> DATA_thread-1 49.98% @ CURRENT EVENT 7080
+>> DATA_thread-2 99.94% @ CURRENT EVENT 14290
+>> DATA_thread-2 COMPLETED 168 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.169.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10318566152
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.169.hipo
+[READER] ---> open successful, size : 633311292
+  27996  56  0
+** reader-open ** records = 162, events = 13991, schemas = 117, time = 764 ms
+[DataSourceDump] --> opened file with events # 13991
+>> EVENTS TO PROCESS 13991
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-0 99.96% @ CURRENT EVENT 14050
+>> DATA_thread-0 COMPLETED 118 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.119.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278778912
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.119.hipo
+[READER] ---> open successful, size : 637010892
+  27996  56  0
+** reader-open ** records = 163, events = 14163, schemas = 117, time = 1431 ms
+[DataSourceDump] --> opened file with events # 14163
+>> EVENTS TO PROCESS 14163
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8502
+>> DATA_thread-1 59.98% @ CURRENT EVENT 8496
+>> DATA_thread-2 10% @ CURRENT EVENT 1399
+>> DATA_thread-3 69.98% @ CURRENT EVENT 9919
+>> DATA_thread-0 10% @ CURRENT EVENT 1416
+>> DATA_thread-1 69.98% @ CURRENT EVENT 9912
+>> DATA_thread-2 20% @ CURRENT EVENT 2798
+>> DATA_thread-0 20% @ CURRENT EVENT 2832
+>> DATA_thread-3 79.98% @ CURRENT EVENT 11336
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11328
+>> DATA_thread-2 30% @ CURRENT EVENT 4197
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4248
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12753
+>> DATA_thread-1 89.97% @ CURRENT EVENT 12744
+>> DATA_thread-2 40% @ CURRENT EVENT 5596
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5664
+>> DATA_thread-3 99.97% @ CURRENT EVENT 14170
+>> DATA_thread-3 COMPLETED 192 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.193.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298117608
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.193.hipo
+[READER] ---> open successful, size : 645656904
+>> DATA_thread-1 99.96% @ CURRENT EVENT 14160
+>> DATA_thread-1 COMPLETED 143 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.144.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278105056
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.144.hipo
+[READER] ---> open successful, size : 636540528
+  27996  56  0
+** reader-open ** records = 165, events = 14258, schemas = 117, time = 2332 ms
+[DataSourceDump] --> opened file with events # 14258
+>> EVENTS TO PROCESS 14258
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+  27996  56  0
+** reader-open ** records = 163, events = 14145, schemas = 117, time = 2605 ms
+[DataSourceDump] --> opened file with events # 14145
+>> EVENTS TO PROCESS 14145
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 50% @ CURRENT EVENT 6995
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7080
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1425
+>> DATA_thread-1 10% @ CURRENT EVENT 1414
+>> DATA_thread-2 60% @ CURRENT EVENT 8394
+>> DATA_thread-0 59.99% @ CURRENT EVENT 8496
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2828
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2850
+>> DATA_thread-2 69.99% @ CURRENT EVENT 9793
+>> DATA_thread-0 69.99% @ CURRENT EVENT 9912
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4275
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4242
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11192
+>> DATA_thread-0 79.98% @ CURRENT EVENT 11328
+>> DATA_thread-1 39.99% @ CURRENT EVENT 5656
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5700
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12591
+>> DATA_thread-0 89.98% @ CURRENT EVENT 12744
+>> DATA_thread-1 49.98% @ CURRENT EVENT 7070
+>> DATA_thread-2 99.99% @ CURRENT EVENT 13990
+>> DATA_thread-2 COMPLETED 169 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.170.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278734168
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.170.hipo
+[READER] ---> open successful, size : 635765952
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7125
+  27996  56  0
+** reader-open ** records = 163, events = 14047, schemas = 117, time = 865 ms
+[DataSourceDump] --> opened file with events # 14047
+>> EVENTS TO PROCESS 14047
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-0 99.98% @ CURRENT EVENT 14160
+>> DATA_thread-0 COMPLETED 119 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.120.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10318117416
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.120.hipo
+[READER] ---> open successful, size : 631602140
+  27996  56  0
+** reader-open ** records = 162, events = 13986, schemas = 117, time = 655 ms
+[DataSourceDump] --> opened file with events # 13986
+>> EVENTS TO PROCESS 13986
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 59.98% @ CURRENT EVENT 8484
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8550
+>> DATA_thread-2 10% @ CURRENT EVENT 1404
+>> DATA_thread-0 10% @ CURRENT EVENT 1398
+>> DATA_thread-1 69.98% @ CURRENT EVENT 9898
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9975
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2808
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2796
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11312
+>> DATA_thread-3 79.96% @ CURRENT EVENT 11400
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4212
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4194
+>> DATA_thread-1 89.97% @ CURRENT EVENT 12726
+>> DATA_thread-3 89.95% @ CURRENT EVENT 12825
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5616
+>> DATA_thread-0 39.98% @ CURRENT EVENT 5592
+>> DATA_thread-1 99.96% @ CURRENT EVENT 14140
+>> DATA_thread-1 COMPLETED 144 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.145.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299873704
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.145.hipo
+[READER] ---> open successful, size : 637986200
+  27996  56  0
+** reader-open ** records = 163, events = 14068, schemas = 117, time = 902 ms
+[DataSourceDump] --> opened file with events # 14068
+>> EVENTS TO PROCESS 14068
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14250
+>> DATA_thread-3 COMPLETED 193 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.194.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10293540256
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.194.hipo
+[READER] ---> open successful, size : 633401908
+>> DATA_thread-2 49.98% @ CURRENT EVENT 7020
+  27996  56  0
+** reader-open ** records = 162, events = 14058, schemas = 117, time = 963 ms
+[DataSourceDump] --> opened file with events # 14058
+>> EVENTS TO PROCESS 14058
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 49.98% @ CURRENT EVENT 6990
+>> DATA_thread-1 9.99% @ CURRENT EVENT 1406
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8424
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1405
+>> DATA_thread-0 59.97% @ CURRENT EVENT 8388
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2812
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2810
+>> DATA_thread-2 69.97% @ CURRENT EVENT 9828
+>> DATA_thread-0 69.97% @ CURRENT EVENT 9786
+>> DATA_thread-1 29.98% @ CURRENT EVENT 4218
+>> DATA_thread-2 79.96% @ CURRENT EVENT 11232
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4215
+>> DATA_thread-0 79.97% @ CURRENT EVENT 11184
+>> DATA_thread-1 39.98% @ CURRENT EVENT 5624
+>> DATA_thread-2 89.96% @ CURRENT EVENT 12636
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5620
+>> DATA_thread-0 89.96% @ CURRENT EVENT 12582
+>> DATA_thread-1 49.97% @ CURRENT EVENT 7030
+>> DATA_thread-2 99.95% @ CURRENT EVENT 14040
+>> DATA_thread-2 COMPLETED 170 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.171.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298492368
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.171.hipo
+[READER] ---> open successful, size : 633876700
+  27996  56  0
+** reader-open ** records = 162, events = 14052, schemas = 117, time = 957 ms
+[DataSourceDump] --> opened file with events # 14052
+>> EVENTS TO PROCESS 14052
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7025
+>> DATA_thread-0 99.96% @ CURRENT EVENT 13980
+>> DATA_thread-0 COMPLETED 120 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.121.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10297385464
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.121.hipo
+[READER] ---> open successful, size : 642171404
+  27996  56  0
+** reader-open ** records = 164, events = 14278, schemas = 117, time = 1198 ms
+[DataSourceDump] --> opened file with events # 14278
+>> EVENTS TO PROCESS 14278
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-1 59.97% @ CURRENT EVENT 8436
+>> DATA_thread-2 10% @ CURRENT EVENT 1405
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8430
+>> DATA_thread-0 9.99% @ CURRENT EVENT 1427
+>> DATA_thread-1 69.96% @ CURRENT EVENT 9842
+>> DATA_thread-2 20% @ CURRENT EVENT 2810
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9835
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2854
+>> DATA_thread-1 79.95% @ CURRENT EVENT 11248
+>> DATA_thread-2 30% @ CURRENT EVENT 4215
+>> DATA_thread-3 79.95% @ CURRENT EVENT 11240
+>> DATA_thread-0 29.98% @ CURRENT EVENT 4281
+>> DATA_thread-1 89.95% @ CURRENT EVENT 12654
+>> DATA_thread-2 39.99% @ CURRENT EVENT 5620
+>> DATA_thread-3 89.95% @ CURRENT EVENT 12645
+>> DATA_thread-1 99.94% @ CURRENT EVENT 14060
+>> DATA_thread-1 COMPLETED 145 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.146.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298390544
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.146.hipo
+[READER] ---> open successful, size : 642534232
+>> DATA_thread-0 39.98% @ CURRENT EVENT 5708
+  27996  56  0
+** reader-open ** records = 165, events = 14149, schemas = 117, time = 665 ms
+[DataSourceDump] --> opened file with events # 14149
+>> EVENTS TO PROCESS 14149
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 49.99% @ CURRENT EVENT 7025
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14050
+>> DATA_thread-3 COMPLETED 194 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.195.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10298369288
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.195.hipo
+[READER] ---> open successful, size : 634318528
+  27996  56  0
+** reader-open ** records = 162, events = 14109, schemas = 117, time = 809 ms
+[DataSourceDump] --> opened file with events # 14109
+>> EVENTS TO PROCESS 14109
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 49.97% @ CURRENT EVENT 7135
+>> DATA_thread-1 9.99% @ CURRENT EVENT 1414
+>> DATA_thread-2 59.99% @ CURRENT EVENT 8430
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1410
+>> DATA_thread-0 59.97% @ CURRENT EVENT 8562
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2828
+>> DATA_thread-2 69.99% @ CURRENT EVENT 9835
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2820
+>> DATA_thread-1 29.98% @ CURRENT EVENT 4242
+>> DATA_thread-0 69.96% @ CURRENT EVENT 9989
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11240
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4230
+>> DATA_thread-0 79.96% @ CURRENT EVENT 11416
+>> DATA_thread-1 39.97% @ CURRENT EVENT 5656
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12645
+>> DATA_thread-3 39.97% @ CURRENT EVENT 5640
+>> DATA_thread-0 89.95% @ CURRENT EVENT 12843
+>> DATA_thread-1 49.97% @ CURRENT EVENT 7070
+>> DATA_thread-2 99.99% @ CURRENT EVENT 14050
+>> DATA_thread-2 COMPLETED 171 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.172.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10318470560
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.172.hipo
+[READER] ---> open successful, size : 635164080
+  27996  56  0
+** reader-open ** records = 163, events = 14000, schemas = 117, time = 1105 ms
+[DataSourceDump] --> opened file with events # 14000
+>> EVENTS TO PROCESS 14000
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7050
+>> DATA_thread-0 99.94% @ CURRENT EVENT 14270
+>> DATA_thread-0 COMPLETED 121 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.122.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278796784
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.122.hipo
+[READER] ---> open successful, size : 641678076
+>> DATA_thread-1 59.96% @ CURRENT EVENT 8484
+  27996  56  0
+** reader-open ** records = 164, events = 14212, schemas = 117, time = 859 ms
+[DataSourceDump] --> opened file with events # 14212
+>> EVENTS TO PROCESS 14212
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1400
+>> DATA_thread-3 59.96% @ CURRENT EVENT 8460
+>> DATA_thread-1 69.96% @ CURRENT EVENT 9898
+>> DATA_thread-2 20% @ CURRENT EVENT 2800
+>> DATA_thread-0 10% @ CURRENT EVENT 1421
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9870
+>> DATA_thread-1 79.95% @ CURRENT EVENT 11312
+>> DATA_thread-2 30% @ CURRENT EVENT 4200
+>> DATA_thread-0 20% @ CURRENT EVENT 2842
+>> DATA_thread-3 79.95% @ CURRENT EVENT 11280
+>> DATA_thread-1 89.94% @ CURRENT EVENT 12726
+>> DATA_thread-2 40% @ CURRENT EVENT 5600
+>> DATA_thread-0 30% @ CURRENT EVENT 4263
+>> DATA_thread-3 89.94% @ CURRENT EVENT 12690
+>> DATA_thread-1 99.94% @ CURRENT EVENT 14140
+>> DATA_thread-1 COMPLETED 146 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.147.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278601664
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.147.hipo
+[READER] ---> open successful, size : 645592508
+  27996  56  0
+** reader-open ** records = 165, events = 14300, schemas = 117, time = 1355 ms
+[DataSourceDump] --> opened file with events # 14300
+>> EVENTS TO PROCESS 14300
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-2 50% @ CURRENT EVENT 7000
+>> DATA_thread-0 39.99% @ CURRENT EVENT 5684
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14100
+>> DATA_thread-3 COMPLETED 195 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.196.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299521064
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.196.hipo
+[READER] ---> open successful, size : 633727492
+  27996  56  0
+** reader-open ** records = 162, events = 14131, schemas = 117, time = 941 ms
+[DataSourceDump] --> opened file with events # 14131
+>> EVENTS TO PROCESS 14131
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-2 60% @ CURRENT EVENT 8400
+>> DATA_thread-0 49.99% @ CURRENT EVENT 7105
+>> DATA_thread-1 10% @ CURRENT EVENT 1430
+>> DATA_thread-3 10% @ CURRENT EVENT 1413
+>> DATA_thread-0 59.99% @ CURRENT EVENT 8526
+>> DATA_thread-2 70% @ CURRENT EVENT 9800
+>> DATA_thread-1 20% @ CURRENT EVENT 2860
+>> DATA_thread-3 20% @ CURRENT EVENT 2826
+>> DATA_thread-0 69.99% @ CURRENT EVENT 9947
+>> DATA_thread-2 80% @ CURRENT EVENT 11200
+>> DATA_thread-1 30% @ CURRENT EVENT 4290
+>> DATA_thread-3 30% @ CURRENT EVENT 4239
+>> DATA_thread-0 79.99% @ CURRENT EVENT 11368
+>> DATA_thread-2 90% @ CURRENT EVENT 12600
+>> DATA_thread-1 40% @ CURRENT EVENT 5720
+>> DATA_thread-3 40% @ CURRENT EVENT 5652
+>> DATA_thread-0 89.99% @ CURRENT EVENT 12789
+>> DATA_thread-2 COMPLETED 172 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.173.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10299457112
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.173.hipo
+[READER] ---> open successful, size : 649112552
+>> DATA_thread-1 50% @ CURRENT EVENT 7150
+  27996  56  0
+** reader-open ** records = 166, events = 14352, schemas = 117, time = 995 ms
+[DataSourceDump] --> opened file with events # 14352
+>> EVENTS TO PROCESS 14352
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-3 50% @ CURRENT EVENT 7065
+>> DATA_thread-0 99.99% @ CURRENT EVENT 14210
+>> DATA_thread-0 COMPLETED 122 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.123.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 11472523320
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.123.hipo
+[READER] ---> open successful, size : 646111184
+>> DATA_thread-1 60% @ CURRENT EVENT 8580
+>> DATA_thread-3 60% @ CURRENT EVENT 8478
+  27996  56  0
+** reader-open ** records = 165, events = 14317, schemas = 117, time = 1217 ms
+[DataSourceDump] --> opened file with events # 14317
+>> EVENTS TO PROCESS 14317
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1435
+>> DATA_thread-1 70% @ CURRENT EVENT 10010
+>> DATA_thread-3 70% @ CURRENT EVENT 9891
+>> DATA_thread-0 10% @ CURRENT EVENT 1431
+>> DATA_thread-2 20% @ CURRENT EVENT 2870
+>> DATA_thread-1 80% @ CURRENT EVENT 11440
+>> DATA_thread-3 79.99% @ CURRENT EVENT 11304
+>> DATA_thread-0 19.99% @ CURRENT EVENT 2862
+>> DATA_thread-2 30% @ CURRENT EVENT 4305
+>> DATA_thread-1 90% @ CURRENT EVENT 12870
+>> DATA_thread-3 89.99% @ CURRENT EVENT 12717
+>> DATA_thread-0 29.99% @ CURRENT EVENT 4293
+>> DATA_thread-2 39.99% @ CURRENT EVENT 5740
+>> DATA_thread-1 COMPLETED 147 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.148.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278919256
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.148.hipo
+[READER] ---> open successful, size : 634856264
+  27996  56  0
+** reader-open ** records = 163, events = 13996, schemas = 117, time = 848 ms
+[DataSourceDump] --> opened file with events # 13996
+>> EVENTS TO PROCESS 13996
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+>> DATA_thread-3 99.99% @ CURRENT EVENT 14130
+>> DATA_thread-3 COMPLETED 196 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.197.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10313761336
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.197.hipo
+[READER] ---> open successful, size : 638089348
+  27996  56  0
+** reader-open ** records = 164, events = 14057, schemas = 117, time = 817 ms
+[DataSourceDump] --> opened file with events # 14057
+>> EVENTS TO PROCESS 14057
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 39.98% @ CURRENT EVENT 5724
+>> DATA_thread-2 49.99% @ CURRENT EVENT 7175
+>> DATA_thread-1 10% @ CURRENT EVENT 1399
+>> DATA_thread-3 10% @ CURRENT EVENT 1405
+>> DATA_thread-0 49.98% @ CURRENT EVENT 7155
+>> DATA_thread-2 59.99% @ CURRENT EVENT 8610
+>> DATA_thread-1 19.99% @ CURRENT EVENT 2798
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2810
+>> DATA_thread-0 59.97% @ CURRENT EVENT 8586
+>> DATA_thread-2 69.99% @ CURRENT EVENT 10045
+>> DATA_thread-1 29.99% @ CURRENT EVENT 4197
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4215
+>> DATA_thread-0 69.97% @ CURRENT EVENT 10017
+>> DATA_thread-2 79.99% @ CURRENT EVENT 11480
+>> DATA_thread-1 39.98% @ CURRENT EVENT 5596
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5620
+>> DATA_thread-0 79.96% @ CURRENT EVENT 11448
+>> DATA_thread-2 89.99% @ CURRENT EVENT 12915
+>> DATA_thread-1 49.98% @ CURRENT EVENT 6995
+>> DATA_thread-3 49.98% @ CURRENT EVENT 7025
+>> DATA_thread-0 89.96% @ CURRENT EVENT 12879
+>> DATA_thread-2 99.99% @ CURRENT EVENT 14350
+>> DATA_thread-2 COMPLETED 173 OF 175 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.174.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10338470736
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.174.hipo
+[READER] ---> open successful, size : 640582588
+  27996  56  0
+** reader-open ** records = 164, events = 14187, schemas = 117, time = 642 ms
+[DataSourceDump] --> opened file with events # 14187
+>> EVENTS TO PROCESS 14187
+>> DATA_thread-2 0% @ CURRENT EVENT 0
+>> DATA_thread-1 59.97% @ CURRENT EVENT 8394
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8430
+>> DATA_thread-0 99.95% @ CURRENT EVENT 14310
+>> DATA_thread-0 COMPLETED 123 OF 125 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.124.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10318461608
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.124.hipo
+[READER] ---> open successful, size : 634108564
+  27996  56  0
+** reader-open ** records = 163, events = 13981, schemas = 117, time = 656 ms
+[DataSourceDump] --> opened file with events # 13981
+>> EVENTS TO PROCESS 13981
+>> DATA_thread-0 0% @ CURRENT EVENT 0
+>> DATA_thread-2 10% @ CURRENT EVENT 1418
+>> DATA_thread-1 69.97% @ CURRENT EVENT 9793
+>> DATA_thread-3 69.97% @ CURRENT EVENT 9835
+>> DATA_thread-0 10% @ CURRENT EVENT 1398
+>> DATA_thread-2 19.99% @ CURRENT EVENT 2836
+>> DATA_thread-1 79.97% @ CURRENT EVENT 11192
+>> DATA_thread-3 79.96% @ CURRENT EVENT 11240
+>> DATA_thread-0 20% @ CURRENT EVENT 2796
+>> DATA_thread-2 29.99% @ CURRENT EVENT 4254
+>> DATA_thread-1 89.96% @ CURRENT EVENT 12591
+>> DATA_thread-3 89.96% @ CURRENT EVENT 12645
+>> DATA_thread-0 30% @ CURRENT EVENT 4194
+>> DATA_thread-2 39.98% @ CURRENT EVENT 5672
+>> DATA_thread-1 99.96% @ CURRENT EVENT 13990
+>> DATA_thread-1 COMPLETED 148 OF 150 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.149.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10955377280
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.149.hipo
+[READER] ---> open successful, size : 641498408
+>> DATA_thread-3 99.95% @ CURRENT EVENT 14050
+>> DATA_thread-3 COMPLETED 197 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.198.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10278079072
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.198.hipo
+[READER] ---> open successful, size : 631681312
+  27996  56  0
+** reader-open ** records = 165, events = 14140, schemas = 117, time = 1166 ms
+[DataSourceDump] --> opened file with events # 14140
+>> EVENTS TO PROCESS 14140
+>> DATA_thread-1 0% @ CURRENT EVENT 0
+  27996  56  0
+** reader-open ** records = 162, events = 13885, schemas = 117, time = 1518 ms
+[DataSourceDump] --> opened file with events # 13885
+>> EVENTS TO PROCESS 13885
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-0 40% @ CURRENT EVENT 5592
+>> DATA_thread-2 49.98% @ CURRENT EVENT 7090
+>> DATA_thread-1 10% @ CURRENT EVENT 1414
+>> DATA_thread-3 10% @ CURRENT EVENT 1388
+>> DATA_thread-0 50% @ CURRENT EVENT 6990
+>> DATA_thread-2 59.97% @ CURRENT EVENT 8508
+>> DATA_thread-1 20% @ CURRENT EVENT 2828
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2776
+>> DATA_thread-0 60% @ CURRENT EVENT 8388
+>> DATA_thread-2 69.97% @ CURRENT EVENT 9926
+>> DATA_thread-1 30% @ CURRENT EVENT 4242
+>> DATA_thread-3 29.99% @ CURRENT EVENT 4164
+>> DATA_thread-0 69.99% @ CURRENT EVENT 9786
+>> DATA_thread-2 79.96% @ CURRENT EVENT 11344
+>> DATA_thread-1 40% @ CURRENT EVENT 5656
+>> DATA_thread-3 39.99% @ CURRENT EVENT 5552
+>> DATA_thread-0 79.99% @ CURRENT EVENT 11184
+>> DATA_thread-2 89.96% @ CURRENT EVENT 12762
+>> DATA_thread-3 49.98% @ CURRENT EVENT 6940
+>> DATA_thread-1 50% @ CURRENT EVENT 7070
+>> DATA_thread-0 89.99% @ CURRENT EVENT 12582
+>> DATA_thread-2 99.95% @ CURRENT EVENT 14180
+>> DATA_thread-2 COMPLETED 174 OF 175 FILES 
+Thread DATA_thread-2 exiting.
+>> DATA_thread-3 59.98% @ CURRENT EVENT 8328
+>> DATA_thread-1 60% @ CURRENT EVENT 8484
+>> DATA_thread-0 99.99% @ CURRENT EVENT 13980
+>> DATA_thread-0 COMPLETED 124 OF 125 FILES 
+Thread DATA_thread-0 exiting.
+>> DATA_thread-3 69.97% @ CURRENT EVENT 9716
+>> DATA_thread-1 70% @ CURRENT EVENT 9898
+>> DATA_thread-3 79.97% @ CURRENT EVENT 11104
+>> DATA_thread-1 80% @ CURRENT EVENT 11312
+>> DATA_thread-3 89.97% @ CURRENT EVENT 12492
+>> DATA_thread-1 90% @ CURRENT EVENT 12726
+>> DATA_thread-3 99.96% @ CURRENT EVENT 13880
+>> DATA_thread-3 COMPLETED 198 OF 200 FILES 
+>> PROCESSING FILE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.199.hipo
+[FileUtils] ----> error : Environment variable CLAS12DIR is not set
+[HipoDataSync] ---> dictionary size = 0
+>> USED IN bytes 10283435440
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.199.hipo
+[READER] ---> open successful, size : 643958980
+  27996  56  0
+** reader-open ** records = 165, events = 14178, schemas = 117, time = 471 ms
+[DataSourceDump] --> opened file with events # 14178
+>> EVENTS TO PROCESS 14178
+>> DATA_thread-3 0% @ CURRENT EVENT 0
+>> DATA_thread-1 COMPLETED 149 OF 150 FILES 
+Thread DATA_thread-1 exiting.
+>> DATA_thread-3 9.99% @ CURRENT EVENT 1417
+>> DATA_thread-3 19.99% @ CURRENT EVENT 2834
+>> DATA_thread-3 29.98% @ CURRENT EVENT 4251
+>> DATA_thread-3 39.98% @ CURRENT EVENT 5668
+>> DATA_thread-3 49.97% @ CURRENT EVENT 7085
+>> DATA_thread-3 59.97% @ CURRENT EVENT 8502
+>> DATA_thread-3 69.96% @ CURRENT EVENT 9919
+>> DATA_thread-3 79.95% @ CURRENT EVENT 11336
+>> DATA_thread-3 89.95% @ CURRENT EVENT 12753
+>> DATA_thread-3 99.94% @ CURRENT EVENT 14170
+>> DATA_thread-3 COMPLETED 199 OF 200 FILES 
+Thread DATA_thread-3 exiting.
+[31m>> BEGINNING LOOP OVER FILES NOW:[0m
+>> SAVING HISTOGRAMS
+ >> SAVING NOW 
+ >> MAKING THETA P HISTO 
+ >> h_4013_el_thetap_cutlvl0
+ >> h_4013_el_thetap_cutlvl1
+ >> h_4013_el_thetap_cutlvl2
+ >> h_4013_el_thetap_cutlvl3
+ >> h_4013_el_thetap_cutlvl4
+ >> h_4013_el_thetap_cutlvl5
+ >> h_4013_el_thetap_cutlvl6
+ >> h_4013_el_thetap_cutlvl7
+ >> h_4013_el_thetap_cutlvl8
+ >> h_4013_el_thetap_cutlvl9
+ >> h_4013_el_thetap_cutlvl10
+ >> h_4013_el_thetap_cutlvl11
+ >> h_4013_el_thetap_cutlvl12
+ >> W 7
+ >> SAVING HIPO FILE NOW 
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+ >> CUT LVL 0 RATES 238964 UNDER 0 OVER 4103
+ >> CUT LVL 1 RATES 201155 UNDER 0 OVER 2002
+ >> CUT LVL 2 RATES 172830 UNDER 0 OVER 1608
+ >> CUT LVL 3 RATES 165309 UNDER 0 OVER 1518
+ >> CUT LVL 4 RATES 113493 UNDER 0 OVER 427
+ >> CUT LVL 5 RATES 112753 UNDER 0 OVER 415
+ >> CUT LVL 6 RATES 59579 UNDER 0 OVER 0
+ >> CUT LVL 7 RATES 53539 UNDER 0 OVER 0
+ >> CUT LVL 8 RATES 50430 UNDER 0 OVER 0
+ >> CUT LVL 9 RATES 50353 UNDER 0 OVER 0
+ >> CUT LVL 10 RATES 46466 UNDER 0 OVER 0
+ >> CUT LVL 11 RATES 0 UNDER 0 OVER 0
+ >> CUT LVL 12 RATES 0 UNDER 0 OVER 0
+>> PRINTING CUT DISRIMINATOR POWER 
+ >> CUT LVL 0 RATES 238964
+ >> CUT LVL 1 RATES 201155
+ >> CUT LVL 2 RATES 181353
+ >> CUT LVL 3 RATES 187799
+ >> CUT LVL 4 RATES 132270
+ >> CUT LVL 5 RATES 199108
+ >> CUT LVL 6 RATES 76135
+ >> CUT LVL 7 RATES 130179
+ >> CUT LVL 8 RATES 154980
+ >> CUT LVL 9 RATES 133199
+ >> CUT LVL 10 RATES 127966
+ >> CUT LVL 11 RATES 0
+ >> CUT LVL 12 RATES 0
+>> COMPLETED SAVING ELECTRON HISTOGRAMS
+>> DONE WITH PID LVL HISTOGRAMS 
+ >> SAVING CLAS12 HIPO FILE NOW 
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+>> COMPLETED SAVING HISTOGRAMS
+>> SAVING HISTOGRAMS
+ >> SAVING NOW 
+ >> MAKING THETA P HISTO 
+ >> h_4013_el_thetap_cutlvl0
+ >> h_4013_el_thetap_cutlvl1
+ >> h_4013_el_thetap_cutlvl2
+ >> h_4013_el_thetap_cutlvl3
+ >> h_4013_el_thetap_cutlvl4
+ >> h_4013_el_thetap_cutlvl5
+ >> h_4013_el_thetap_cutlvl6
+ >> h_4013_el_thetap_cutlvl7
+ >> h_4013_el_thetap_cutlvl8
+ >> h_4013_el_thetap_cutlvl9
+ >> h_4013_el_thetap_cutlvl10
+ >> h_4013_el_thetap_cutlvl11
+ >> h_4013_el_thetap_cutlvl12
+ >> W 7
+ >> SAVING HIPO FILE NOW 
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+ >> CUT LVL 0 RATES 238902 UNDER 0 OVER 4040
+ >> CUT LVL 1 RATES 201310 UNDER 0 OVER 1962
+ >> CUT LVL 2 RATES 172991 UNDER 0 OVER 1602
+ >> CUT LVL 3 RATES 165481 UNDER 0 OVER 1512
+ >> CUT LVL 4 RATES 113966 UNDER 0 OVER 454
+ >> CUT LVL 5 RATES 113220 UNDER 0 OVER 434
+ >> CUT LVL 6 RATES 59971 UNDER 0 OVER 3
+ >> CUT LVL 7 RATES 53924 UNDER 0 OVER 2
+ >> CUT LVL 8 RATES 50734 UNDER 0 OVER 2
+ >> CUT LVL 9 RATES 50651 UNDER 0 OVER 2
+ >> CUT LVL 10 RATES 46708 UNDER 0 OVER 0
+ >> CUT LVL 11 RATES 0 UNDER 0 OVER 0
+ >> CUT LVL 12 RATES 0 UNDER 0 OVER 0
+>> PRINTING CUT DISRIMINATOR POWER 
+ >> CUT LVL 0 RATES 238902
+ >> CUT LVL 1 RATES 201310
+ >> CUT LVL 2 RATES 181526
+ >> CUT LVL 3 RATES 187761
+ >> CUT LVL 4 RATES 132923
+ >> CUT LVL 5 RATES 199126
+ >> CUT LVL 6 RATES 76499
+ >> CUT LVL 7 RATES 130499
+ >> CUT LVL 8 RATES 155097
+ >> CUT LVL 9 RATES 133626
+ >> CUT LVL 10 RATES 127898
+ >> CUT LVL 11 RATES 0
+ >> CUT LVL 12 RATES 0
+>> COMPLETED SAVING ELECTRON HISTOGRAMS
+>> DONE WITH PID LVL HISTOGRAMS 
+ >> SAVING CLAS12 HIPO FILE NOW 
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+
+---> writing data group descriptors, size = 0
+>> COMPLETED SAVING HISTOGRAMS
+>> SAVING HISTOGRAMS
+ >> SAVING NOW 
+ >> MAKING THETA P HISTO 
+ >> h_4013_el_thetap_cutlvl0
+ >> h_4013_el_thetap_cutlvl1
+ >> h_4013_el_thetap_cutlvl2
+ >> h_4013_el_thetap_cutlvl3
+ >> h_4013_el_thetap_cutlvl4
+ >> h_4013_el_thetap_cutlvl5
+ >> h_4013_el_thetap_cutlvl6
+ >> h_4013_el_thetap_cutlvl7
+ >> h_4013_el_thetap_cutlvl8
+ >> h_4013_el_thetap_cutlvl9
+ >> h_4013_el_thetap_cutlvl10
+ >> h_4013_el_thetap_cutlvl11
+ >> h_4013_el_thetap_cutlvl12
+ >> W 7
+ >> SAVING HIPO FILE NOW 
+[HIPO-WRITER] ---> Schema factory is empty.
+
+
+
+
+

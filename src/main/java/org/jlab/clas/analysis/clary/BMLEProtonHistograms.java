@@ -111,6 +111,7 @@ public class BMLEProtonHistograms {
     //LAYERS FTOF 2 PLOTS
 
     H2F h_beta_all_pos;
+    H2F h_beta_all_neg;
     H1F h_test_phi;
     
     Vector<H2F> h2_pr_ftof_l2_masstimep = new Vector<H2F>();
@@ -123,8 +124,10 @@ public class BMLEProtonHistograms {
     Vector<H1F> h_pr_ftof_l2_beta_time = new Vector<H1F>();
     Vector<H1F> h_pr_ftof_l2_masstime = new Vector<H1F>();
 
-    Vector<H2F> h2_beta_all_pos_sect_ftof_l2 = new Vector<H2F>();                                                                                                                                            Vector<H2F> h2_beta_all_pos_sect_ftof_l1 = new Vector<H2F>();                                                                                                                                         
-    Vector<H2F> h2_beta_all_neg_sect_ftof_l2 = new Vector<H2F>();                                                                                                                                            Vector<H2F> h2_beta_all_neg_sect_ftof_l1 = new Vector<H2F>();                                                                                                                                       
+    Vector<H2F> h2_beta_all_pos_sect_ftof_l2 = new Vector<H2F>();                                                                                                                                            
+    Vector<H2F> h2_beta_all_pos_sect_ftof_l1 = new Vector<H2F>();                                                                                                                                    
+    Vector<H2F> h2_beta_all_neg_sect_ftof_l2 = new Vector<H2F>();                                                                                                                                            
+    Vector<H2F> h2_beta_all_neg_sect_ftof_l1 = new Vector<H2F>();                                                                                                                                       
     
     Vector<H2F> h2_beta_all_pr_sect_ftof_l2 = new Vector<H2F>();                                                                                                                                         
     Vector<H2F> h2_beta_all_pr_sect_ftof_l1 = new Vector<H2F>();                                                                                                                                                                                                                                                                                                                                                  
@@ -132,6 +135,18 @@ public class BMLEProtonHistograms {
     Vector<H2F> h2_beta_all_pip_sect_ftof_l1 = new Vector<H2F>();                                                                                                                                                                                                                                                                                                                                                 
     Vector<H2F> h2_beta_all_kp_sect_ftof_l2 = new Vector<H2F>();                                                                                                                                         
     Vector<H2F> h2_beta_all_kp_sect_ftof_l1 = new Vector<H2F>();
+
+    /*
+
+      BETA FOR MINUS PARTICLES
+
+     */
+
+    Vector<H2F> h2_beta_all_pim_sect_ftof_l2 = new Vector<H2F>();
+    Vector<H2F> h2_beta_all_km_sect_ftof_l2 = new Vector<H2F>();
+    Vector<H2F> h2_beta_all_pim_sect_ftof_l1 = new Vector<H2F>();
+    Vector<H2F> h2_beta_all_km_sect_ftof_l1 = new Vector<H2F>();
+
 
     Vector<Vector<H2F>> h2_pr_sect_ftof_l2_betap = new Vector< Vector<H2F> >();
     Vector<Vector<H2F>> h2_pr_sect_ftof_l2_deltabeta = new Vector<Vector<H2F> >();
@@ -146,19 +161,45 @@ public class BMLEProtonHistograms {
     HashMap<Integer, Vector< Vector<H1F> > > m_pr_sect_panel_deltime = new HashMap<Integer, Vector< Vector< H1F> > >();
 
 
-    H2F h2_poscharge_dc_R1_traj = new H2F("h2_"+s_run_number+"_poschrg_dchit_R1_traj_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R1_traj_cutlvl0", 500, -200.0, 200.0, 500, -200.0, 200.0);
-    H2F h2_poscharge_dc_R2_traj = new H2F("h2_"+s_run_number+"_poschrg_dchit_R2_traj_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R2_traj_cutlvl0", 500, -300.0, 300.0, 500, -300.0, 300.0);
-    H2F h2_poscharge_dc_R3_traj = new H2F("h2_"+s_run_number+"_poschrg_dchit_R3_traj_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R3_traj_cutlvl0", 500, -400.0, 400.0, 500, -400.0, 400.0);
+    H2F h2_poscharge_dc_R1_traj;
+    H2F h2_poscharge_dc_R2_traj;
+    H2F h2_poscharge_dc_R3_traj;
 
-    H2F h2_poscharge_dc_R1_traj_rot = new H2F("h2_"+s_run_number+"_poschrg_dchit_R1_traj_rot_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R1_traj_rot_cutlvl0", 500, -200.0, 200.0, 500, -200.0, 200.0);
-    H2F h2_poscharge_dc_R2_traj_rot = new H2F("h2_"+s_run_number+"_poschrg_dchit_R2_traj_rot_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R2_traj_rot_cutlvl0", 500, -300.0, 300.0, 500, -300.0, 300.0);
-    H2F h2_poscharge_dc_R3_traj_rot = new H2F("h2_"+s_run_number+"_poschrg_dchit_R3_traj_rot_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R3_traj_rot_cutlvl0", 500, -400.0, 400.0, 500, -400.0, 400.0);
+    H2F h2_poscharge_dc_R1_traj_rot;
+    H2F h2_poscharge_dc_R2_traj_rot;
+    H2F h2_poscharge_dc_R3_traj_rot;
+
+    H2F h2_negcharge_dc_R1_traj;
+    H2F h2_negcharge_dc_R2_traj; 
+    H2F h2_negcharge_dc_R3_traj;
+
+    H2F h2_negcharge_dc_R1_traj_rot;
+    H2F h2_negcharge_dc_R2_traj_rot;
+    H2F h2_negcharge_dc_R3_traj_rot;
 
     public void createProtonMLEHistograms(){
 
 	int i = 0;
 	h_beta_all_pos = new H2F("h_beta_all_pos","h_beta_all_pos",250,0.0,6.5, 250, 0.01, 1.2);
+	h_beta_all_neg = new H2F("h_beta_all_neg","h_beta_all_neg",250,0.0,6.5, 250, 0.01, 1.2);
 	h_test_phi = new H1F("h_test_phi","h_test_phi",100,0.5,1.3);
+
+
+	h2_poscharge_dc_R1_traj = new H2F("h2_"+s_run_number+"_poschrg_dchit_R1_traj_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R1_traj_cutlvl0", 500, -200.0, 200.0, 500, -200.0, 200.0);
+	h2_poscharge_dc_R2_traj = new H2F("h2_"+s_run_number+"_poschrg_dchit_R2_traj_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R2_traj_cutlvl0", 500, -300.0, 300.0, 500, -300.0, 300.0);
+	h2_poscharge_dc_R3_traj = new H2F("h2_"+s_run_number+"_poschrg_dchit_R3_traj_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R3_traj_cutlvl0", 500, -400.0, 400.0, 500, -400.0, 400.0);
+
+	h2_poscharge_dc_R1_traj_rot = new H2F("h2_"+s_run_number+"_poschrg_dchit_R1_traj_rot_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R1_traj_rot_cutlvl0", 500, -200.0, 200.0, 500, -200.0, 200.0);
+	h2_poscharge_dc_R2_traj_rot = new H2F("h2_"+s_run_number+"_poschrg_dchit_R2_traj_rot_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R2_traj_rot_cutlvl0", 500, -300.0, 300.0, 500, -300.0, 300.0);
+	h2_poscharge_dc_R3_traj_rot = new H2F("h2_"+s_run_number+"_poschrg_dchit_R3_traj_rot_cutlvl0","h2_"+s_run_number+"_poschrg_dchit_R3_traj_rot_cutlvl0", 500, -400.0, 400.0, 500, -400.0, 400.0);
+
+	h2_negcharge_dc_R1_traj = new H2F("h2_"+s_run_number+"_negchrg_dchit_R1_traj_cutlvl0","h2_"+s_run_number+"_negchrg_dchit_R1_traj_cutlvl0", 500, -200.0, 200.0, 500, -200.0, 200.0);
+	h2_negcharge_dc_R2_traj = new H2F("h2_"+s_run_number+"_negchrg_dchit_R2_traj_cutlvl0","h2_"+s_run_number+"_negchrg_dchit_R2_traj_cutlvl0", 500, -300.0, 300.0, 500, -300.0, 300.0);
+	h2_negcharge_dc_R3_traj = new H2F("h2_"+s_run_number+"_negchrg_dchit_R3_traj_cutlvl0","h2_"+s_run_number+"_negchrg_dchit_R3_traj_cutlvl0", 500, -400.0, 400.0, 500, -400.0, 400.0);
+
+	h2_negcharge_dc_R1_traj_rot = new H2F("h2_"+s_run_number+"_negchrg_dchit_R1_traj_rot_cutlvl0","h2_"+s_run_number+"_negchrg_dchit_R1_traj_rot_cutlvl0", 500, -200.0, 200.0, 500, -200.0, 200.0);
+	h2_negcharge_dc_R2_traj_rot = new H2F("h2_"+s_run_number+"_negchrg_dchit_R2_traj_rot_cutlvl0","h2_"+s_run_number+"_negchrg_dchit_R2_traj_rot_cutlvl0", 500, -300.0, 300.0, 500, -300.0, 300.0);
+	h2_negcharge_dc_R3_traj_rot = new H2F("h2_"+s_run_number+"_negchrg_dchit_R3_traj_rot_cutlvl0","h2_"+s_run_number+"_negchrg_dchit_R3_traj_rot_cutlvl0", 500, -400.0, 400.0, 500, -400.0, 400.0);
 
 	h_pr_p.add( new H1F("h_"+s_run_number+"_pr_p_mle","h_"+s_run_number+"_pr_p_mle", 100, min_p, max_p ) );
 	h_pr_theta.add( new H1F("h_"+s_run_number+"_pr_theta_mle","h_"+s_run_number+"_pr_theta_mle", 100, min_theta, max_theta) );
@@ -218,6 +259,17 @@ public class BMLEProtonHistograms {
 
             h2_beta_all_kp_sect_ftof_l2.add( new H2F("h2_"+s_run_number+"_beta_all_kp_"+sect+"_ftof_l2","h2_"+s_run_number+"_beta_all_kp_"+sect+"_ftof_l2",250, 0.0, 6.5, 250, 0.01, 1.2));
             h2_beta_all_kp_sect_ftof_l1.add( new H2F("h2_"+s_run_number+"_beta_all_kp_"+sect+"_ftof_l1","h2_"+s_run_number+"_beta_all_kp_"+sect+"_ftof_l1",250, 0.0, 6.5, 250, 0.01, 1.2)); 
+
+	    /*
+	      BETA FOR NEG PARTICLES
+	    */
+
+
+            h2_beta_all_pim_sect_ftof_l2.add( new H2F("h2_"+s_run_number+"_beta_all_pim_"+sect+"_ftof_l2","h2_"+s_run_number+"_beta_all_pim_"+sect+"_ftof_l2",250, 0.0, 6.5, 250, 0.01, 1.2)); 
+            h2_beta_all_pim_sect_ftof_l1.add( new H2F("h2_"+s_run_number+"_beta_all_pim_"+sect+"_ftof_l1","h2_"+s_run_number+"_beta_all_pim_"+sect+"_ftof_l1",250, 0.0, 6.5, 250, 0.01, 1.2));
+
+            h2_beta_all_km_sect_ftof_l2.add( new H2F("h2_"+s_run_number+"_beta_all_km_"+sect+"_ftof_l2","h2_"+s_run_number+"_beta_all_km_"+sect+"_ftof_l2",250, 0.0, 6.5, 250, 0.01, 1.2));
+            h2_beta_all_km_sect_ftof_l1.add( new H2F("h2_"+s_run_number+"_beta_all_km_"+sect+"_ftof_l1","h2_"+s_run_number+"_beta_all_km_"+sect+"_ftof_l1",250, 0.0, 6.5, 250, 0.01, 1.2)); 
         }     
 
 
@@ -923,6 +975,15 @@ public class BMLEProtonHistograms {
 	dir.addDataSet(h2_poscharge_dc_R1_traj_rot);
 	dir.addDataSet(h2_poscharge_dc_R2_traj_rot);
 	dir.addDataSet(h2_poscharge_dc_R3_traj_rot);
+
+	dir.mkdir("/proton/mle/h2_negcharge_dc_traj/");
+	dir.cd("/proton/mle/h2_negcharge_dc_traj/");
+	dir.addDataSet(h2_negcharge_dc_R1_traj);
+	dir.addDataSet(h2_negcharge_dc_R2_traj);
+	dir.addDataSet(h2_negcharge_dc_R3_traj);
+	dir.addDataSet(h2_negcharge_dc_R1_traj_rot);
+	dir.addDataSet(h2_negcharge_dc_R2_traj_rot);
+	dir.addDataSet(h2_negcharge_dc_R3_traj_rot);
 	
 
 	dir.mkdir("/proton/mle/h2_pr_ptheta/");
@@ -1001,6 +1062,11 @@ public class BMLEProtonHistograms {
 	c_beta_all.draw(f_d,"same");
 	//c_beta_all.save(savepath+h_beta_all_pos.getTitle()+".png");
 
+	dir.mkdir("/proton/mle/h2_beta_all_neg/");
+	dir.cd("/proton/mle/h2_beta_all_neg/");
+	dir.addDataSet(h_beta_all_neg);
+
+
 	dir.mkdir("/proton/mle/h2_beta_all_pos_sect_ftof_l2/");
 	dir.cd("/proton/mle/h2_beta_all_pos_sect_ftof_l2/");
 	for( int s = 0; s < h2_beta_all_pos_sect_ftof_l2.size(); s++ ){
@@ -1032,7 +1098,7 @@ public class BMLEProtonHistograms {
         for(H2F h2_temp : h2_beta_all_pr_sect_ftof_l2 ){                                                                                                                                                 
             dir.addDataSet(h2_temp);                                                                                                                                                                     
         }                                                                                                                                                                                                                                                                                                                                                                                                         
-        dir.mkdir("/proton/mle/h2_betap_sect_pip_ftof_l1/");                                                                                                                                             
+         dir.mkdir("/proton/mle/h2_betap_sect_pip_ftof_l1/");                                                                                                                                             
         dir.cd("/proton/mle/h2_betap_sect_pip_ftof_l1/");                                                                                                                                                
         for(H2F h2_temp : h2_beta_all_pip_sect_ftof_l1 ){                                                                                                                                                
             dir.addDataSet(h2_temp);                                                                                                                                                                     
@@ -1053,6 +1119,31 @@ public class BMLEProtonHistograms {
         dir.cd("/proton/mle/h2_betap_sect_kp_ftof_l2/");                                                                                                                                                 
         for(H2F h2_temp : h2_beta_all_kp_sect_ftof_l2 ){                                                                                                                                                 
            dir.addDataSet(h2_temp);                                                                                                                                                                              }                              
+
+	dir.mkdir("/proton/mle/h2_betap_sect_all_pim_ftof_l2/"); 
+	dir.cd("/proton/mle/h2_betap_sect_all_pim_ftof_l2/");
+	for(H2F h2_temp : h2_beta_all_pim_sect_ftof_l2 ){
+	    dir.addDataSet(h2_temp); 
+	}
+
+	dir.mkdir("/proton/mle/h2_betap_sect_all_km_ftof_l2/"); 
+	dir.cd("/proton/mle/h2_betap_sect_all_km_ftof_l2/");
+	for(H2F h2_temp : h2_beta_all_km_sect_ftof_l2 ){
+	    dir.addDataSet(h2_temp); 
+	}
+
+	dir.mkdir("/proton/mle/h2_betap_sect_all_pim_ftof_l1/"); 
+	dir.cd("/proton/mle/h2_betap_sect_all_pim_ftof_l1/");
+	for(H2F h2_temp : h2_beta_all_pim_sect_ftof_l1 ){
+	    dir.addDataSet(h2_temp); 
+	}
+
+	dir.mkdir("/proton/mle/h2_betap_sect_all_km_ftof_l1/"); 
+	dir.cd("/proton/mle/h2_betap_sect_all_km_ftof_l1/");
+	for(H2F h2_temp : h2_beta_all_km_sect_ftof_l1 ){
+	    dir.addDataSet(h2_temp); 
+	}
+
 
 	saveHipoOut();
 

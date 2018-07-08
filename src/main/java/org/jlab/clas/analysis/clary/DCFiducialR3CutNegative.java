@@ -12,7 +12,7 @@ import org.jlab.clas.physics.Particle;
 import org.jlab.clas.analysis.clary.Calculator;
 import org.jlab.clas.analysis.clary.Detectors;
 
-public class DCFiducialR3CutPositive implements BIParticleCandidate{
+public class DCFiducialR3CutNegative implements BIParticleCandidate{
 
     public Particle particleCandidate( BEventInfo bev, int rec_i ){
 
@@ -21,7 +21,7 @@ public class DCFiducialR3CutPositive implements BIParticleCandidate{
 	double conf_lvl = 0.0;
 
 	double angle = 60;
-	double height = 69;//31;
+	double height = 41;//31;
 
 	Vector<Double> dc_r3 = Detectors.getDCTrajR3(bev.bevEvent, rec_i);
 	double cx = dc_r3.get(0);
@@ -37,13 +37,13 @@ public class DCFiducialR3CutPositive implements BIParticleCandidate{
 	    double left  = (height - slope * y3_rot);
 	    double right = (height + slope * y3_rot);
 	    
-	    double radius2_DCr3 = Math.pow(78,2) - Math.pow(y3_rot,2);    // cut out the inner circle //32 -> 31 temp mod
+	    double radius2_DCr3 = Math.pow(52,2) - Math.pow(y3_rot,2);    // cut out the inner circle //32 -> 31 temp mod
 	    
 	    if( x3_rot > left && x3_rot > right &&  Math.pow(x3_rot,2) > radius2_DCr3 ){
 
 		//System.out.println(">>DC R3 PASSED " + sec );
 		conf_lvl = 1.0;
-	 	//return true;
+		//return true;
 	    }
 	}
 	//System.out.println(">> in DC FIC BANKS DO NOT EXIST" );
@@ -54,4 +54,5 @@ public class DCFiducialR3CutPositive implements BIParticleCandidate{
 	//return false;
     }
     
+
 }

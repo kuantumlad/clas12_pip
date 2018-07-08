@@ -33,12 +33,13 @@ public class ParallelElectron implements Runnable{
 
     ElectronPID find_el;
     MLEParticleFinder mle_particle;
+    MLEParticleFinder mle_particle_neg;
 
     BHistoPIDLevel h_pid_cutlvls;
     BHistoCLAS12PID h_pid_clas12;
     BHistoMLE h_pid_mle;
     HipoDataSource temphiporeader;
-    //BHistoPhys h_phys;
+    BHistoPhys h_phys;
 
     int run_number;
     String f_name;
@@ -62,11 +63,11 @@ public class ParallelElectron implements Runnable{
 	h_pid_cutlvls = new BHistoPIDLevel(run_number, threadName);
 	h_pid_clas12 = new BHistoCLAS12PID(run_number, threadName);
 	h_pid_mle = new BHistoMLE(run_number, threadName);
-	//h_phys = new BHistoPhys(run_number,threadName);
+	h_phys = new BHistoPhys(run_number,threadName);
 
 	h_pid_cutlvls.CreateHistograms(); 
 	h_pid_clas12.createHistograms();
-	//h_phys.createHistograms();
+	h_phys.createHistograms();
 	
 	Runtime rt = Runtime.getRuntime();
 	rt.gc();
@@ -75,7 +76,7 @@ public class ParallelElectron implements Runnable{
 
 	////////////
 	//
-	CutConfigInfo cutconfig = new CutConfigInfo();
+	/*	CutConfigInfo cutconfig = new CutConfigInfo();
 	try{
 	    Gson gson = new Gson();
 	    BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v3/v2/v1/run_db/cut_config.json") );
@@ -83,19 +84,24 @@ public class ParallelElectron implements Runnable{
 	}
 	catch( IOException e ){
 	    System.out.println(" >> ERROR LOADING CUT DB JSON FILE " );
-	}	
+	}
+	*/
+
+	CutConfig cutconfig = new CutConfig("/home/bclary/CLAS12/phi_analysis/v3/v2/v1/run_db/cut_config.json");	
 	
-	System.out.println(" >> " + cutconfig.el_cuts);
-	System.out.println(" >> " + cutconfig.pr_cuts);
+	System.out.println(" >> " + cutconfig.getElectronCuts());
+	System.out.println(" >> " + cutconfig.getProtonCuts());
 	
-	List<String> my_el_cuts = cutconfig.el_cuts;
+	List<String> my_el_cuts = cutconfig.getElectronCuts();
 	
 	find_el = new ElectronPID(my_el_cuts);
 
 	//
 	///////////////
 
-	mle_particle = new MLEParticleFinder(); 
+	mle_particle = new MLEParticleFinder("pos"); 
+	mle_particle_neg = new MLEParticleFinder("neg"); 
+
 	run_number = Integer.valueOf(s_run);
 	f_name = file_name;
 
@@ -133,15 +139,15 @@ public class ParallelElectron implements Runnable{
 	h_pid_cutlvls = new BHistoPIDLevel(run_number, threadName);
 	h_pid_clas12 = new BHistoCLAS12PID(run_number, threadName);
 	h_pid_mle = new BHistoMLE(run_number, threadName);
-	//h_phys = new BHistoPhys(run_number,threadName);
+	h_phys = new BHistoPhys(run_number,threadName);
 
 	h_pid_cutlvls.CreateHistograms();
 	h_pid_clas12.createHistograms();
-	//h_phys.createHistograms();
+	h_phys.createHistograms();
 	
 	////////////
 	//
-	CutConfigInfo cutconfig = new CutConfigInfo();
+	/* CutConfigInfo cutconfig = new CutConfigInfo();
 	try{
 	    Gson gson = new Gson();
 	    BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v3/v2/v1/run_db/cut_config.json") );
@@ -149,19 +155,24 @@ public class ParallelElectron implements Runnable{
 	}
 	catch( IOException e ){
 	    System.out.println(" >> ERROR LOADING CUT DB JSON FILE " );
-	}	
+	}
+	*/	
 	
-	System.out.println(" >> " + cutconfig.el_cuts);
-	System.out.println(" >> " + cutconfig.pr_cuts);
+	CutConfig cutconfig = new CutConfig("/home/bclary/CLAS12/phi_analysis/v3/v2/v1/run_db/cut_config.json");	
+
+	System.out.println(" >> " + cutconfig.getElectronCuts());
+	System.out.println(" >> " + cutconfig.getProtonCuts());
 	
-	List<String> my_el_cuts = cutconfig.el_cuts;
+	List<String> my_el_cuts = cutconfig.getElectronCuts();
 	
 	find_el = new ElectronPID(my_el_cuts);
 
 	//
 	///////////////       
 	//find_el = new ElectronPID();
-	mle_particle = new MLEParticleFinder(); 
+	mle_particle = new MLEParticleFinder("pos"); 
+	mle_particle_neg = new MLEParticleFinder("neg"); 
+
 	run_number = Integer.valueOf(s_run);
 	//f_name = file_name;
 	temphiporeader = temp_hipo;
@@ -193,14 +204,14 @@ public class ParallelElectron implements Runnable{
 
 	h_pid_cutlvls = new BHistoPIDLevel(run_number, threadName);       
 	h_pid_mle = new BHistoMLE(run_number,threadName);
-	//h_phys = new BHistoPhys(run_number,threadName);
+	h_phys = new BHistoPhys(run_number,threadName);
 
 	h_pid_cutlvls.CreateHistograms();
-	//h_phys.createHistograms();
+	h_phys.createHistograms();
 
 	////////////
 	//
-	CutConfigInfo cutconfig = new CutConfigInfo();
+	/*CutConfigInfo cutconfig = new CutConfigInfo();
 	try{
 	    Gson gson = new Gson();
 	    BufferedReader br = new BufferedReader( new FileReader("/home/bclary/CLAS12/phi_analysis/v3/v2/v1/run_db/cut_config.json") );
@@ -209,18 +220,23 @@ public class ParallelElectron implements Runnable{
 	catch( IOException e ){
 	    System.out.println(" >> ERROR LOADING CUT DB JSON FILE " );
 	}	
+	*/
+
+	CutConfig cutconfig = new CutConfig("/home/bclary/CLAS12/phi_analysis/v3/v2/v1/run_db/cut_config.json");	
+
+	System.out.println(" >> " + cutconfig.getElectronCuts());
+	System.out.println(" >> " + cutconfig.getProtonCuts());
 	
-	System.out.println(" >> " + cutconfig.el_cuts);
-	System.out.println(" >> " + cutconfig.pr_cuts);
-	
-	List<String> my_el_cuts = cutconfig.el_cuts;
+	List<String> my_el_cuts = cutconfig.getElectronCuts();
 	
 	find_el = new ElectronPID(my_el_cuts);
 	//
 	///////////////
 	//find_el = new ElectronPID();
 
-	mle_particle = new MLEParticleFinder(); 
+	mle_particle = new MLEParticleFinder("pos"); 
+	mle_particle_neg = new MLEParticleFinder("neg"); 
+
 	run_number = Integer.valueOf(s_run);
 	//f_name = file_name;
 
@@ -297,8 +313,8 @@ public class ParallelElectron implements Runnable{
 
 		BufferedWriter buffwriter = new BufferedWriter( new FileWriter(out_file_txt) );//;ull;
 		//try{
-		//    buffwriter = new BufferedWriter( new FileWriter(out_file_txt) );
-		//	}
+		    //buffwriter = new BufferedWriter( new FileWriter(out_file_txt) );
+		    //}
 		//	catch( IOException e ){
 		//   System.out.println(" >> ERROR "  + e );
 		//}
@@ -338,7 +354,12 @@ public class ParallelElectron implements Runnable{
 				    if( charge > 0 && i != 0){
 					h_pid_mle.fillBetaAll(event,i);
 					h_pid_mle.fillDCTraj(event,i);
-				    }				    
+				    }
+				    if( charge < 0 && i != 0 ){
+					h_pid_mle.fillBetaAllNeg(event,i);
+					h_pid_mle.fillDCTrajNeg(event,i);
+				    }
+
 				}
 			    }
 			}
@@ -352,6 +373,7 @@ public class ParallelElectron implements Runnable{
 
 			boolean good_mle_pr = false;
 			boolean good_mle_kp = false;
+			boolean good_mle_km = false;
 			boolean el_present = false;
 			int good_el = -1;
 
@@ -383,10 +405,10 @@ public class ParallelElectron implements Runnable{
 			    v_el_tests = find_el.processCutsVector(event, k);
 			    //System.out.println(">> RESULT VECTOR " + v_el_tests );
 			    // Let the thread sleep for a while.
-			    h_pid_cutlvls.FillElectronPID( v_el_tests, event, k );
+			    //h_pid_cutlvls.FillElectronPID( v_el_tests, event, k );
 			    int clas12_el_test  = recBank.getInt("pid",k);
 			    if( clas12_el_test == 11 ){
-				h_pid_clas12.fillElectronEB(k);
+				//h_pid_clas12.fillElectronEB(k);
 			    }			    			    
 			}
 
@@ -409,8 +431,10 @@ public class ParallelElectron implements Runnable{
 			
 			double pr_e = -1.0;
 			double kp_e = -1.0;
+			double km_e = -1.0;
 			int good_kp = -1;
 			int good_pr = -1;
+			int good_km = -1;
 
 			//System.out.println( " >> PROCESSING EVENT " + num_ev );
 			HashMap<Boolean,Integer> m_final_el = find_el.getResult(event);			
@@ -429,8 +453,55 @@ public class ParallelElectron implements Runnable{
 				    int status = recBank.getShort("status",m);
 				    if( status >= 4000 || status <= 1999 ) continue;			
 
+
+				    if( charge < 0 && m != el_result_index ){
+					BEventWriter bwriter = new BEventWriter();
+					BEvent bevent = bwriter.getBEvent(event);
+					bwriter.loadBankMaps(event);
+					BEventLoader bload = new BEventLoader(event);
+					bload.setBEventInfo();
+					BEventInfo bevinf = bload.getBEventInfo();
+					bwriter.loadBankMaps(event);				    
 				    
-				    if( charge > 0 && m != el_result_index ){
+ 					Particle mle_part_neg = mle_particle_neg.getMLEParticle(bevinf,m);
+					double conf_part_neg = mle_part_neg.getProperty("conflvl");
+					double le_part_neg = mle_part_neg.getProperty("likelihood");
+					double pid_mle_neg = mle_part_neg.getProperty("pid");
+
+					Particle mle_kaonm = mle_particle_neg.getKaonMinus(bevinf,m);
+					Particle mle_pionm = mle_particle_neg.getPionMinus(bevinf,m);
+
+ 					double km_conf = mle_kaonm.getProperty("conflvl");
+					double pim_conf = mle_pionm.getProperty("conflvl");
+
+					h_pid_mle.fillKaonMinusConfidenceLevel(mle_kaonm.getProperty("conflvl"));
+					h_pid_mle.fillPionMinusConfidenceLevel(mle_pionm.getProperty("conflvl"));
+					
+					//System.out.println(" >> MLE NEGATIVE PARTICLE PID " + pid_mle_neg + " CONF " + conf_part_neg + " INDEX " + m );
+					//System.out.println(" >> KAON MINUS " + km_conf );
+					//System.out.println(" >> PION MINUS " + pim_conf );
+
+					if( (int)pid_mle_neg == -321 && conf_part_neg >= 0.27 && pim_conf <= 0.73 ){
+					    h_pid_mle.fillKaonMinusMLE(event,m);
+
+					    double temp_km_e = Calculator.lv_energy(recBank,m,321);
+					    if( temp_km_e > km_e ){ 
+						km_e = temp_km_e;
+						good_km = m;
+						good_mle_km = true;
+						System.out.println(" >> ITS A KAON MINUS " );
+
+					    }
+					}
+					//else if( (int)pid_mle_neg == -211 && conf_part_neg >= 0.27 && km_conf <= 0.73){
+					//    System.out.println(" >> ITS A PION  MINUS " );
+					//}
+
+
+				    }
+
+				    
+				    else if( charge > 0 && m != el_result_index ){
 					BEventWriter bwriter = new BEventWriter();
 					BEvent bevent = bwriter.getBEvent(event);
 					bwriter.loadBankMaps(event);
@@ -449,24 +520,23 @@ public class ParallelElectron implements Runnable{
 					Particle mle_kaon = mle_particle.getKaonPlus(bevinf,m);
 					Particle mle_pion = mle_particle.getPionPlus(bevinf,m);
 
-
 					double pr_conf = mle_proton.getProperty("conflvl");
-					double kp_conf = mle_kaon.getProperty("conflvl");
+ 					double kp_conf = mle_kaon.getProperty("conflvl");
 					double pip_conf = mle_pion.getProperty("conflvl");
 
 					//h_pid_mle.fillDCTraj(event, m);
 					
 					h_pid_mle.fillProtonConfidenceLevel(mle_proton.getProperty("conflvl"));
 					h_pid_mle.fillKaonConfidenceLevel(mle_kaon.getProperty("conflvl"));
-					h_pid_mle.fillDCTraj(event,m);
-
+					h_pid_mle.fillPionPlusConfidenceLevel(mle_pion.getProperty("conf_lvl"));
+ 					h_pid_mle.fillDCTraj(event,m);
 					
-					if( pid_mle == 321 && conf_part >= 0.27 && pr_conf <= 0.73 && pip_conf <= 0.73 ){
+					if( (int)pid_mle == 321 && conf_part >= 0.27 && pr_conf <= 0.73 && pip_conf <= 0.73 ){
 					    good_kp = m;
 					    //tempn_kp = tempn_pr + 1;
 					    //fast_kaon.add(m);
-					    //System.out.println(" >> MLE KAON PID " + pid_mle + " CONF " + conf_part );
-					    //System.out.println(" >> VALUES OF CONF LVL FOR PARTICLES ");
+					    //  System.out.println(" >> MLE KAON PID " + pid_mle + " CONF " + conf_part );
+					    ///System.out.println(" >> VALUES OF CONF LVL FOR PARTICLES ");
 					    //System.out.println(" >> Pr: " + pr_conf);
 					    //System.out.println(" >> Kp: " + kp_conf);
 					    //System.out.println(" >> Pip: " + pip_conf);
@@ -479,7 +549,7 @@ public class ParallelElectron implements Runnable{
 					    }
 					}
 					
-					if( pid_mle == 2212 && conf_part >= 0.27 && kp_conf <= 0.73 && pip_conf <= 0.73 ){
+					if( (int)pid_mle == 2212 && conf_part >= 0.27 && kp_conf <= 0.73 && pip_conf <= 0.73 ){
 					    good_pr = m;
 					    //tempn_pr = tempn_pr + 1;
 					    //fast_proton.add(m);
@@ -539,10 +609,14 @@ public class ParallelElectron implements Runnable{
 			    
 			}
 			*/
+			if( el_present && good_mle_pr && good_mle_kp ){
+			    System.out.println(" >> STATUS OF KAON MINUS " + good_mle_km );
+			}
 
-			LorentzVector lv_el = new LorentzVector(0,0,0,0);//null;
+			LorentzVector lv_el = new LorentzVector(0,0,0,0);
 			LorentzVector lv_pr = new LorentzVector(0,0,0,0);
 			LorentzVector lv_kp = new LorentzVector(0,0,0,0);
+			LorentzVector lv_km = new LorentzVector(0,0,0,0);
 						
 			//if( el_present ){
 			//  eventtopology = 0;
@@ -565,9 +639,21 @@ public class ParallelElectron implements Runnable{
 			    lv_kp = Calculator.lv_particle(recBank, good_kp, 321);
 			    lv_pr = Calculator.lv_particle(recBank, good_pr, 2212);
 			}
+			else if( el_present && good_mle_pr && good_mle_kp && good_mle_km ){
+			    eventtopology = 4;
+
+			    System.out.println(" >> --------------------------------------------------------------------------  << " );
+			    System.out.println(" >>                       PHI EVENT YEAH! " );
+
+			    lv_el = Calculator.lv_particle(recBank,good_el,11);
+			    lv_kp = Calculator.lv_particle(recBank, good_kp, 321);
+			    lv_km = Calculator.lv_particle(recBank, good_km, 321);
+			    lv_pr = Calculator.lv_particle(recBank, good_pr, 2212);
+			}
 			   
 
 			if( eventtopology >= 0 ){
+			    real_event = true;
 			    //DataEvent physics_event = writer.createEvent();
 			    //DataBank physics_bank = physics_event.createBank("REC::Particle", 10);// (int)(eventtopology+1));
 
@@ -578,21 +664,24 @@ public class ParallelElectron implements Runnable{
 
 			    //physics_event.show();
 
+			    /*
 			    try{
 				int helicity = -10;
 				if( event.hasBank("REC::Event") ){
 				    helicity = event.getBank("REC::Event").getInt("Helic",0);
 				}
 				//System.out.println(" >> ELECTRON PX " + lv_el.px() );
-				buffwriter.write( Integer.toString(run_number ) + " " + Integer.toString(eventtopology) + " " + Integer.toString(helicity) + " "  +  Double.toString(lv_el.px()) + " " + Double.toString(lv_el.py()) + " " + Double.toString(lv_el.px()) + " " + Double.toString(lv_pr.px()) + " " + Double.toString(lv_pr.py()) + " " + Double.toString(lv_pr.pz()) + " " + Double.toString(lv_kp.px()) + " " + Double.toString(lv_kp.py()) + " " + Double.toString(lv_kp.pz()) + "\n");
+				buffwriter.write( Integer.toString(run_number ) + " " + Integer.toString(eventtopology) + " " + Integer.toString(helicity) + " "  +  Double.toString(lv_el.px()) + " " + Double.toString(lv_el.py()) + " " + Double.toString(lv_el.px()) + " " + Double.toString(lv_pr.px()) + " " + Double.toString(lv_pr.py()) + " " + Double.toString(lv_pr.pz()) + " " + Double.toString(lv_kp.px()) + " " + Double.toString(lv_kp.py()) + " " + Double.toString(lv_kp.pz()) + " " + Double.toString(lv_km.px()) + " " + Double.toString(lv_km.py()) + " " + Double.toString(lv_km.pz()) + "\n");
 
 			    }
 			    catch(IOException e ){
 				System.out.println(" ERROR WRITING " + e );
 			    }
-			}
+			   
+			    
 			
-
+			    */
+			}
 
 			if( good_el >= 0 && good_pr > 0 ){
 			    //LorentzVector lv_beam = new LorentzVector(0,0,PhysicalConstants.eBeam,PhysicalConstants.eBeam);
@@ -604,10 +693,10 @@ public class ParallelElectron implements Runnable{
 
 			}
 
-			if ( real_event ){
-			    //PhysicsBuilder physicsbuild = new PhysicsBuilder();
-			    //PhysicsEvent final_phy_event = physicsbuild.setPhysicsEvent( real_event, event, golden_el_index, golden_pr_index, golden_kp_index, golden_km_index, eventtopology );
-			    //h_phys.fillPhysicsEventHistograms(final_phy_event);
+			if ( real_event && eventtopology == 4 ){
+			    PhysicsBuilder physicsbuild = new PhysicsBuilder();
+			    PhysicsEvent final_phy_event = physicsbuild.setPhysicsEvent( real_event, event, good_el, good_pr, good_kp, good_km, eventtopology );
+			    h_phys.fillPhysicsEventHistograms(final_phy_event);
 
 			}
 			//if( good_el >= 0 ){ //HAVE A GOOD ELECTRON IN THE EVENT 
@@ -634,7 +723,7 @@ public class ParallelElectron implements Runnable{
 		reader = null;
 		//writer.close();
 
-		try{
+		/*try{
 		    if( buffwriter != null ){
 			buffwriter.close();
 		    }
@@ -643,6 +732,7 @@ public class ParallelElectron implements Runnable{
 		    System.out.println(" >> ERROR CLOSING FILE " + e );
 		}
 
+		*/
 	    }   	    
 	}
 	catch (Throwable e) {
@@ -708,7 +798,7 @@ public class ParallelElectron implements Runnable{
 	h_pid_cutlvls.savePIDHistograms(view_phys);
 	h_pid_clas12.saveCLAS12PIDHistograms(view_phys);
 	h_pid_mle.saveMLEHistograms(view_phys);
-	//h_phys.savePhysHistograms(view_phys);
+	h_phys.savePhysHistograms(view_phys);
 	System.out.println(">> COMPLETED SAVING HISTOGRAMS");
 
     }

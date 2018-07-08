@@ -137,6 +137,28 @@ public class BMLEKaonHistograms {
 
     HashMap<Integer, Vector< Vector<H2F> > > m_kp_sect_panel_deltp = new HashMap<Integer, Vector< Vector< H2F> > >();
 
+    /* KAON MINUS HISTOGRAMS */
+    Vector<H1F> h_km_p = new Vector<H1F>(); 
+    Vector<H1F> h_km_theta = new Vector<H1F>(); 
+    Vector<H1F> h_km_phi = new Vector<H1F>(); 
+    Vector<H1F> h_km_vz = new Vector<H1F>(); 
+    Vector<H1F> h_km_vz_mod = new Vector<H1F>(); 
+    Vector<H1F> h_km_timing = new Vector<H1F>(); 
+    Vector<H1F> h_km_masstime = new Vector<H1F>();
+    Vector<H1F> h_km_conflvl = new Vector<H1F>();
+
+    Vector<H2F> h2_km_betap = new Vector<H2F>();
+    Vector<H2F> h2_km_vzphi = new Vector< H2F >();
+    Vector<H2F> h2_km_ptheta = new Vector< H2F >();
+    Vector<H2F> h2_km_pphi = new Vector< H2F >();
+
+    Vector<H2F> h2_km_ftof_l2_betap = new Vector<H2F>();
+
+    /* STUPIDLY MAKING THE PION CONF LEVEL PLOTS HERE " */
+    Vector<H1F> h_pip_conflvl = new Vector<H1F>();
+    Vector<H1F> h_pim_conflvl = new Vector<H1F>();
+
+
     public void createKaonMLEHistograms(){
 
 	int i = 0;
@@ -149,7 +171,17 @@ public class BMLEKaonHistograms {
 	h_kp_vz.add( new H1F("h_"+s_run_number+"_kp_vz_mle","h_"+s_run_number+"_kp_vz_mle", 100, min_vz, max_vz ) );
 	h_kp_vz_mod.add( new H1F("h_"+s_run_number+"_kp_vzmod_mle","h_"+s_run_number+"_kp_vzmod_mle", 100, min_vz, max_vz ) );
 	h_kp_timing.add( new H1F("h_"+s_run_number+"_kp_timing_mle","h_"+s_run_number+"_kp_timing_mle"+Integer.toString(i), 100, min_timing, max_timing ) );
+
+	h_km_p.add( new H1F("h_"+s_run_number+"_km_p_mle","h_"+s_run_number+"_km_p_mle", 100, min_p, max_p ) );
+	h_km_theta.add( new H1F("h_"+s_run_number+"_km_theta_mle","h_"+s_run_number+"_km_theta_mle", 100, min_theta, max_theta) );
+	h_km_phi.add( new H1F("h_"+s_run_number+"_km_phi_mle","h_"+s_run_number+"_km_phi_mle", 100, min_phi, max_phi ) );
+	h_km_vz.add( new H1F("h_"+s_run_number+"_km_vz_mle","h_"+s_run_number+"_km_vz_mle", 100, min_vz, max_vz ) );
+	h_km_vz_mod.add( new H1F("h_"+s_run_number+"_km_vzmod_mle","h_"+s_run_number+"_km_vzmod_mle", 100, min_vz, max_vz ) );
+	h_km_timing.add( new H1F("h_"+s_run_number+"_km_timing_mle","h_"+s_run_number+"_km_timing_mle"+Integer.toString(i), 100, min_timing, max_timing ) );
+	h2_km_betap.add( new H2F("h2_"+s_run_number+"_km_betap_mle"+Integer.toString(i),"h2_"+s_run_number+"_km_betap_mle"+Integer.toString(i),500, min_p, max_p, 500, min_b, max_b ));
+
 	h_kp_conflvl.add( new H1F("h_"+s_run_number+"_kp_conflvl_mle","h_"+s_run_number+"_kp_conflvl_mle"+Integer.toString(i), 100,0.0,1.1));
+	h_km_conflvl.add( new H1F("h_"+s_run_number+"_km_conflvl_mle","h_"+s_run_number+"_km_conflvl_mle"+Integer.toString(i), 100,0.0,1.1));
 
 	h_kp_rpath.add( new H1F("h_"+s_run_number+"_kp_rpath_mle","h_"+s_run_number+"_kp_rpath_mle"+Integer.toString(i), 300, min_rpath, max_rpath ) );
 	h_kp_beta_time.add( new H1F("h_"+s_run_number+"_kp_betatime_mle","h_"+s_run_number+"_kp_betatime_mle"+Integer.toString(i), 200, min_b, max_b ) );
@@ -161,8 +193,12 @@ public class BMLEKaonHistograms {
 	h2_kp_deltabeta.add( new H2F("h2_"+s_run_number+"_kp_deltabeta_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_deltabeta_mle"+Integer.toString(i), 500, min_p, max_p, 500, min_delb, max_delb ));
 
 	h2_kp_vzphi.add( new H2F("h2_"+s_run_number+"_kp_vzphi_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_vzphi_mle"+Integer.toString(i), 200, min_vz, max_vz, 200, min_phi, max_phi ));
-	h2_kp_ptheta.add( new H2F("h2_"+s_run_number+"_kp_ptheta_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_ptheta_mle"+Integer.toString(i), 200, min_p, max_p, 200, min_theta, max_theta ));
+ 	h2_kp_ptheta.add( new H2F("h2_"+s_run_number+"_kp_ptheta_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_ptheta_mle"+Integer.toString(i), 200, min_p, max_p, 200, min_theta, max_theta ));
 	h2_kp_pphi.add( new H2F("h2_"+s_run_number+"_kp_pphi_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_pphi_mle"+Integer.toString(i), 200, min_p, max_p, 200, min_phi, max_phi ));
+
+	h2_km_vzphi.add( new H2F("h2_"+s_run_number+"_km_vzphi_mle"+Integer.toString(i),"h2_"+s_run_number+"_km_vzphi_mle"+Integer.toString(i), 200, min_vz, max_vz, 200, min_phi, max_phi ));
+ 	h2_km_ptheta.add( new H2F("h2_"+s_run_number+"_km_ptheta_mle"+Integer.toString(i),"h2_"+s_run_number+"_km_ptheta_mle"+Integer.toString(i), 200, min_p, max_p, 200, min_theta, max_theta ));
+	h2_km_pphi.add( new H2F("h2_"+s_run_number+"_km_pphi_mle"+Integer.toString(i),"h2_"+s_run_number+"_km_pphi_mle"+Integer.toString(i), 200, min_p, max_p, 200, min_phi, max_phi ));
 
  	h2_kp_dchit_R1_xy.add( new H2F("h2_"+s_run_number+"_kp_dchit_R1_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_dchit_R1_mle"+Integer.toString(i), 500, -95.0, 95.0, 500, -100.0, 100.0 ));
  	h2_kp_dchit_R2_xy.add( new H2F("h2_"+s_run_number+"_kp_dchit_R2_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_dchit_R2_mle"+Integer.toString(i), 500, -150.0, 150.0, 500, -150.0, 150.0 ));
@@ -185,6 +221,14 @@ public class BMLEKaonHistograms {
 	h2_kp_ftof_l2_deltabeta.add( new H2F("h2_"+s_run_number+"_kp_ftof_l2_deltabeta_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_ftof_l2_deltabeta_mle"+Integer.toString(i), 500, min_p, max_p, 500, min_delb, max_delb ));
 	h2_kp_ftof_l2_betap.add( new H2F("h2_"+s_run_number+"_kp_ftof_l2_betap_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_ftof_l2_betap_mle"+Integer.toString(i),500, min_p, max_p, 500, min_b, max_b ));
 	h2_kp_ftof_l2_deltimep.add( new H2F("h2_"+s_run_number+"_kp_ftof_l2_deltimep_mle"+Integer.toString(i),"h2_"+s_run_number+"_kp_ftof_l2_deltimep_mle"+Integer.toString(i),500, min_p, max_p, 500, min_delt, max_delt ));
+
+	h2_km_ftof_l2_betap.add( new H2F("h2_"+s_run_number+"_km_ftof_l2_betap_mle"+Integer.toString(i),"h2_"+s_run_number+"_km_ftof_l2_betap_mle"+Integer.toString(i),500, min_p, max_p, 500, min_b, max_b ));
+
+
+	h_pip_conflvl.add( new H1F("h_"+s_run_number+"_pip_conflvl_mle","h_"+s_run_number+"_pip_conflvl_mle"+Integer.toString(i), 100,0.0,1.1));
+	h_pim_conflvl.add( new H1F("h_"+s_run_number+"_pim_conflvl_mle","h_"+s_run_number+"_pim_conflvl_mle"+Integer.toString(i), 100,0.0,1.1));
+
+
 
     }
 
@@ -504,6 +548,19 @@ public class BMLEKaonHistograms {
 	    dir.addDataSet(h_temp);
 	}
 
+	dir.mkdir("/kaon/mle/h2_km_betap/");
+	dir.cd("/kaon/mle/h2_km_betap/");
+	for( H2F h_temp : h2_km_betap ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("p [GeV]");
+	    h_temp.setTitleY("#beta");
+	    c_temp.draw(h_temp,"colz");
+	    c_temp.draw(f_beta_cuttop,"same");
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}
+
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///SECTOR BASED PLOTS
 	F1D f_beta_kp = new F1D("f_betacut_kp","x/sqrt(x*x + [a]*[a])",0.1,5.5);
@@ -798,6 +855,16 @@ public class BMLEKaonHistograms {
 	    }
 	}
 
+	dir.mkdir("/kaon/mle/h_kp_p/");
+	dir.cd("/kaon/mle/h_kp_p/");
+	for( H1F h_temp : h_kp_p ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("p [GeV]");
+	    c_temp.draw(h_temp);
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}
 
 	dir.mkdir("/kaon/mle/h2_kp_conflvl/");
 	dir.cd("/kaon/mle/h2_kp_conflvl/");
@@ -835,6 +902,89 @@ public class BMLEKaonHistograms {
 	    dir.addDataSet(h_temp);
 	}	
 	
+
+	dir.mkdir("/kaon/mle/h_km_p/");
+	dir.cd("/kaon/mle/h_km_p/");
+	for( H1F h_temp : h_km_p ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("p [GeV]");
+	    c_temp.draw(h_temp);
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}
+
+	dir.mkdir("/kaon/mle/h2_km_conflvl/");
+	dir.cd("/kaon/mle/h2_km_conflvl/");
+	for( H1F h_temp :  h_km_conflvl ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("Confidence Level");
+	    c_temp.draw(h_temp);
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}
+
+	dir.mkdir("/kaon/mle/h_pim_conflvl/");
+	dir.cd("/kaon/mle/h_pim_conflvl/");
+	for( H1F h_temp : h_pim_conflvl ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("Confidence Level");
+	    c_temp.draw(h_temp);
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}
+
+	dir.mkdir("/kaon/mle/h_km_conflvl/");
+	dir.cd("/kaon/mle/h_km_conflvl/");
+	for( H1F h_temp : h_km_conflvl ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("Confidence Level");
+	    c_temp.draw(h_temp);
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}
+
+
+	dir.mkdir("/kaon/mle/h2_km_ptheta/");
+	dir.cd("/kaon/mle/h2_km_ptheta/");
+	for( H2F h_temp :  h2_km_ptheta ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("p [GeV]");
+	    h_temp.setTitleY("#theta [deg]");
+	    c_temp.draw(h_temp,"colz");
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}	
+
+	dir.mkdir("/kaon/mle/h2_km_pphi/");
+	dir.cd("/kaon/mle/h2_km_pphi/");
+	for( H2F h_temp :  h2_km_pphi ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("p [GeV]");
+	    h_temp.setTitleY("#phi [deg]");
+	    c_temp.draw(h_temp,"colz");
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}	
+	
+	dir.mkdir("/kaon/mle/h2_km_ftof_l2_betap/");
+	dir.cd("/kaon/mle/h2_km_ftof_l2_betap/");
+	for( H2F h_temp : h2_km_ftof_l2_betap ){
+	    EmbeddedCanvas c_temp = new EmbeddedCanvas();
+	    c_temp.setSize(800,800);
+	    h_temp.setTitleX("p [GeV]");
+	    h_temp.setTitleY("#beta");
+	    c_temp.draw(h_temp,"colz");
+	    c_temp.draw(f_beta_cuttop,"same");
+	    //c_temp.save(savepath+h_temp.getTitle()+".png");
+	    dir.addDataSet(h_temp);
+	}
+
 
 	dir.mkdir("/kaon/mle/h2_test/");
 	dir.cd("/kaon/mle/h2_test/");

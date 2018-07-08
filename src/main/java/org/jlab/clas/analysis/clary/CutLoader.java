@@ -75,6 +75,35 @@ public class CutLoader{
     static List<Double> kp_beta_min_fit_values_sector_5;
     static List<Double> kp_beta_min_fit_values_sector_6;
 
+    /* NEGATIVE BETA CUTS */
+    static List<Double> pim_beta_max_fit_values_sector_1;
+    static List<Double> pim_beta_max_fit_values_sector_2;
+    static List<Double> pim_beta_max_fit_values_sector_3;
+    static List<Double> pim_beta_max_fit_values_sector_4;
+    static List<Double> pim_beta_max_fit_values_sector_5;
+    static List<Double> pim_beta_max_fit_values_sector_6;
+
+    static List<Double> pim_beta_min_fit_values_sector_1;
+    static List<Double> pim_beta_min_fit_values_sector_2;
+    static List<Double> pim_beta_min_fit_values_sector_3;
+    static List<Double> pim_beta_min_fit_values_sector_4;
+    static List<Double> pim_beta_min_fit_values_sector_5;
+    static List<Double> pim_beta_min_fit_values_sector_6;
+
+    static List<Double> km_beta_max_fit_values_sector_1;
+    static List<Double> km_beta_max_fit_values_sector_2;
+    static List<Double> km_beta_max_fit_values_sector_3;
+    static List<Double> km_beta_max_fit_values_sector_4;
+    static List<Double> km_beta_max_fit_values_sector_5;
+    static List<Double> km_beta_max_fit_values_sector_6;
+
+    static List<Double> km_beta_min_fit_values_sector_1;
+    static List<Double> km_beta_min_fit_values_sector_2;
+    static List<Double> km_beta_min_fit_values_sector_3;
+    static List<Double> km_beta_min_fit_values_sector_4;
+    static List<Double> km_beta_min_fit_values_sector_5;
+    static List<Double> km_beta_min_fit_values_sector_6;
+
 
     /*
      VERTEX CUT
@@ -204,6 +233,20 @@ public class CutLoader{
 	kp_beta_max_fit_values_sector_5 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("kp_beta_cut_ftofl2").getMaxFitParametersSector5("kaon");
 	kp_beta_max_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("kp_beta_cut_ftofl2").getMaxFitParametersSector6("kaon");
 
+	pim_beta_max_fit_values_sector_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMaxFitParametersSector1("pionM");
+	pim_beta_max_fit_values_sector_2 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMaxFitParametersSector2("pionM");
+	pim_beta_max_fit_values_sector_3 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMaxFitParametersSector3("pionM");
+	pim_beta_max_fit_values_sector_4 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMaxFitParametersSector4("pionM");
+	pim_beta_max_fit_values_sector_5 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMaxFitParametersSector5("pionM");
+	pim_beta_max_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMaxFitParametersSector6("pionM");
+
+	km_beta_max_fit_values_sector_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMaxFitParametersSector1("kaonM");
+	km_beta_max_fit_values_sector_2 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMaxFitParametersSector2("kaonM");
+	km_beta_max_fit_values_sector_3 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMaxFitParametersSector3("kaonM");
+	km_beta_max_fit_values_sector_4 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMaxFitParametersSector4("kaonM");
+	km_beta_max_fit_values_sector_5 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMaxFitParametersSector5("kaonM");
+	km_beta_max_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMaxFitParametersSector6("kaonM");
+
     }
 
     public void setBetaMinSectorAllCuts(){
@@ -214,7 +257,7 @@ public class CutLoader{
 	pr_beta_min_fit_values_sector_5 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pr_beta_cut_ftofl2").getMinFitParametersSector5("proton");
 	pr_beta_min_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pr_beta_cut_ftofl2").getMinFitParametersSector6("proton");
 
-	pip_beta_min_fit_values_sector_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pip_beta_cut_ftofl2").getMinFitParametersSector1("pion");
+ 	pip_beta_min_fit_values_sector_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pip_beta_cut_ftofl2").getMinFitParametersSector1("pion");
 	pip_beta_min_fit_values_sector_2 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pip_beta_cut_ftofl2").getMinFitParametersSector2("pion");
 	pip_beta_min_fit_values_sector_3 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pip_beta_cut_ftofl2").getMinFitParametersSector3("pion");
 	pip_beta_min_fit_values_sector_4 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pip_beta_cut_ftofl2").getMinFitParametersSector4("pion");
@@ -227,7 +270,23 @@ public class CutLoader{
 	kp_beta_min_fit_values_sector_4 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("kp_beta_cut_ftofl2").getMinFitParametersSector4("kaon");
 	kp_beta_min_fit_values_sector_5 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("kp_beta_cut_ftofl2").getMinFitParametersSector5("kaon");
 	kp_beta_min_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("kp_beta_cut_ftofl2").getMinFitParametersSector6("kaon");
-    }
+ 
+	pim_beta_min_fit_values_sector_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMinFitParametersSector1("pionM");
+	pim_beta_min_fit_values_sector_2 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMinFitParametersSector2("pionM");
+	pim_beta_min_fit_values_sector_3 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMinFitParametersSector3("pionM");
+	pim_beta_min_fit_values_sector_4 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMinFitParametersSector4("pionM");
+	pim_beta_min_fit_values_sector_5 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMinFitParametersSector5("pionM");
+	pim_beta_min_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("pim_beta_cut_ftofl2").getMinFitParametersSector6("pionM");
+
+	km_beta_min_fit_values_sector_1 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMinFitParametersSector1("kaonM");
+	km_beta_min_fit_values_sector_2 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMinFitParametersSector2("kaonM");
+	km_beta_min_fit_values_sector_3 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMinFitParametersSector3("kaonM");
+	km_beta_min_fit_values_sector_4 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMinFitParametersSector4("kaonM");
+	km_beta_min_fit_values_sector_5 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMinFitParametersSector5("kaonM");
+	km_beta_min_fit_values_sector_6 = runinfo.getRunParameters().get(run_number).getCutType().get(cut_type).getBetaCutParameters().get("km_beta_cut_ftofl2").getMinFitParametersSector6("kaonM");
+ 
+
+   }
    
     public void setVertexCut(){
 		
@@ -345,6 +404,22 @@ public class CutLoader{
 	    System.out.println(">> KAON PLUS BETA FTOF L2 MIN : S1 " + kp_beta_min_fit_values_sector_1.get(p) + " S2 " + kp_beta_min_fit_values_sector_2.get(p) + " S3 " + kp_beta_min_fit_values_sector_3.get(p) + " S4 " + kp_beta_min_fit_values_sector_4.get(p) + " S5 " + kp_beta_min_fit_values_sector_5.get(p) + " S6 " + kp_beta_min_fit_values_sector_6.get(p) );
 	}
 
+	for( int p = 0; p < pim_beta_min_fit_values_sector_1.size(); p++ ){
+	    System.out.println(">> PION MINUS BETA FTOF L2 MAX: S1 " + pim_beta_max_fit_values_sector_1.get(p) + " S2 " + pim_beta_max_fit_values_sector_2.get(p) + " S3 " + pim_beta_max_fit_values_sector_3.get(p) + " S4 " + pim_beta_max_fit_values_sector_4.get(p) + " S5 " + pim_beta_max_fit_values_sector_5.get(p) + " S6 " + pim_beta_max_fit_values_sector_6.get(p) );
+	}
+
+	for( int p = 0; p < pim_beta_min_fit_values_sector_1.size(); p++ ){
+	    System.out.println(">> PION MINUS BETA FTOF L2 MIN : S1 " + pim_beta_min_fit_values_sector_1.get(p) + " S2 " + pim_beta_min_fit_values_sector_2.get(p) + " S3 " + pim_beta_min_fit_values_sector_3.get(p) + " S4 " + pim_beta_min_fit_values_sector_4.get(p) + " S5 " + pim_beta_min_fit_values_sector_5.get(p) + " S6 " + pim_beta_min_fit_values_sector_6.get(p) );
+	}
+
+	for( int p = 0; p < km_beta_min_fit_values_sector_1.size(); p++ ){
+	    System.out.println(">> KAON MINUS BETA FTOF L2 MAX: S1 " + km_beta_max_fit_values_sector_1.get(p) + " S2 " + km_beta_max_fit_values_sector_2.get(p) + " S3 " + km_beta_max_fit_values_sector_3.get(p) + " S4 " + km_beta_max_fit_values_sector_4.get(p) + " S5 " + km_beta_max_fit_values_sector_5.get(p) + " S6 " + km_beta_max_fit_values_sector_6.get(p) );
+	}
+
+	for( int p = 0; p < km_beta_min_fit_values_sector_1.size(); p++ ){
+	    System.out.println(">> KAON MINUS BETA FTOF L2 MIN : S1 " + km_beta_min_fit_values_sector_1.get(p) + " S2 " + km_beta_min_fit_values_sector_2.get(p) + " S3 " + km_beta_min_fit_values_sector_3.get(p) + " S4 " + km_beta_min_fit_values_sector_4.get(p) + " S5 " + km_beta_min_fit_values_sector_5.get(p) + " S6 " + km_beta_min_fit_values_sector_6.get(p) );
+	}
+
 	System.out.println(" >> PRINTING VERTEX CUTS " );
 	System.out.println(" >> VERTEX CUT SECTOR 1 " + neg_vz_sec_1 );
 	System.out.println(" >> VERTEX CUT SECTOR 2 " + neg_vz_sec_2 );
@@ -410,6 +485,34 @@ public class CutLoader{
     static public List<Double> getMinKPBetaSector4Cut(){ return kp_beta_min_fit_values_sector_4; }
     static public List<Double> getMinKPBetaSector5Cut(){ return kp_beta_min_fit_values_sector_5; }
     static public List<Double> getMinKPBetaSector6Cut(){ return kp_beta_min_fit_values_sector_6; }
+
+    static public List<Double> getMaxPIMBetaSector1Cut(){ return pim_beta_max_fit_values_sector_1;}
+    static public List<Double> getMaxPIMBetaSector2Cut(){ return pim_beta_max_fit_values_sector_2;}
+    static public List<Double> getMaxPIMBetaSector3Cut(){ return pim_beta_max_fit_values_sector_3;}
+    static public List<Double> getMaxPIMBetaSector4Cut(){ return pim_beta_max_fit_values_sector_4;}
+    static public List<Double> getMaxPIMBetaSector5Cut(){ return pim_beta_max_fit_values_sector_5;}
+    static public List<Double> getMaxPIMBetaSector6Cut(){ return pim_beta_max_fit_values_sector_6;}
+
+    static public List<Double> getMinPIMBetaSector1Cut(){ return pim_beta_min_fit_values_sector_1;}
+    static public List<Double> getMinPIMBetaSector2Cut(){ return pim_beta_min_fit_values_sector_2;}
+    static public List<Double> getMinPIMBetaSector3Cut(){ return pim_beta_min_fit_values_sector_3;}
+    static public List<Double> getMinPIMBetaSector4Cut(){ return pim_beta_min_fit_values_sector_4;}
+    static public List<Double> getMinPIMBetaSector5Cut(){ return pim_beta_min_fit_values_sector_5;}
+    static public List<Double> getMinPIMBetaSector6Cut(){ return pim_beta_min_fit_values_sector_6;}
+
+    static public List<Double> getMaxKMBetaSector1Cut(){ return km_beta_max_fit_values_sector_1; }
+    static public List<Double> getMaxKMBetaSector2Cut(){ return km_beta_max_fit_values_sector_2; }
+    static public List<Double> getMaxKMBetaSector3Cut(){ return km_beta_max_fit_values_sector_3; }
+    static public List<Double> getMaxKMBetaSector4Cut(){ return km_beta_max_fit_values_sector_4; }
+    static public List<Double> getMaxKMBetaSector5Cut(){ return km_beta_max_fit_values_sector_5; }
+    static public List<Double> getMaxKMBetaSector6Cut(){ return km_beta_max_fit_values_sector_6; }
+
+    static public List<Double> getMinKMBetaSector1Cut(){ return km_beta_min_fit_values_sector_1; }
+    static public List<Double> getMinKMBetaSector2Cut(){ return km_beta_min_fit_values_sector_2; }
+    static public List<Double> getMinKMBetaSector3Cut(){ return km_beta_min_fit_values_sector_3; }
+    static public List<Double> getMinKMBetaSector4Cut(){ return km_beta_min_fit_values_sector_4; }
+    static public List<Double> getMinKMBetaSector5Cut(){ return km_beta_min_fit_values_sector_5; }
+    static public List<Double> getMinKMBetaSector6Cut(){ return km_beta_min_fit_values_sector_6; }
 
     static public List<Double> getVertexCutSector1(){ return neg_vz_sec_1; }
     static public List<Double> getVertexCutSector2(){ return neg_vz_sec_2; }

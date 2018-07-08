@@ -136,12 +136,7 @@ public class PhysicsBuilder {
         float rc_el_py = recBank.getFloat("py",el_index);
 	float rc_el_pz = recBank.getFloat("pz",el_index);
  	float rc_el_vz = recBank.getFloat("vz",el_index);
-	
-	//double rc_el_px = recBank.getFloat("px",el_index);
-        //double rc_el_py = recBank.getFloat("py",el_index);
-	//double rc_el_pz = recBank.getFloat("pz",el_index);
- 	//double rc_el_vz = recBank.getFloat("vz",el_index);
-	
+		
 	double rc_el_E = Math.sqrt( rc_el_px*rc_el_px +  rc_el_py*rc_el_py +  rc_el_pz*rc_el_pz + PhysicalConstants.mass_electron*PhysicalConstants.mass_electron);
 	
 	
@@ -222,10 +217,10 @@ public class PhysicsBuilder {
 	    float rc_kp_pz = recBank.getFloat("pz",kp_index);
 	    float rc_kp_vz = recBank.getFloat("vz",kp_index);
 	    
-	    float rc_km_px = recBank.getFloat("px",km_index);
-	    float rc_km_py = recBank.getFloat("py",km_index);
-	    float rc_km_pz = recBank.getFloat("pz",km_index);
-	    float rc_km_vz = recBank.getFloat("vz",km_index);
+	    //float rc_km_px = recBank.getFloat("px",km_index);
+	    //float rc_km_py = recBank.getFloat("py",km_index);
+	    //float rc_km_pz = recBank.getFloat("pz",km_index);
+	    //float rc_km_vz = recBank.getFloat("vz",km_index);
 	    
 	    double rc_kp_E = Math.sqrt( rc_kp_px*rc_kp_px +  rc_kp_py*rc_kp_py +  rc_kp_pz*rc_kp_pz + PhysicalConstants.mass_kaon*PhysicalConstants.mass_kaon);	    
 	    lv_kp.setPxPyPzE(recBank.getFloat("px",kp_index), recBank.getFloat("py",kp_index), recBank.getFloat("pz",kp_index), rc_kp_E);//rc_kp_px,rc_kp_py,rc_kp_pz,rc_kp_px, rc_kp_E);
@@ -240,10 +235,10 @@ public class PhysicsBuilder {
 	else{
 	    System.out.println(" >> SETTING KM KINEMATICS " );
 
-	    float rc_kp_px = recBank.getFloat("px",kp_index);
-	    float rc_kp_py = recBank.getFloat("py",kp_index);
-	    float rc_kp_pz = recBank.getFloat("pz",kp_index);
-	    float rc_kp_vz = recBank.getFloat("vz",kp_index);
+	    //float rc_kp_px = recBank.getFloat("px",kp_index);
+	    //float rc_kp_py = recBank.getFloat("py",kp_index);
+	    //float rc_kp_pz = recBank.getFloat("pz",kp_index);
+	    //float rc_kp_vz = recBank.getFloat("vz",kp_index);
 	    
 	    float rc_km_px = recBank.getFloat("px",km_index);
 	    float rc_km_py = recBank.getFloat("py",km_index);
@@ -253,6 +248,30 @@ public class PhysicsBuilder {
 	    double rc_km_E = Math.sqrt( rc_km_px*rc_km_px +  rc_km_py*rc_km_py +  rc_km_pz*rc_km_pz + PhysicalConstants.mass_kaon*PhysicalConstants.mass_kaon);	    
 	    lv_km.setPxPyPzE( recBank.getFloat("px",km_index), recBank.getFloat("py",km_index), recBank.getFloat("pz",km_index), rc_km_E);// rc_km_px,rc_km_py,rc_km_pz,rc_km_px, rc_km_E);
 	    physev.lv_km = lv_km;
+	}
+
+
+	if( physev.topology == 4 ){
+	    //BOTH KAON PLUS AND MINUS ARE MEASURED 
+
+	    float rc_kp_px = recBank.getFloat("px",kp_index);
+	    float rc_kp_py = recBank.getFloat("py",kp_index);
+	    float rc_kp_pz = recBank.getFloat("pz",kp_index);
+	    float rc_kp_vz = recBank.getFloat("vz",kp_index);
+	    
+	    double rc_kp_E = Math.sqrt( rc_kp_px*rc_kp_px +  rc_kp_py*rc_kp_py +  rc_kp_pz*rc_kp_pz + PhysicalConstants.mass_kaon*PhysicalConstants.mass_kaon);	    
+	    lv_kp.setPxPyPzE(recBank.getFloat("px",kp_index), recBank.getFloat("py",kp_index), recBank.getFloat("pz",kp_index), rc_kp_E);//rc_kp_px,rc_kp_py,rc_kp_pz,rc_kp_px, rc_kp_E);
+	    physev.lv_kp = lv_kp;
+
+	    float rc_km_px = recBank.getFloat("px",km_index);
+	    float rc_km_py = recBank.getFloat("py",km_index);
+	    float rc_km_pz = recBank.getFloat("pz",km_index);
+	    float rc_km_vz = recBank.getFloat("vz",km_index);	    
+	    
+	    double rc_km_E = Math.sqrt( rc_km_px*rc_km_px +  rc_km_py*rc_km_py +  rc_km_pz*rc_km_pz + PhysicalConstants.mass_kaon*PhysicalConstants.mass_kaon);	    
+	    lv_km.setPxPyPzE( recBank.getFloat("px",km_index), recBank.getFloat("py",km_index), recBank.getFloat("pz",km_index), rc_km_E);// rc_km_px,rc_km_py,rc_km_pz,rc_km_px, rc_km_E);
+	    physev.lv_km = lv_km;
+
 	}
 
     }
@@ -306,7 +325,7 @@ public class PhysicsBuilder {
 	}
 	if( physev.topology == 2 ){
 	    System.out.println(" HAVE MISSING KM... CREATING KM LV" );
-	    lv_km.add(lv_beam);
+ 	    lv_km.add(lv_beam);
 	    lv_km.add(target);
 	    lv_km.sub(lv_el);
 	    lv_km.sub(lv_pr);

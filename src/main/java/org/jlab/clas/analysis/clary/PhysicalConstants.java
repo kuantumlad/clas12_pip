@@ -31,9 +31,10 @@ public class PhysicalConstants{
     //PDG IDS
     public static int electronID = 11;
     public static int protonID = 2212;
-    public static int kaonplusID = 411;
-    public static int kaonminusID = -411;
+    public static int kaonplusID = 321;
+    public static int kaonminusID = -321;
     public static int pionplusID = 211;
+    public static int pionminusID = -211;
 
     public void checkBE(){
 

@@ -106,6 +106,37 @@ public class BHistoMLE {
 	    
     }
 
+    public void fillDCTrajNeg(DataEvent event, int rec_i ){
+
+	if( event.hasBank("REC::Traj") ){
+	    Vector<Double> dc_hit_R1 = Detectors.getDCTrajR1(event,rec_i);
+	    Vector<Double> dc_hit_R2 = Detectors.getDCTrajR2(event,rec_i);
+	    Vector<Double> dc_hit_R3 = Detectors.getDCTrajR3(event,rec_i);
+	    
+	    if( dc_hit_R1.get(0) > -1000 && dc_hit_R1.get(1) > -1000 ){
+		
+		int dc_sect_traj1 = Detectors.getDCTrajSect(event, rec_i, 12) - 1; // 12, 24, 36 for R1, R2, R3
+		int dc_sect_traj2 = Detectors.getDCTrajSect(event, rec_i, 24) - 1; // 12, 24, 36 for R1, R2, R3
+		int dc_sect_traj3 = Detectors.getDCTrajSect(event, rec_i, 36) - 1; // 12, 24, 36 for R1, R2, R3
+		
+		Vector<Double> dc_hit_R1_rot = Calculator.getTrajRotatedCoordindate(dc_hit_R1.get(0),dc_hit_R1.get(1),dc_sect_traj1);
+		Vector<Double> dc_hit_R2_rot = Calculator.getTrajRotatedCoordindate(dc_hit_R2.get(0),dc_hit_R2.get(1),dc_sect_traj2);
+		Vector<Double> dc_hit_R3_rot = Calculator.getTrajRotatedCoordindate(dc_hit_R3.get(0),dc_hit_R3.get(1),dc_sect_traj3);
+		
+		h_prmle.h2_negcharge_dc_R1_traj.fill(dc_hit_R1.get(0),dc_hit_R1.get(1));
+		h_prmle.h2_negcharge_dc_R2_traj.fill(dc_hit_R2.get(0),dc_hit_R2.get(1));
+		h_prmle.h2_negcharge_dc_R3_traj.fill(dc_hit_R3.get(0),dc_hit_R3.get(1));
+		
+		h_prmle.h2_negcharge_dc_R1_traj_rot.fill(dc_hit_R1_rot.get(0),dc_hit_R1_rot.get(1));
+		h_prmle.h2_negcharge_dc_R2_traj_rot.fill(dc_hit_R2_rot.get(0),dc_hit_R2_rot.get(1));
+		h_prmle.h2_negcharge_dc_R3_traj_rot.fill(dc_hit_R3_rot.get(0), dc_hit_R3_rot.get(1));
+
+	    }
+	}
+
+	    
+    }
+
     public void fillProtonMLE( DataEvent event, int rec_i ){
 	
 	int j = 0;
@@ -295,6 +326,87 @@ public class BHistoMLE {
     public void fillKaonConfidenceLevel(double conf_lvl ){	
 	h_kpmle.h_kp_conflvl.get(0).fill(conf_lvl);	
     }	    
+
+    public void fillKaonMinusConfidenceLevel(double conf_lvl ){	
+	h_kpmle.h_km_conflvl.get(0).fill(conf_lvl);	
+    }	    
+
+    public void fillPionPlusConfidenceLevel(double conf_lvl ){	
+	h_kpmle.h_pip_conflvl.get(0).fill(conf_lvl);	
+    }	    
+
+    public void fillPionMinusConfidenceLevel(double conf_lvl ){	
+	h_kpmle.h_pim_conflvl.get(0).fill(conf_lvl);	
+    }	    
+
+
+    public void fillKaonMinusMLE( DataEvent event, int rec_i ){
+	int j = 0;
+
+	DataBank recBank = event.getBank("REC::Particle");
+	DataBank eventBank = event.getBank("REC::Event");
+	DataBank scintBank = event.getBank("REC::Scintillator");
+	
+	LorentzVector lv_km = Calculator.lv_particle(recBank,rec_i, PhysicalConstants.kaonplusID);
+	float km_beta_clas12 = recBank.getFloat("beta",rec_i);
+
+	double p = lv_km.p();
+	double theta = Math.toDegrees(lv_km.theta());
+	double phi = Math.toDegrees(lv_km.phi());
+	double vz = recBank.getFloat("vz",rec_i);
+	double vz_mod = (recBank.getFloat("vz",0) - vz);///2.0;
+	double km_beta_mntm = p/Math.sqrt(p*p + PhysicalConstants.mass_kaon*PhysicalConstants.mass_kaon);
+
+	h_kpmle.h2_km_vzphi.get(j).fill(vz, phi);
+	h_kpmle.h2_km_ptheta.get(j).fill(p, theta);
+	h_kpmle.h2_km_pphi.get(j).fill(p, phi);
+	h_kpmle.h_km_vz.get(j).fill(vz);
+	h_kpmle.h_km_vz_mod.get(j).fill(vz_mod);
+
+	//CALCULATE DELTA TIME FOR EACH HIT
+	for( int i = 0; i < scintBank.rows(); i++){
+			    
+	    int pindex = scintBank.getShort("pindex",i);
+	    if( pindex == rec_i ){
+			
+		int scint_sector = scintBank.getInt("sector",i) - 1;
+		int scint_detector = scintBank.getByte("detector",i);
+		int scint_layer = scintBank.getByte("layer",i);
+		int scint_bar = scintBank.getInt("component",i) - 1  ;
+			
+		double ftof_e  = scintBank.getFloat("energy",i)/100.0;
+			
+		double start_time = eventBank.getFloat("STTime",0);
+		double r_path = scintBank.getFloat("path",i);
+		double t_ftof = scintBank.getFloat("time",i);
+		double km_tof = t_ftof - start_time;
+		double km_beta_time = r_path/km_tof * (1.0/30.0); 
+		double km_tmeas = r_path/km_beta_mntm * (1.0/30.0);
+		double km_deltime = -km_tmeas + km_tof;
+		double km_delbeta = km_beta_time - km_beta_mntm;
+		
+		double km_masstime = p*Math.sqrt( 1/(km_beta_time*km_beta_time) - 1.0 );
+			
+		if( scint_sector >= 0 && scint_detector == 12 ){ // && scint_layer == 1){
+		
+		    //////////////////////////
+
+
+		    if( scint_layer == 1 && scint_bar >= 0 ){
+			//h_kpmle.m_kp_sect_panel_deltp.get(scint_sector).get(scint_bar).get(j).fill(p,kp_deltime);
+		    }
+			    
+		    if(  scint_layer == 2 ){
+			h_kpmle.h2_km_ftof_l2_betap.get(j).fill(p,km_beta_time);		
+		    }
+		}
+	    }
+	}
+    
+
+
+
+    }
 
     public void fillKaonMLE( DataEvent event, int rec_i ){
 
@@ -547,6 +659,74 @@ public class BHistoMLE {
                 } 
 	    }
 	    
+	}
+    }
+
+
+    public void fillBetaAllNeg(DataEvent event, int rec_i ){
+
+	int j = 0;
+
+	DataBank recBank = event.getBank("REC::Particle");
+	DataBank eventBank = event.getBank("REC::Event");
+	DataBank scintBank = event.getBank("REC::Scintillator");
+
+	LorentzVector lv_pr = Calculator.lv_particle(recBank,rec_i);// PhysicalConstants.kaonplusID);
+	float pr_beta_clas12 = recBank.getFloat("beta",rec_i);
+	int pid_clas12 = recBank.getInt("pid",rec_i);
+
+	double p = lv_pr.p();
+	double theta = Math.toDegrees(lv_pr.theta());
+	double phi = Math.toDegrees(lv_pr.phi());
+	double pr_beta_mntm = p/Math.sqrt(p*p + PhysicalConstants.mass_proton * PhysicalConstants.mass_proton);
+
+	//h_prmle.h_pr_beta_mntm.get(j).fill(pr_beta_mntm);
+	//h_prmle.h2_pr_vzphi.get(j).fill(p, phi);
+
+	//Map<Integer, Double> m_edep = Detectors.getEDepCal( event, rec_i );
+		
+	////////////////////////////////
+	//ELECTRON SECTOR
+	int el_sect = Detectors.getSectorECAL( event, 0 ) - 1; // index 0 is trigger electron
+
+	//CALCULATE DELTA TIME FOR EACH HIT
+	for( int i = 0; i < scintBank.rows(); i++){
+			    
+	    int pindex = scintBank.getShort("pindex",i);
+	    if( pindex == rec_i ){
+			
+		int scint_sector = scintBank.getInt("sector",i) - 1;
+		int scint_detector = scintBank.getByte("detector",i);
+		int scint_layer = scintBank.getByte("layer",i);
+		int scint_bar = scintBank.getInt("component",i) - 1  ;
+			
+		double ftof_e  = scintBank.getFloat("energy",i)/100.0;
+			
+		double start_time = eventBank.getFloat("STTime",0);
+		double r_path = scintBank.getFloat("path",i);
+		double t_ftof = scintBank.getFloat("time",i);
+		double pr_tof = t_ftof - start_time;
+		double pr_beta_time = r_path/pr_tof * (1.0/30.0); 
+		double pr_tmeas = r_path/pr_beta_mntm * (1.0/30.0);
+		double pr_deltime = -pr_tmeas + pr_tof;
+		double pr_delbeta = pr_beta_time - pr_beta_mntm;
+		double tof = t_ftof - start_time;
+		double beta_time = r_path/tof * (1.0/PhysicalConstants.speedOfLight);  
+
+		double pr_masstime = p*Math.sqrt( 1/(pr_beta_time*pr_beta_time) - 1.0 );
+			
+		if( scint_sector >= 0 && scint_detector == 12 && scint_layer == 2){
+		    h_prmle.h_beta_all_neg.fill(p,pr_beta_time);
+		    
+		    if( pid_clas12 == -211 ){
+			h_prmle.h2_beta_all_pim_sect_ftof_l2.get(scint_sector).fill(p,beta_time);
+		    }
+		    else if( pid_clas12 == -321 ){
+			h_prmle.h2_beta_all_km_sect_ftof_l2.get(scint_sector).fill(p,beta_time);
+		    }
+		
+		}
+	    }
 	}
     }
     

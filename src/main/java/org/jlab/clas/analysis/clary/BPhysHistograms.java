@@ -68,6 +68,7 @@ public class BPhysHistograms {
  
     H2F h2_mm_epKX_eKX;
     
+    H1F h_full_excl_phi_mass;
 
     double beam_energy = PhysicalConstants.eBeam;
     double min_p = 0.0; double max_p = beam_energy;
@@ -98,7 +99,10 @@ public class BPhysHistograms {
 	h2_xbphi = new H2F("h2_"+s_run_number+"_xbphi",200, 0.0, 1.1, 200, 0.5, 4.5 );
 
 	h2_tw = new H2F("h2_"+s_run_number+"_tw",200, 0.0, 1.1, 200, 0.5, 4.5 );
-	
+
+	h_full_excl_phi_mass = new H1F("h_full_excl_phi_mass","h_full_excl_phi_mass",300,0.4,1.6);
+
+
     }
     
     
@@ -134,6 +138,7 @@ public class BPhysHistograms {
 	dir.addDataSet(h2_q2phi);
 
 	dir.addDataSet(h2_tw);
+	dir.addDataSet(h_full_excl_phi_mass);
 
 	dir.addDataSet(h2_mm_epKX_eKX);
 

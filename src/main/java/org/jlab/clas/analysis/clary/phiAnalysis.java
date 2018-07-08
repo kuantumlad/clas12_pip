@@ -235,7 +235,7 @@ public class phiAnalysis{
 	CLAS12KaonPlusPID clas12_kp = new CLAS12KaonPlusPID();
 	CLAS12KaonMinusPID clas12_km = new CLAS12KaonMinusPID();
 
-	MLEParticleFinder mle_particle = new MLEParticleFinder(); 
+	//MLEParticleFinder mle_particle = new MLEParticleFinder(); 
 	System.out.println(">> STUCK HERE " );
 
 	//match_el.initializeCuts();

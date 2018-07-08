@@ -13,18 +13,28 @@ public class MLEParticleFinder{
     MLEKaon mle_kaon = new MLEKaon();
     MLEPion mle_pion = new MLEPion();
 
-    public MLEParticleFinder(){
-	initializeMLEParticleFinder();
+    int charge_type;
+
+    public MLEParticleFinder(String particle_charge ){
+	if( particle_charge == "pos" ){
+	    System.out.println(" >> INITIALIZE CUTS FOR POSITION HADRON PARTICLES ");
+	    charge_type = 1;
+	}
+	if( particle_charge == "neg" ){
+	    System.out.println(" >> INITIALIZE CUTS FOR NEGATIVE HADRON PARTICLES ");
+	    charge_type = -1;
+	}
+	
+	initializeMLEParticleFinder(particle_charge);
 
     }
 
-
-    private void initializeMLEParticleFinder(){
+    private void initializeMLEParticleFinder(String particle_charge){
 
 	System.out.println(" >> INIT MLE CUTS " );
 	mle_proton.initializeLikelihoods();
-	mle_kaon.initializeLikelihoods();
-	mle_pion.initializeLikelihoods();
+	mle_kaon.initializeLikelihoods(particle_charge);
+	mle_pion.initializeLikelihoods(particle_charge);
 
     }
     
@@ -33,12 +43,18 @@ public class MLEParticleFinder{
 	m_mle_particle.clear();
 
 	mle_proton.setMLEParticleProperties( bev, rec_i );
-	mle_kaon.setMLEParticleProperties( bev, rec_i );
-	mle_pion.setMLEParticleProperties( bev, rec_i );
+	if( charge_type == 1 ){
+	    mle_kaon.setMLEParticleProperties( bev, rec_i, PhysicalConstants.kaonplusID );
+	    mle_pion.setMLEParticleProperties( bev, rec_i, PhysicalConstants.pionplusID );
+	}
+	else if( charge_type == -1 ){
+	    mle_kaon.setMLEParticleProperties( bev, rec_i, PhysicalConstants.kaonminusID );
+	    mle_pion.setMLEParticleProperties( bev, rec_i, PhysicalConstants.pionminusID );
+	}
 
-	m_mle_particle.put(2212, mle_proton.getMLEProtonParticle().getProperty("likelihood") );
-	m_mle_particle.put(321, mle_kaon.getMLEKaonParticle().getProperty("likelihood")  );
-	m_mle_particle.put(211, mle_pion.getMLEPionParticle().getProperty("likelihood")  );
+	m_mle_particle.put(2212, mle_proton.getMLEProtonParticle().getProperty("likelihood"));
+	m_mle_particle.put(321, mle_kaon.getMLEKaonParticle().getProperty("likelihood"));
+	m_mle_particle.put(211, mle_pion.getMLEPionParticle().getProperty("likelihood"));
 	
 	//System.out.println(" >> MAP OF HADRONS " + m_mle_particle);
 
@@ -88,14 +104,23 @@ public class MLEParticleFinder{
     }
 
     public Particle getKaonPlus( BEventInfo bev, int rec_i ){
-	mle_kaon.setMLEParticleProperties( bev, rec_i );
+	mle_kaon.setMLEParticleProperties( bev, rec_i, PhysicalConstants.kaonplusID );
 	return mle_kaon.getMLEKaonParticle();
     }
 
     public Particle getPionPlus( BEventInfo bev, int rec_i ){
-	mle_pion.setMLEParticleProperties( bev, rec_i );
+	mle_pion.setMLEParticleProperties( bev, rec_i, PhysicalConstants.pionplusID );
 	return mle_pion.getMLEPionParticle();
-
+    }
+   
+    public Particle getKaonMinus( BEventInfo bev, int rec_i ){
+	mle_pion.setMLEParticleProperties( bev, rec_i, PhysicalConstants.kaonminusID);
+	return mle_kaon.getMLEKaonParticle();
     }
 
+    public Particle getPionMinus( BEventInfo bev, int rec_i ){
+	mle_pion.setMLEParticleProperties( bev, rec_i, PhysicalConstants.pionminusID);
+	return mle_pion.getMLEPionParticle();
+    }
+ 
 }
