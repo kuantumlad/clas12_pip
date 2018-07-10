@@ -1,0 +1,1419 @@
+ >> BEGIN SCRIPT FOR ANAYLSIS 
+ >> RUN  4013
+ >> STARTING FILE  0
+ >> ENDING FILE  100
+ >> DATA TYPE  DATA
+ >> FILE LOCATION  /run/media/sdiehl/easystore1/brandon/
+ >> FILE PREFIX  skim_clas_004013.evio.
+ >> SHIFT IS  100
+0 100
+[31m>> STARTING ANALYSIS FOR RUN 4013 FOR DATA PROCESS FILES FROM MACHINE STARTING FILE 0 ENDING AT 100[0m
+>> SIM OR DATA? DATA
+ >> LOADING JSON FILE FOR DATA ANALYSIS 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+>> BEAM ENERGY SET TO: 10.6
+ >> WRITING TO JSON FILE FOR DATA ANALYSIS 
+ LOADING CUTS
+>> GETTING JSON FILE FOR LOAD RUN CUTS CLASS DATA
+ >> java.io.BufferedReader@6659c656
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ VERTEX CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ BETA CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ EC CUT PARAMETERS CONSTRUCTOR 
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> getting sc sf shit {ec_sf_cut=org.jlab.clas.analysis.clary.ECCutParameters@bebdb06}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> TESTING [12.0]
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+ >> GET VERTEXCUTPARAMETERS {vz_cut=org.jlab.clas.analysis.clary.VertexCutParameters@7a4f0f29}
+EC Sampling Fraction MAX: S1: 0.23681357134832712 S2: 0.2587294717347171 S3: 0.2537550827476082 S4: 0.2707717224654288 S5 0.27844759810347874 S6: 0.26529173772505665
+EC Sampling Fraction MAX: S1: -0.0283414836387067 S2: -0.025988956792108164 S3: -0.022682902994491327 S4: -0.061946804344595374 S5 -0.06992888858914853 S6: -0.033181915954012986
+EC Sampling Fraction MAX: S1: 0.0699541439225035 S2: 0.013799096382277994 S3: 0.23689510293584345 S4: 0.060606899825825095 S5 0.08351225211115608 S6: 0.13347230855286787
+EC Sampling Fraction MAX: S1: 0.0018162705841484328 S2: 0.18598827925102218 S3: -0.642631232145144 S4: -0.05664556962292737 S5 -0.11817587961453915 S6: -0.27674574887191394
+EC Sampling Fraction MAX: S1: -0.020088275292131166 S2: -0.1550602023560274 S3: 0.5955978766671073 S4: 0.1070962863640481 S5 0.1376222264323988 S6: 0.2886102570613964
+EC Sampling Fraction MIN: S1: 0.23681357134832712 S2: 0.2587294717347171 S3: 0.2537550827476082 S4: 0.2707717224654288 S5 0.27844759810347874 S6: 0.26529173772505665
+EC Sampling Fraction MIN: S1: -0.0283414836387067 S2: -0.025988956792108164 S3: -0.022682902994491327 S4: -0.061946804344595374 S5 -0.06992888858914853 S6: -0.033181915954012986
+EC Sampling Fraction MIN: S1: 0.0699541439225035 S2: 0.013799096382277994 S3: 0.23689510293584345 S4: 0.060606899825825095 S5 0.08351225211115608 S6: 0.13347230855286787
+EC Sampling Fraction MIN: S1: 0.0018162705841484328 S2: 0.18598827925102218 S3: -0.642631232145144 S4: -0.05664556962292737 S5 -0.11817587961453915 S6: -0.27674574887191394
+EC Sampling Fraction MIN: S1: -0.020088275292131166 S2: -0.1550602023560274 S3: 0.5955978766671073 S4: 0.1070962863640481 S5 0.1376222264323988 S6: 0.2886102570613964
+>> PROTON BETA FTOF L2 MAX: S1 -0.011556208097559306 S2 0.027269472120960037 S3 0.004468773467901588 S4 0.024943055480963205 S5 0.03977910753255204 S6 0.02359411413859641
+>> PROTON BETA FTOF L2 MAX: S1 0.08673542710030713 S2 0.04205969225225292 S3 0.07700361363277508 S4 0.04206219653529053 S5 0.03188081698645506 S6 0.05189997067170171
+>> PROTON BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PROTON BETA FTOF L2 MIN : S1 0.9906344271875708 S2 0.9929640836452698 S3 0.9942797794583359 S4 0.9916591378803761 S5 0.9898413321673959 S6 0.9913408691650061
+>> PROTON BETA FTOF L2 MIN : S1 0.93827 S2 0.93827 S3 0.93827 S4 0.93827 S5 0.93827 S6 0.93827
+>> PROTON BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PION PLUS BETA FTOF L2 MAX: S1 -0.12487880669988077 S2 -0.027093358651129967 S3 -0.009904365142137592 S4 -0.06860624185609487 S5 -0.06966216240856521 S6 0.010913805077584299
+>> PION PLUS BETA FTOF L2 MAX: S1 0.25834830028760475 S2 0.10258210985574424 S3 0.08707368076187792 S4 0.17221055174003835 S5 0.1719426543125886 S6 0.06981967879124976
+>> PION PLUS BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PION PLUS BETA FTOF L2 MIN : S1 0.9989230037909002 S2 0.9988340633585879 S3 0.9983725706385547 S4 0.9996698865941518 S5 0.999385543010272 S6 1.0013015484496786
+>> PION PLUS BETA FTOF L2 MIN : S1 0.1395 S2 0.1395 S3 0.1395 S4 0.1395 S5 0.1395 S6 0.1395
+>> PION PLUS BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> KAON PLUS BETA FTOF L2 MAX: S1 -0.02830455953637756 S2 0.007144911270915766 S3 0.007144911270915766 S4 0.007144911270915766 S5 0.04769263149723432 S6 -0.03925090101300044
+>> KAON PLUS BETA FTOF L2 MAX: S1 0.1000673197533582 S2 0.05015979831955425 S3 0.05015979831955425 S4 0.05015979831955425 S5 0.002044675927434181 S6 0.11332599267674526
+>> KAON PLUS BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> KAON PLUS BETA FTOF L2 MIN : S1 0.9966324647367659 S2 1.0012092221658337 S3 1.0012092221658337 S4 1.0012092221658337 S5 0.9967998010003916 S6 1.0008277448002925
+>> KAON PLUS BETA FTOF L2 MIN : S1 0.49368 S2 0.49368 S3 0.49368 S4 0.49368 S5 0.49368 S6 0.49368
+>> KAON PLUS BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PION MINUS BETA FTOF L2 MAX: S1 0.0015984924246398302 S2 0.0015984924246398302 S3 0.0015984924246398302 S4 0.0015984924246398302 S5 0.0015984924246398302 S6 0.0015984924246398302
+>> PION MINUS BETA FTOF L2 MAX: S1 0.04253081500310177 S2 0.04253081500310177 S3 0.04253081500310177 S4 0.04253081500310177 S5 0.04253081500310177 S6 0.04253081500310177
+>> PION MINUS BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> PION MINUS BETA FTOF L2 MIN : S1 0.9995849668602249 S2 0.9995849668602249 S3 0.9995849668602249 S4 0.9995849668602249 S5 0.9995849668602249 S6 0.9995849668602249
+>> PION MINUS BETA FTOF L2 MIN : S1 0.1395 S2 0.1395 S3 0.1395 S4 0.1395 S5 0.1395 S6 0.1395
+>> PION MINUS BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> KAON MINUS BETA FTOF L2 MAX: S1 -0.0035418849098968197 S2 -0.0035418849098968197 S3 -0.0035418849098968197 S4 -0.0035418849098968197 S5 -0.0035418849098968197 S6 -0.0035418849098968197
+>> KAON MINUS BETA FTOF L2 MAX: S1 0.03354459041256075 S2 0.03354459041256075 S3 0.03354459041256075 S4 0.03354459041256075 S5 0.03354459041256075 S6 0.03354459041256075
+>> KAON MINUS BETA FTOF L2 MAX: S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+>> KAON MINUS BETA FTOF L2 MIN : S1 0.998635061351878 S2 0.998635061351878 S3 0.998635061351878 S4 0.998635061351878 S5 0.998635061351878 S6 0.998635061351878
+>> KAON MINUS BETA FTOF L2 MIN : S1 0.49368 S2 0.49368 S3 0.49368 S4 0.49368 S5 0.49368 S6 0.49368
+>> KAON MINUS BETA FTOF L2 MIN : S1 0.0 S2 0.0 S3 0.0 S4 0.0 S5 0.0 S6 0.0
+ >> PRINTING VERTEX CUTS 
+ >> VERTEX CUT SECTOR 1 [-8.0, 12.0]
+ >> VERTEX CUT SECTOR 2 [-8.0, 12.0]
+ >> VERTEX CUT SECTOR 3 [-8.0, 12.0]
+ >> VERTEX CUT SECTOR 4 [-10.0, 9.0]
+ >> VERTEX CUT SECTOR 5 [-7.0, 13.0]
+ >> VERTEX CUT SECTOR 6 [-7.0, 14.0]
+ >> LOADING CUT LIST 
+ >> [negative_charge, dcr1_fiducial, dcr2_fiducial, dcr3_fiducial, pcal_fiducial, ftof_hit, ecsf, htcc_nphe, min_mntm, min_pcal_energy, vz_pos]
+ >> [positive_charge]
+[SystemFonts] ---> set size = 25, available 3
+ >> 1
+ >> 2
+ >> 3
+ >> 4
+ >> 5
+ >> 6
+ >> 7
+ >> negative_charge
+ >> dcr1_fiducial
+ >> dcr2_fiducial
+ >> dcr3_fiducial
+ >> pcal_fiducial
+ >> ftof_hit
+ >> ecsf
+ >> htcc_nphe
+ >> min_mntm
+ >> min_pcal_energy
+ >> vz_pos
+ >> SIZE OF PERSONALIZED VECTOR 0
+ >> INITIALIZE CUTS FOR POSITION HADRON PARTICLES 
+ >> INIT MLE CUTS 
+ >> INITIALIZE CUTS FOR NEGATIVE HADRON PARTICLES 
+ >> INIT MLE CUTS 
+[31m>> BEGINNING LOOP OVER FILES NOW:[0m
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.0.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.0.hipo
+[READER] ---> open successful, size : 635758384
+  27996  56  0
+** reader-open ** records = 163, events = 14109, schemas = 117, time = 30 ms
+[DataSourceDump] --> opened file with events # 14109
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1410
+>> DATA_100 19.99% @ CURRENT EVENT 2820
+>> DATA_100 29.98% @ CURRENT EVENT 4230
+>> DATA_100 39.97% @ CURRENT EVENT 5640
+>> DATA_100 49.97% @ CURRENT EVENT 7050
+>> DATA_100 59.96% @ CURRENT EVENT 8460
+>> DATA_100 69.96% @ CURRENT EVENT 9870
+>> DATA_100 79.95% @ CURRENT EVENT 11280
+>> DATA_100 89.94% @ CURRENT EVENT 12690
+>> DATA_100 99.94% @ CURRENT EVENT 14100
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.1.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.1.hipo
+[READER] ---> open successful, size : 641889052
+  27996  56  0
+** reader-open ** records = 164, events = 14259, schemas = 117, time = 841 ms
+[DataSourceDump] --> opened file with events # 14259
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1425
+>> DATA_100 19.99% @ CURRENT EVENT 2850
+>> DATA_100 29.98% @ CURRENT EVENT 4275
+>> DATA_100 39.97% @ CURRENT EVENT 5700
+>> DATA_100 49.97% @ CURRENT EVENT 7125
+>> DATA_100 59.96% @ CURRENT EVENT 8550
+>> DATA_100 69.96% @ CURRENT EVENT 9975
+>> DATA_100 79.95% @ CURRENT EVENT 11400
+>> DATA_100 89.94% @ CURRENT EVENT 12825
+>> DATA_100 99.94% @ CURRENT EVENT 14250
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.2.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.2.hipo
+[READER] ---> open successful, size : 633123540
+  27996  56  0
+** reader-open ** records = 162, events = 13904, schemas = 117, time = 1326 ms
+[DataSourceDump] --> opened file with events # 13904
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1390
+>> DATA_100 19.99% @ CURRENT EVENT 2780
+>> DATA_100 29.99% @ CURRENT EVENT 4170
+>> DATA_100 39.99% @ CURRENT EVENT 5560
+>> DATA_100 49.99% @ CURRENT EVENT 6950
+>> DATA_100 59.98% @ CURRENT EVENT 8340
+>> DATA_100 69.98% @ CURRENT EVENT 9730
+>> DATA_100 79.98% @ CURRENT EVENT 11120
+>> DATA_100 89.97% @ CURRENT EVENT 12510
+>> DATA_100 99.97% @ CURRENT EVENT 13900
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.3.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.3.hipo
+[READER] ---> open successful, size : 634984584
+  27996  56  0
+** reader-open ** records = 163, events = 13894, schemas = 117, time = 704 ms
+[DataSourceDump] --> opened file with events # 13894
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1389
+>> DATA_100 19.99% @ CURRENT EVENT 2778
+>> DATA_100 29.99% @ CURRENT EVENT 4167
+>> DATA_100 39.99% @ CURRENT EVENT 5556
+>> DATA_100 49.99% @ CURRENT EVENT 6945
+>> DATA_100 59.98% @ CURRENT EVENT 8334
+>> DATA_100 69.98% @ CURRENT EVENT 9723
+>> DATA_100 79.98% @ CURRENT EVENT 11112
+>> DATA_100 89.97% @ CURRENT EVENT 12501
+>> DATA_100 99.97% @ CURRENT EVENT 13890
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.4.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.4.hipo
+[READER] ---> open successful, size : 639399484
+  27996  56  0
+** reader-open ** records = 164, events = 14105, schemas = 117, time = 677 ms
+[DataSourceDump] --> opened file with events # 14105
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1410
+>> DATA_100 19.99% @ CURRENT EVENT 2820
+>> DATA_100 29.99% @ CURRENT EVENT 4230
+>> DATA_100 39.99% @ CURRENT EVENT 5640
+>> DATA_100 49.98% @ CURRENT EVENT 7050
+>> DATA_100 59.98% @ CURRENT EVENT 8460
+>> DATA_100 69.98% @ CURRENT EVENT 9870
+>> DATA_100 79.97% @ CURRENT EVENT 11280
+>> DATA_100 89.97% @ CURRENT EVENT 12690
+>> DATA_100 99.96% @ CURRENT EVENT 14100
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.5.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.5.hipo
+[READER] ---> open successful, size : 638473940
+  27996  56  0
+** reader-open ** records = 164, events = 14034, schemas = 117, time = 688 ms
+[DataSourceDump] --> opened file with events # 14034
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1403
+>> DATA_100 19.99% @ CURRENT EVENT 2806
+>> DATA_100 29.99% @ CURRENT EVENT 4209
+>> DATA_100 39.99% @ CURRENT EVENT 5612
+>> DATA_100 49.99% @ CURRENT EVENT 7015
+>> DATA_100 59.98% @ CURRENT EVENT 8418
+>> DATA_100 69.98% @ CURRENT EVENT 9821
+>> DATA_100 79.98% @ CURRENT EVENT 11224
+>> DATA_100 89.97% @ CURRENT EVENT 12627
+>> DATA_100 99.97% @ CURRENT EVENT 14030
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.6.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.6.hipo
+[READER] ---> open successful, size : 644412692
+  27996  56  0
+** reader-open ** records = 165, events = 14264, schemas = 117, time = 814 ms
+[DataSourceDump] --> opened file with events # 14264
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1426
+>> DATA_100 19.99% @ CURRENT EVENT 2852
+>> DATA_100 29.99% @ CURRENT EVENT 4278
+>> DATA_100 39.99% @ CURRENT EVENT 5704
+>> DATA_100 49.99% @ CURRENT EVENT 7130
+ >> --------------------------------------------------------------------------  << 
+ >>                       PHI EVENT YEAH! 
+ >> WRITING TO TXT FILE 
+ >> 0 2 5 4
+ >> SETTING ELECTRON KINEMATICS 
+ >> SETTING PROTON KINEMATICS 
+ >> SETTING KP KINEMATICS 
+ >> SETTING KM KINEMATICS 
+ >> Q2 elements 10.6 -0.5243127942085266 0.6195563673973083 4.208889961242676
+>> t 2.428930567669902
+ >> FILLING PHYSICS EVENT HISTOGRAMS 
+ >> Q2 1.6439145145205103
+ >> xb 0.13875435310090753
+ >> -t 2.428930567669902
+ >> KP Mass 0.493679992749336
+ >> KM Mass 0.49368036300219925
+ >> FILLING HISTO 2D PHI MASS IS: 2.1329697948167285
+ >> PHI EVENT DETECTED 
+ >> FILLING PHI HISTO WITH 1.2969766918470467
+>> DATA_100 59.98% @ CURRENT EVENT 8556
+>> DATA_100 69.98% @ CURRENT EVENT 9982
+>> DATA_100 79.98% @ CURRENT EVENT 11408
+>> DATA_100 89.97% @ CURRENT EVENT 12834
+>> DATA_100 99.97% @ CURRENT EVENT 14260
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.7.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.7.hipo
+[READER] ---> open successful, size : 637148684
+  27996  56  0
+** reader-open ** records = 163, events = 14121, schemas = 117, time = 537 ms
+[DataSourceDump] --> opened file with events # 14121
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1412
+>> DATA_100 20% @ CURRENT EVENT 2824
+>> DATA_100 30% @ CURRENT EVENT 4236
+>> DATA_100 40% @ CURRENT EVENT 5648
+>> DATA_100 50% @ CURRENT EVENT 7060
+>> DATA_100 60% @ CURRENT EVENT 8472
+>> DATA_100 70% @ CURRENT EVENT 9884
+>> DATA_100 79.99% @ CURRENT EVENT 11296
+>> DATA_100 89.99% @ CURRENT EVENT 12708
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.8.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.8.hipo
+[READER] ---> open successful, size : 641118196
+  27996  56  0
+** reader-open ** records = 164, events = 14179, schemas = 117, time = 799 ms
+[DataSourceDump] --> opened file with events # 14179
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1417
+>> DATA_100 19.99% @ CURRENT EVENT 2834
+>> DATA_100 29.98% @ CURRENT EVENT 4251
+>> DATA_100 39.97% @ CURRENT EVENT 5668
+>> DATA_100 49.97% @ CURRENT EVENT 7085
+>> DATA_100 59.96% @ CURRENT EVENT 8502
+>> DATA_100 69.96% @ CURRENT EVENT 9919
+>> DATA_100 79.95% @ CURRENT EVENT 11336
+>> DATA_100 89.94% @ CURRENT EVENT 12753
+>> DATA_100 99.94% @ CURRENT EVENT 14170
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.9.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.9.hipo
+[READER] ---> open successful, size : 640889924
+  27996  56  0
+** reader-open ** records = 164, events = 14168, schemas = 117, time = 860 ms
+[DataSourceDump] --> opened file with events # 14168
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1416
+>> DATA_100 19.99% @ CURRENT EVENT 2832
+>> DATA_100 29.98% @ CURRENT EVENT 4248
+>> DATA_100 39.98% @ CURRENT EVENT 5664
+>> DATA_100 49.97% @ CURRENT EVENT 7080
+>> DATA_100 59.97% @ CURRENT EVENT 8496
+>> DATA_100 69.96% @ CURRENT EVENT 9912
+>> DATA_100 79.95% @ CURRENT EVENT 11328
+>> DATA_100 89.95% @ CURRENT EVENT 12744
+>> DATA_100 99.94% @ CURRENT EVENT 14160
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.10.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.10.hipo
+[READER] ---> open successful, size : 641599708
+  27996  56  0
+** reader-open ** records = 164, events = 14090, schemas = 117, time = 870 ms
+[DataSourceDump] --> opened file with events # 14090
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1409
+>> DATA_100 20% @ CURRENT EVENT 2818
+>> DATA_100 30% @ CURRENT EVENT 4227
+>> DATA_100 40% @ CURRENT EVENT 5636
+>> DATA_100 50% @ CURRENT EVENT 7045
+>> DATA_100 60% @ CURRENT EVENT 8454
+>> DATA_100 70% @ CURRENT EVENT 9863
+>> DATA_100 80% @ CURRENT EVENT 11272
+>> DATA_100 90% @ CURRENT EVENT 12681
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.11.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.11.hipo
+[READER] ---> open successful, size : 644126468
+  27996  56  0
+** reader-open ** records = 165, events = 14311, schemas = 117, time = 263 ms
+[DataSourceDump] --> opened file with events # 14311
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1431
+>> DATA_100 20% @ CURRENT EVENT 2862
+>> DATA_100 30% @ CURRENT EVENT 4293
+>> DATA_100 40% @ CURRENT EVENT 5724
+>> DATA_100 50% @ CURRENT EVENT 7155
+>> DATA_100 60% @ CURRENT EVENT 8586
+>> DATA_100 70% @ CURRENT EVENT 10017
+>> DATA_100 79.99% @ CURRENT EVENT 11448
+>> DATA_100 89.99% @ CURRENT EVENT 12879
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.12.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.12.hipo
+[READER] ---> open successful, size : 632698572
+  27996  56  0
+** reader-open ** records = 162, events = 13870, schemas = 117, time = 667 ms
+[DataSourceDump] --> opened file with events # 13870
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1387
+>> DATA_100 20% @ CURRENT EVENT 2774
+>> DATA_100 30% @ CURRENT EVENT 4161
+>> DATA_100 40% @ CURRENT EVENT 5548
+>> DATA_100 50% @ CURRENT EVENT 6935
+>> DATA_100 60% @ CURRENT EVENT 8322
+>> DATA_100 70% @ CURRENT EVENT 9709
+>> DATA_100 80% @ CURRENT EVENT 11096
+>> DATA_100 90% @ CURRENT EVENT 12483
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.13.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.13.hipo
+[READER] ---> open successful, size : 627422792
+  27996  56  0
+** reader-open ** records = 161, events = 13733, schemas = 117, time = 647 ms
+[DataSourceDump] --> opened file with events # 13733
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1373
+>> DATA_100 20% @ CURRENT EVENT 2746
+>> DATA_100 29.99% @ CURRENT EVENT 4119
+>> DATA_100 39.99% @ CURRENT EVENT 5492
+>> DATA_100 49.99% @ CURRENT EVENT 6865
+>> DATA_100 59.99% @ CURRENT EVENT 8238
+>> DATA_100 69.98% @ CURRENT EVENT 9611
+>> DATA_100 79.98% @ CURRENT EVENT 10984
+>> DATA_100 89.98% @ CURRENT EVENT 12357
+>> DATA_100 99.98% @ CURRENT EVENT 13730
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.14.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.14.hipo
+[READER] ---> open successful, size : 635946708
+  27996  56  0
+** reader-open ** records = 163, events = 14124, schemas = 117, time = 503 ms
+[DataSourceDump] --> opened file with events # 14124
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1412
+>> DATA_100 19.99% @ CURRENT EVENT 2824
+>> DATA_100 29.99% @ CURRENT EVENT 4236
+>> DATA_100 39.99% @ CURRENT EVENT 5648
+>> DATA_100 49.99% @ CURRENT EVENT 7060
+>> DATA_100 59.98% @ CURRENT EVENT 8472
+>> DATA_100 69.98% @ CURRENT EVENT 9884
+>> DATA_100 79.98% @ CURRENT EVENT 11296
+>> DATA_100 89.97% @ CURRENT EVENT 12708
+>> DATA_100 99.97% @ CURRENT EVENT 14120
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.15.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.15.hipo
+[READER] ---> open successful, size : 640336380
+  27996  56  0
+** reader-open ** records = 164, events = 14141, schemas = 117, time = 381 ms
+[DataSourceDump] --> opened file with events # 14141
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1414
+>> DATA_100 20% @ CURRENT EVENT 2828
+>> DATA_100 30% @ CURRENT EVENT 4242
+>> DATA_100 40% @ CURRENT EVENT 5656
+>> DATA_100 50% @ CURRENT EVENT 7070
+>> DATA_100 60% @ CURRENT EVENT 8484
+>> DATA_100 70% @ CURRENT EVENT 9898
+>> DATA_100 79.99% @ CURRENT EVENT 11312
+>> DATA_100 89.99% @ CURRENT EVENT 12726
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.16.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.16.hipo
+[READER] ---> open successful, size : 646223112
+  27996  56  0
+** reader-open ** records = 165, events = 14221, schemas = 117, time = 705 ms
+[DataSourceDump] --> opened file with events # 14221
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1422
+>> DATA_100 20% @ CURRENT EVENT 2844
+>> DATA_100 30% @ CURRENT EVENT 4266
+>> DATA_100 40% @ CURRENT EVENT 5688
+ >> --------------------------------------------------------------------------  << 
+ >>                       PHI EVENT YEAH! 
+ >> WRITING TO TXT FILE 
+ >> 0 1 3 2
+ >> SETTING ELECTRON KINEMATICS 
+ >> SETTING PROTON KINEMATICS 
+ >> SETTING KP KINEMATICS 
+ >> SETTING KM KINEMATICS 
+ >> Q2 elements 10.6 -0.48043394088745117 0.8729958534240723 5.108922958374023
+>> t 0.7576871298670435
+ >> FILLING PHYSICS EVENT HISTOGRAMS 
+ >> Q2 2.040921362926987
+ >> xb 0.20160092504039487
+ >> -t 0.7576871298670435
+ >> KP Mass 0.4936799638008318
+ >> KM Mass 0.4936801119101217
+ >> FILLING HISTO 2D PHI MASS IS: 1.6741111204667873
+ >> PHI EVENT DETECTED 
+ >> FILLING PHI HISTO WITH 1.3628388974940526
+>> DATA_100 50% @ CURRENT EVENT 7110
+>> DATA_100 60% @ CURRENT EVENT 8532
+>> DATA_100 70% @ CURRENT EVENT 9954
+>> DATA_100 79.99% @ CURRENT EVENT 11376
+>> DATA_100 89.99% @ CURRENT EVENT 12798
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.17.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.17.hipo
+[READER] ---> open successful, size : 635964352
+  27996  56  0
+** reader-open ** records = 163, events = 14112, schemas = 117, time = 1451 ms
+[DataSourceDump] --> opened file with events # 14112
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1411
+>> DATA_100 20% @ CURRENT EVENT 2822
+>> DATA_100 30% @ CURRENT EVENT 4233
+>> DATA_100 39.99% @ CURRENT EVENT 5644
+>> DATA_100 49.99% @ CURRENT EVENT 7055
+>> DATA_100 59.99% @ CURRENT EVENT 8466
+>> DATA_100 69.99% @ CURRENT EVENT 9877
+>> DATA_100 79.99% @ CURRENT EVENT 11288
+>> DATA_100 89.99% @ CURRENT EVENT 12699
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.18.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.18.hipo
+[READER] ---> open successful, size : 642441880
+  27996  56  0
+** reader-open ** records = 164, events = 14169, schemas = 117, time = 715 ms
+[DataSourceDump] --> opened file with events # 14169
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1416
+>> DATA_100 19.99% @ CURRENT EVENT 2832
+>> DATA_100 29.98% @ CURRENT EVENT 4248
+>> DATA_100 39.97% @ CURRENT EVENT 5664
+>> DATA_100 49.97% @ CURRENT EVENT 7080
+>> DATA_100 59.96% @ CURRENT EVENT 8496
+>> DATA_100 69.96% @ CURRENT EVENT 9912
+>> DATA_100 79.95% @ CURRENT EVENT 11328
+>> DATA_100 89.94% @ CURRENT EVENT 12744
+>> DATA_100 99.94% @ CURRENT EVENT 14160
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.19.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.19.hipo
+[READER] ---> open successful, size : 633919168
+  27996  56  0
+** reader-open ** records = 163, events = 13904, schemas = 117, time = 639 ms
+[DataSourceDump] --> opened file with events # 13904
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1390
+>> DATA_100 19.99% @ CURRENT EVENT 2780
+>> DATA_100 29.99% @ CURRENT EVENT 4170
+>> DATA_100 39.99% @ CURRENT EVENT 5560
+>> DATA_100 49.99% @ CURRENT EVENT 6950
+>> DATA_100 59.98% @ CURRENT EVENT 8340
+>> DATA_100 69.98% @ CURRENT EVENT 9730
+>> DATA_100 79.98% @ CURRENT EVENT 11120
+ >> --------------------------------------------------------------------------  << 
+ >>                       PHI EVENT YEAH! 
+ >> WRITING TO TXT FILE 
+ >> 0 3 1 2
+ >> SETTING ELECTRON KINEMATICS 
+ >> SETTING PROTON KINEMATICS 
+ >> SETTING KP KINEMATICS 
+ >> SETTING KM KINEMATICS 
+ >> Q2 elements 10.6 -0.35989853739738464 -0.8500339388847351 5.498361587524414
+>> t 1.2752308084196013
+ >> FILLING PHYSICS EVENT HISTOGRAMS 
+ >> Q2 1.6312743620073498
+ >> xb 0.1730054485646359
+ >> -t 1.2752308084196013
+ >> KP Mass 0.493680156228062
+ >> KM Mass 0.49367999264222834
+ >> FILLING HISTO 2D PHI MASS IS: 1.8540300614937877
+ >> PHI EVENT DETECTED 
+ >> FILLING PHI HISTO WITH 1.2718113472322665
+>> DATA_100 89.97% @ CURRENT EVENT 12510
+>> DATA_100 99.97% @ CURRENT EVENT 13900
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.20.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.20.hipo
+[READER] ---> open successful, size : 645738972
+  27996  56  0
+** reader-open ** records = 165, events = 14142, schemas = 117, time = 443 ms
+[DataSourceDump] --> opened file with events # 14142
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1414
+>> DATA_100 20% @ CURRENT EVENT 2828
+>> DATA_100 30% @ CURRENT EVENT 4242
+>> DATA_100 39.99% @ CURRENT EVENT 5656
+>> DATA_100 49.99% @ CURRENT EVENT 7070
+>> DATA_100 59.99% @ CURRENT EVENT 8484
+>> DATA_100 69.99% @ CURRENT EVENT 9898
+>> DATA_100 79.99% @ CURRENT EVENT 11312
+>> DATA_100 89.99% @ CURRENT EVENT 12726
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.21.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.21.hipo
+[READER] ---> open successful, size : 637591132
+  27996  56  0
+** reader-open ** records = 163, events = 14083, schemas = 117, time = 605 ms
+[DataSourceDump] --> opened file with events # 14083
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1408
+>> DATA_100 20% @ CURRENT EVENT 2816
+>> DATA_100 29.99% @ CURRENT EVENT 4224
+>> DATA_100 39.99% @ CURRENT EVENT 5632
+>> DATA_100 49.99% @ CURRENT EVENT 7040
+>> DATA_100 59.99% @ CURRENT EVENT 8448
+>> DATA_100 69.99% @ CURRENT EVENT 9856
+>> DATA_100 79.98% @ CURRENT EVENT 11264
+>> DATA_100 89.98% @ CURRENT EVENT 12672
+>> DATA_100 99.98% @ CURRENT EVENT 14080
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.22.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.22.hipo
+[READER] ---> open successful, size : 645589388
+  27996  56  0
+** reader-open ** records = 165, events = 14329, schemas = 117, time = 714 ms
+[DataSourceDump] --> opened file with events # 14329
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1432
+>> DATA_100 19.99% @ CURRENT EVENT 2864
+>> DATA_100 29.98% @ CURRENT EVENT 4296
+ >> --------------------------------------------------------------------------  << 
+ >>                       PHI EVENT YEAH! 
+ >> WRITING TO TXT FILE 
+ >> 0 3 2 1
+ >> SETTING ELECTRON KINEMATICS 
+ >> SETTING PROTON KINEMATICS 
+ >> SETTING KP KINEMATICS 
+ >> SETTING KM KINEMATICS 
+ >> Q2 elements 10.6 -0.38609641790390015 -1.0622923374176025 4.3121161460876465
+>> t 4.308640612677129
+ >> FILLING PHYSICS EVENT HISTOGRAMS 
+ >> Q2 3.088258807613144
+ >> xb 0.2679360236163395
+ >> -t 4.308640612677129
+ >> KP Mass 0.4936800294424254
+ >> KM Mass 0.49367999252247274
+ >> FILLING HISTO 2D PHI MASS IS: 1.9479655219380176
+ >> PHI EVENT DETECTED 
+ >> FILLING PHI HISTO WITH 1.2581796014663496
+>> DATA_100 39.97% @ CURRENT EVENT 5728
+>> DATA_100 49.97% @ CURRENT EVENT 7160
+>> DATA_100 59.96% @ CURRENT EVENT 8592
+>> DATA_100 69.96% @ CURRENT EVENT 10024
+>> DATA_100 79.95% @ CURRENT EVENT 11456
+>> DATA_100 89.94% @ CURRENT EVENT 12888
+>> DATA_100 99.94% @ CURRENT EVENT 14320
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.23.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.23.hipo
+[READER] ---> open successful, size : 636727800
+  27996  56  0
+** reader-open ** records = 163, events = 14120, schemas = 117, time = 956 ms
+[DataSourceDump] --> opened file with events # 14120
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1412
+>> DATA_100 20% @ CURRENT EVENT 2824
+>> DATA_100 30% @ CURRENT EVENT 4236
+>> DATA_100 40% @ CURRENT EVENT 5648
+>> DATA_100 50% @ CURRENT EVENT 7060
+>> DATA_100 60% @ CURRENT EVENT 8472
+>> DATA_100 70% @ CURRENT EVENT 9884
+>> DATA_100 80% @ CURRENT EVENT 11296
+>> DATA_100 90% @ CURRENT EVENT 12708
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.24.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.24.hipo
+[READER] ---> open successful, size : 640707596
+  27996  56  0
+** reader-open ** records = 164, events = 14123, schemas = 117, time = 661 ms
+[DataSourceDump] --> opened file with events # 14123
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1412
+>> DATA_100 20% @ CURRENT EVENT 2824
+>> DATA_100 29.99% @ CURRENT EVENT 4236
+>> DATA_100 39.99% @ CURRENT EVENT 5648
+>> DATA_100 49.99% @ CURRENT EVENT 7060
+>> DATA_100 59.99% @ CURRENT EVENT 8472
+>> DATA_100 69.99% @ CURRENT EVENT 9884
+>> DATA_100 79.98% @ CURRENT EVENT 11296
+>> DATA_100 89.98% @ CURRENT EVENT 12708
+>> DATA_100 99.98% @ CURRENT EVENT 14120
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.25.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.26.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.27.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.28.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.29.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.30.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.31.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.32.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.33.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.34.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.35.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.36.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.37.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.38.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.39.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.40.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.41.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.42.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.43.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.44.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.45.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.46.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.47.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.48.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.49.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.50.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.51.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.51.hipo
+[READER] ---> open successful, size : 640617132
+  27996  56  0
+** reader-open ** records = 164, events = 14161, schemas = 117, time = 651 ms
+[DataSourceDump] --> opened file with events # 14161
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1416
+>> DATA_100 20% @ CURRENT EVENT 2832
+>> DATA_100 30% @ CURRENT EVENT 4248
+>> DATA_100 40% @ CURRENT EVENT 5664
+>> DATA_100 50% @ CURRENT EVENT 7080
+>> DATA_100 60% @ CURRENT EVENT 8496
+>> DATA_100 70% @ CURRENT EVENT 9912
+>> DATA_100 79.99% @ CURRENT EVENT 11328
+>> DATA_100 89.99% @ CURRENT EVENT 12744
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.52.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.52.hipo
+[READER] ---> open successful, size : 639897108
+  27996  56  0
+** reader-open ** records = 164, events = 14076, schemas = 117, time = 554 ms
+[DataSourceDump] --> opened file with events # 14076
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1407
+>> DATA_100 19.99% @ CURRENT EVENT 2814
+>> DATA_100 29.99% @ CURRENT EVENT 4221
+>> DATA_100 39.98% @ CURRENT EVENT 5628
+>> DATA_100 49.98% @ CURRENT EVENT 7035
+>> DATA_100 59.97% @ CURRENT EVENT 8442
+>> DATA_100 69.97% @ CURRENT EVENT 9849
+>> DATA_100 79.97% @ CURRENT EVENT 11256
+>> DATA_100 89.96% @ CURRENT EVENT 12663
+>> DATA_100 99.96% @ CURRENT EVENT 14070
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.53.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.53.hipo
+[READER] ---> open successful, size : 636899692
+  27996  56  0
+** reader-open ** records = 163, events = 14036, schemas = 117, time = 770 ms
+[DataSourceDump] --> opened file with events # 14036
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1403
+>> DATA_100 19.99% @ CURRENT EVENT 2806
+>> DATA_100 29.99% @ CURRENT EVENT 4209
+>> DATA_100 39.98% @ CURRENT EVENT 5612
+>> DATA_100 49.98% @ CURRENT EVENT 7015
+>> DATA_100 59.97% @ CURRENT EVENT 8418
+>> DATA_100 69.97% @ CURRENT EVENT 9821
+>> DATA_100 79.97% @ CURRENT EVENT 11224
+>> DATA_100 89.96% @ CURRENT EVENT 12627
+>> DATA_100 99.96% @ CURRENT EVENT 14030
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.54.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.54.hipo
+[READER] ---> open successful, size : 645459832
+  27996  56  0
+** reader-open ** records = 165, events = 14245, schemas = 117, time = 940 ms
+[DataSourceDump] --> opened file with events # 14245
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1424
+>> DATA_100 19.99% @ CURRENT EVENT 2848
+>> DATA_100 29.99% @ CURRENT EVENT 4272
+>> DATA_100 39.99% @ CURRENT EVENT 5696
+>> DATA_100 49.98% @ CURRENT EVENT 7120
+>> DATA_100 59.98% @ CURRENT EVENT 8544
+>> DATA_100 69.98% @ CURRENT EVENT 9968
+>> DATA_100 79.97% @ CURRENT EVENT 11392
+>> DATA_100 89.97% @ CURRENT EVENT 12816
+>> DATA_100 99.96% @ CURRENT EVENT 14240
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.55.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.55.hipo
+[READER] ---> open successful, size : 635173528
+  27996  56  0
+** reader-open ** records = 163, events = 14063, schemas = 117, time = 526 ms
+[DataSourceDump] --> opened file with events # 14063
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1406
+>> DATA_100 20% @ CURRENT EVENT 2812
+>> DATA_100 29.99% @ CURRENT EVENT 4218
+>> DATA_100 39.99% @ CURRENT EVENT 5624
+>> DATA_100 49.99% @ CURRENT EVENT 7030
+>> DATA_100 59.99% @ CURRENT EVENT 8436
+>> DATA_100 69.99% @ CURRENT EVENT 9842
+>> DATA_100 79.98% @ CURRENT EVENT 11248
+>> DATA_100 89.98% @ CURRENT EVENT 12654
+>> DATA_100 99.98% @ CURRENT EVENT 14060
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.56.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.56.hipo
+[READER] ---> open successful, size : 640045880
+  27996  56  0
+** reader-open ** records = 164, events = 14160, schemas = 117, time = 660 ms
+[DataSourceDump] --> opened file with events # 14160
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1416
+>> DATA_100 20% @ CURRENT EVENT 2832
+>> DATA_100 30% @ CURRENT EVENT 4248
+>> DATA_100 40% @ CURRENT EVENT 5664
+>> DATA_100 50% @ CURRENT EVENT 7080
+>> DATA_100 60% @ CURRENT EVENT 8496
+>> DATA_100 70% @ CURRENT EVENT 9912
+>> DATA_100 80% @ CURRENT EVENT 11328
+>> DATA_100 90% @ CURRENT EVENT 12744
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.57.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.57.hipo
+[READER] ---> open successful, size : 644227520
+  27996  56  0
+** reader-open ** records = 165, events = 14185, schemas = 117, time = 875 ms
+[DataSourceDump] --> opened file with events # 14185
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1418
+>> DATA_100 19.99% @ CURRENT EVENT 2836
+>> DATA_100 29.99% @ CURRENT EVENT 4254
+>> DATA_100 39.99% @ CURRENT EVENT 5672
+>> DATA_100 49.98% @ CURRENT EVENT 7090
+>> DATA_100 59.98% @ CURRENT EVENT 8508
+>> DATA_100 69.98% @ CURRENT EVENT 9926
+>> DATA_100 79.97% @ CURRENT EVENT 11344
+>> DATA_100 89.97% @ CURRENT EVENT 12762
+>> DATA_100 99.96% @ CURRENT EVENT 14180
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.58.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.58.hipo
+[READER] ---> open successful, size : 643777176
+  27996  56  0
+** reader-open ** records = 165, events = 14283, schemas = 117, time = 744 ms
+[DataSourceDump] --> opened file with events # 14283
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1428
+>> DATA_100 20% @ CURRENT EVENT 2856
+>> DATA_100 29.99% @ CURRENT EVENT 4284
+>> DATA_100 39.99% @ CURRENT EVENT 5712
+>> DATA_100 49.99% @ CURRENT EVENT 7140
+>> DATA_100 59.99% @ CURRENT EVENT 8568
+>> DATA_100 69.99% @ CURRENT EVENT 9996
+>> DATA_100 79.98% @ CURRENT EVENT 11424
+>> DATA_100 89.98% @ CURRENT EVENT 12852
+>> DATA_100 99.98% @ CURRENT EVENT 14280
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.59.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.59.hipo
+[READER] ---> open successful, size : 634368072
+  27996  56  0
+** reader-open ** records = 162, events = 14029, schemas = 117, time = 573 ms
+[DataSourceDump] --> opened file with events # 14029
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1402
+>> DATA_100 19.99% @ CURRENT EVENT 2804
+>> DATA_100 29.98% @ CURRENT EVENT 4206
+>> DATA_100 39.97% @ CURRENT EVENT 5608
+>> DATA_100 49.97% @ CURRENT EVENT 7010
+>> DATA_100 59.96% @ CURRENT EVENT 8412
+>> DATA_100 69.96% @ CURRENT EVENT 9814
+>> DATA_100 79.95% @ CURRENT EVENT 11216
+>> DATA_100 89.94% @ CURRENT EVENT 12618
+>> DATA_100 99.94% @ CURRENT EVENT 14020
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.60.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.60.hipo
+[READER] ---> open successful, size : 635080704
+  27996  56  0
+** reader-open ** records = 163, events = 14006, schemas = 117, time = 878 ms
+[DataSourceDump] --> opened file with events # 14006
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1400
+>> DATA_100 19.99% @ CURRENT EVENT 2800
+>> DATA_100 29.99% @ CURRENT EVENT 4200
+>> DATA_100 39.98% @ CURRENT EVENT 5600
+>> DATA_100 49.98% @ CURRENT EVENT 7000
+>> DATA_100 59.97% @ CURRENT EVENT 8400
+>> DATA_100 69.97% @ CURRENT EVENT 9800
+>> DATA_100 79.97% @ CURRENT EVENT 11200
+>> DATA_100 89.96% @ CURRENT EVENT 12600
+>> DATA_100 99.96% @ CURRENT EVENT 14000
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.61.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.61.hipo
+[READER] ---> open successful, size : 635675928
+  27996  56  0
+** reader-open ** records = 163, events = 14026, schemas = 117, time = 569 ms
+[DataSourceDump] --> opened file with events # 14026
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1402
+>> DATA_100 19.99% @ CURRENT EVENT 2804
+>> DATA_100 29.99% @ CURRENT EVENT 4206
+>> DATA_100 39.98% @ CURRENT EVENT 5608
+>> DATA_100 49.98% @ CURRENT EVENT 7010
+>> DATA_100 59.97% @ CURRENT EVENT 8412
+>> DATA_100 69.97% @ CURRENT EVENT 9814
+>> DATA_100 79.97% @ CURRENT EVENT 11216
+>> DATA_100 89.96% @ CURRENT EVENT 12618
+>> DATA_100 99.96% @ CURRENT EVENT 14020
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.62.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.62.hipo
+[READER] ---> open successful, size : 638070380
+  27996  56  0
+** reader-open ** records = 164, events = 14077, schemas = 117, time = 581 ms
+[DataSourceDump] --> opened file with events # 14077
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1407
+>> DATA_100 19.99% @ CURRENT EVENT 2814
+>> DATA_100 29.99% @ CURRENT EVENT 4221
+>> DATA_100 39.98% @ CURRENT EVENT 5628
+>> DATA_100 49.98% @ CURRENT EVENT 7035
+>> DATA_100 59.97% @ CURRENT EVENT 8442
+>> DATA_100 69.97% @ CURRENT EVENT 9849
+>> DATA_100 79.96% @ CURRENT EVENT 11256
+>> DATA_100 89.96% @ CURRENT EVENT 12663
+>> DATA_100 99.95% @ CURRENT EVENT 14070
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.63.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.63.hipo
+[READER] ---> open successful, size : 636682064
+  27996  56  0
+** reader-open ** records = 163, events = 14094, schemas = 117, time = 768 ms
+[DataSourceDump] --> opened file with events # 14094
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1409
+>> DATA_100 19.99% @ CURRENT EVENT 2818
+>> DATA_100 29.99% @ CURRENT EVENT 4227
+>> DATA_100 39.99% @ CURRENT EVENT 5636
+>> DATA_100 49.99% @ CURRENT EVENT 7045
+>> DATA_100 59.98% @ CURRENT EVENT 8454
+>> DATA_100 69.98% @ CURRENT EVENT 9863
+>> DATA_100 79.98% @ CURRENT EVENT 11272
+>> DATA_100 89.97% @ CURRENT EVENT 12681
+>> DATA_100 99.97% @ CURRENT EVENT 14090
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.64.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.64.hipo
+[READER] ---> open successful, size : 639685364
+  27996  56  0
+** reader-open ** records = 164, events = 14101, schemas = 117, time = 747 ms
+[DataSourceDump] --> opened file with events # 14101
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1410
+>> DATA_100 20% @ CURRENT EVENT 2820
+>> DATA_100 30% @ CURRENT EVENT 4230
+>> DATA_100 40% @ CURRENT EVENT 5640
+>> DATA_100 50% @ CURRENT EVENT 7050
+>> DATA_100 60% @ CURRENT EVENT 8460
+>> DATA_100 70% @ CURRENT EVENT 9870
+>> DATA_100 79.99% @ CURRENT EVENT 11280
+>> DATA_100 89.99% @ CURRENT EVENT 12690
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.65.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.65.hipo
+[READER] ---> open successful, size : 648231832
+  27996  56  0
+** reader-open ** records = 166, events = 14245, schemas = 117, time = 887 ms
+[DataSourceDump] --> opened file with events # 14245
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1424
+>> DATA_100 19.99% @ CURRENT EVENT 2848
+>> DATA_100 29.99% @ CURRENT EVENT 4272
+>> DATA_100 39.99% @ CURRENT EVENT 5696
+>> DATA_100 49.98% @ CURRENT EVENT 7120
+>> DATA_100 59.98% @ CURRENT EVENT 8544
+>> DATA_100 69.98% @ CURRENT EVENT 9968
+>> DATA_100 79.97% @ CURRENT EVENT 11392
+>> DATA_100 89.97% @ CURRENT EVENT 12816
+>> DATA_100 99.96% @ CURRENT EVENT 14240
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.66.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.66.hipo
+[READER] ---> open successful, size : 639338328
+  27996  56  0
+** reader-open ** records = 164, events = 14117, schemas = 117, time = 638 ms
+[DataSourceDump] --> opened file with events # 14117
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1411
+>> DATA_100 19.99% @ CURRENT EVENT 2822
+>> DATA_100 29.99% @ CURRENT EVENT 4233
+>> DATA_100 39.98% @ CURRENT EVENT 5644
+>> DATA_100 49.98% @ CURRENT EVENT 7055
+>> DATA_100 59.97% @ CURRENT EVENT 8466
+>> DATA_100 69.97% @ CURRENT EVENT 9877
+>> DATA_100 79.96% @ CURRENT EVENT 11288
+>> DATA_100 89.96% @ CURRENT EVENT 12699
+>> DATA_100 99.95% @ CURRENT EVENT 14110
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.67.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.67.hipo
+[READER] ---> open successful, size : 627217076
+  27996  56  0
+** reader-open ** records = 161, events = 13837, schemas = 117, time = 594 ms
+[DataSourceDump] --> opened file with events # 13837
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1383
+>> DATA_100 19.99% @ CURRENT EVENT 2766
+>> DATA_100 29.98% @ CURRENT EVENT 4149
+>> DATA_100 39.98% @ CURRENT EVENT 5532
+>> DATA_100 49.97% @ CURRENT EVENT 6915
+>> DATA_100 59.97% @ CURRENT EVENT 8298
+>> DATA_100 69.96% @ CURRENT EVENT 9681
+>> DATA_100 79.96% @ CURRENT EVENT 11064
+>> DATA_100 89.95% @ CURRENT EVENT 12447
+>> DATA_100 99.95% @ CURRENT EVENT 13830
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.68.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.68.hipo
+[READER] ---> open successful, size : 638484904
+  27996  56  0
+** reader-open ** records = 164, events = 14084, schemas = 117, time = 680 ms
+[DataSourceDump] --> opened file with events # 14084
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1408
+>> DATA_100 19.99% @ CURRENT EVENT 2816
+>> DATA_100 29.99% @ CURRENT EVENT 4224
+>> DATA_100 39.99% @ CURRENT EVENT 5632
+>> DATA_100 49.99% @ CURRENT EVENT 7040
+>> DATA_100 59.98% @ CURRENT EVENT 8448
+>> DATA_100 69.98% @ CURRENT EVENT 9856
+>> DATA_100 79.98% @ CURRENT EVENT 11264
+>> DATA_100 89.97% @ CURRENT EVENT 12672
+>> DATA_100 99.97% @ CURRENT EVENT 14080
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.69.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.69.hipo
+[READER] ---> open successful, size : 644260940
+  27996  56  0
+** reader-open ** records = 165, events = 14192, schemas = 117, time = 984 ms
+[DataSourceDump] --> opened file with events # 14192
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1419
+>> DATA_100 20% @ CURRENT EVENT 2838
+>> DATA_100 30% @ CURRENT EVENT 4257
+>> DATA_100 39.99% @ CURRENT EVENT 5676
+>> DATA_100 49.99% @ CURRENT EVENT 7095
+>> DATA_100 59.99% @ CURRENT EVENT 8514
+>> DATA_100 69.99% @ CURRENT EVENT 9933
+>> DATA_100 79.99% @ CURRENT EVENT 11352
+>> DATA_100 89.99% @ CURRENT EVENT 12771
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.70.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.70.hipo
+[READER] ---> open successful, size : 637041856
+  27996  56  0
+** reader-open ** records = 163, events = 14079, schemas = 117, time = 549 ms
+[DataSourceDump] --> opened file with events # 14079
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1407
+>> DATA_100 19.99% @ CURRENT EVENT 2814
+>> DATA_100 29.98% @ CURRENT EVENT 4221
+>> DATA_100 39.97% @ CURRENT EVENT 5628
+>> DATA_100 49.97% @ CURRENT EVENT 7035
+>> DATA_100 59.96% @ CURRENT EVENT 8442
+>> DATA_100 69.96% @ CURRENT EVENT 9849
+>> DATA_100 79.95% @ CURRENT EVENT 11256
+>> DATA_100 89.94% @ CURRENT EVENT 12663
+>> DATA_100 99.94% @ CURRENT EVENT 14070
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.71.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.71.hipo
+[READER] ---> open successful, size : 636983180
+  27996  56  0
+** reader-open ** records = 163, events = 14129, schemas = 117, time = 791 ms
+[DataSourceDump] --> opened file with events # 14129
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1412
+>> DATA_100 19.99% @ CURRENT EVENT 2824
+>> DATA_100 29.98% @ CURRENT EVENT 4236
+>> DATA_100 39.97% @ CURRENT EVENT 5648
+>> DATA_100 49.97% @ CURRENT EVENT 7060
+>> DATA_100 59.96% @ CURRENT EVENT 8472
+>> DATA_100 69.96% @ CURRENT EVENT 9884
+>> DATA_100 79.95% @ CURRENT EVENT 11296
+>> DATA_100 89.94% @ CURRENT EVENT 12708
+>> DATA_100 99.94% @ CURRENT EVENT 14120
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.72.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.72.hipo
+[READER] ---> open successful, size : 635300196
+  27996  56  0
+** reader-open ** records = 163, events = 13992, schemas = 117, time = 697 ms
+[DataSourceDump] --> opened file with events # 13992
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1399
+>> DATA_100 20% @ CURRENT EVENT 2798
+>> DATA_100 30% @ CURRENT EVENT 4197
+>> DATA_100 39.99% @ CURRENT EVENT 5596
+>> DATA_100 49.99% @ CURRENT EVENT 6995
+>> DATA_100 59.99% @ CURRENT EVENT 8394
+>> DATA_100 69.99% @ CURRENT EVENT 9793
+>> DATA_100 79.99% @ CURRENT EVENT 11192
+>> DATA_100 89.99% @ CURRENT EVENT 12591
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.73.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.73.hipo
+[READER] ---> open successful, size : 640807860
+  27996  56  0
+** reader-open ** records = 164, events = 14187, schemas = 117, time = 475 ms
+[DataSourceDump] --> opened file with events # 14187
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1418
+>> DATA_100 19.99% @ CURRENT EVENT 2836
+>> DATA_100 29.99% @ CURRENT EVENT 4254
+>> DATA_100 39.98% @ CURRENT EVENT 5672
+>> DATA_100 49.98% @ CURRENT EVENT 7090
+>> DATA_100 59.97% @ CURRENT EVENT 8508
+>> DATA_100 69.97% @ CURRENT EVENT 9926
+>> DATA_100 79.96% @ CURRENT EVENT 11344
+>> DATA_100 89.96% @ CURRENT EVENT 12762
+>> DATA_100 99.95% @ CURRENT EVENT 14180
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.74.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.75.hipo
+File DOES NOT Exists
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.76.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.76.hipo
+[READER] ---> open successful, size : 632326780
+  27996  56  0
+** reader-open ** records = 162, events = 14000, schemas = 117, time = 825 ms
+[DataSourceDump] --> opened file with events # 14000
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1400
+>> DATA_100 20% @ CURRENT EVENT 2800
+>> DATA_100 30% @ CURRENT EVENT 4200
+>> DATA_100 40% @ CURRENT EVENT 5600
+>> DATA_100 50% @ CURRENT EVENT 7000
+>> DATA_100 60% @ CURRENT EVENT 8400
+>> DATA_100 70% @ CURRENT EVENT 9800
+>> DATA_100 80% @ CURRENT EVENT 11200
+>> DATA_100 90% @ CURRENT EVENT 12600
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.77.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.77.hipo
+[READER] ---> open successful, size : 640714936
+  27996  56  0
+** reader-open ** records = 164, events = 14159, schemas = 117, time = 771 ms
+[DataSourceDump] --> opened file with events # 14159
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 9.99% @ CURRENT EVENT 1415
+>> DATA_100 19.99% @ CURRENT EVENT 2830
+>> DATA_100 29.98% @ CURRENT EVENT 4245
+>> DATA_100 39.97% @ CURRENT EVENT 5660
+>> DATA_100 49.97% @ CURRENT EVENT 7075
+>> DATA_100 59.96% @ CURRENT EVENT 8490
+>> DATA_100 69.96% @ CURRENT EVENT 9905
+>> DATA_100 79.95% @ CURRENT EVENT 11320
+>> DATA_100 89.94% @ CURRENT EVENT 12735
+>> DATA_100 99.94% @ CURRENT EVENT 14150
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.78.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.78.hipo
+[READER] ---> open successful, size : 642423252
+  27996  56  0
+** reader-open ** records = 165, events = 14150, schemas = 117, time = 800 ms
+[DataSourceDump] --> opened file with events # 14150
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1415
+>> DATA_100 20% @ CURRENT EVENT 2830
+>> DATA_100 30% @ CURRENT EVENT 4245
+>> DATA_100 40% @ CURRENT EVENT 5660
+>> DATA_100 50% @ CURRENT EVENT 7075
+>> DATA_100 60% @ CURRENT EVENT 8490
+>> DATA_100 70% @ CURRENT EVENT 9905
+>> DATA_100 80% @ CURRENT EVENT 11320
+>> DATA_100 90% @ CURRENT EVENT 12735
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.79.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.79.hipo
+[READER] ---> open successful, size : 633250964
+  27996  56  0
+** reader-open ** records = 162, events = 14060, schemas = 117, time = 670 ms
+[DataSourceDump] --> opened file with events # 14060
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1406
+>> DATA_100 20% @ CURRENT EVENT 2812
+>> DATA_100 30% @ CURRENT EVENT 4218
+>> DATA_100 40% @ CURRENT EVENT 5624
+>> DATA_100 50% @ CURRENT EVENT 7030
+>> DATA_100 60% @ CURRENT EVENT 8436
+>> DATA_100 70% @ CURRENT EVENT 9842
+>> DATA_100 80% @ CURRENT EVENT 11248
+>> DATA_100 90% @ CURRENT EVENT 12654
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.80.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.80.hipo
+[READER] ---> open successful, size : 641076644
+  27996  56  0
+** reader-open ** records = 164, events = 14123, schemas = 117, time = 971 ms
+[DataSourceDump] --> opened file with events # 14123
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1412
+>> DATA_100 20% @ CURRENT EVENT 2824
+>> DATA_100 29.99% @ CURRENT EVENT 4236
+>> DATA_100 39.99% @ CURRENT EVENT 5648
+>> DATA_100 49.99% @ CURRENT EVENT 7060
+>> DATA_100 59.99% @ CURRENT EVENT 8472
+>> DATA_100 69.99% @ CURRENT EVENT 9884
+>> DATA_100 79.98% @ CURRENT EVENT 11296
+>> DATA_100 89.98% @ CURRENT EVENT 12708
+>> DATA_100 99.98% @ CURRENT EVENT 14120
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.81.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.81.hipo
+[READER] ---> open successful, size : 641739076
+  27996  56  0
+** reader-open ** records = 165, events = 14203, schemas = 117, time = 784 ms
+[DataSourceDump] --> opened file with events # 14203
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1420
+>> DATA_100 20% @ CURRENT EVENT 2840
+>> DATA_100 29.99% @ CURRENT EVENT 4260
+>> DATA_100 39.99% @ CURRENT EVENT 5680
+>> DATA_100 49.99% @ CURRENT EVENT 7100
+>> DATA_100 59.99% @ CURRENT EVENT 8520
+>> DATA_100 69.99% @ CURRENT EVENT 9940
+>> DATA_100 79.98% @ CURRENT EVENT 11360
+>> DATA_100 89.98% @ CURRENT EVENT 12780
+>> DATA_100 99.98% @ CURRENT EVENT 14200
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.82.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.82.hipo
+[READER] ---> open successful, size : 650436424
+  27996  56  0
+** reader-open ** records = 166, events = 14495, schemas = 117, time = 944 ms
+[DataSourceDump] --> opened file with events # 14495
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1449
+>> DATA_100 19.99% @ CURRENT EVENT 2898
+>> DATA_100 29.99% @ CURRENT EVENT 4347
+>> DATA_100 39.99% @ CURRENT EVENT 5796
+>> DATA_100 49.98% @ CURRENT EVENT 7245
+>> DATA_100 59.98% @ CURRENT EVENT 8694
+>> DATA_100 69.98% @ CURRENT EVENT 10143
+>> DATA_100 79.97% @ CURRENT EVENT 11592
+>> DATA_100 89.97% @ CURRENT EVENT 13041
+>> DATA_100 99.97% @ CURRENT EVENT 14490
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.83.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.83.hipo
+[READER] ---> open successful, size : 627348832
+  27996  56  0
+** reader-open ** records = 161, events = 13821, schemas = 117, time = 919 ms
+[DataSourceDump] --> opened file with events # 13821
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1382
+>> DATA_100 20% @ CURRENT EVENT 2764
+>> DATA_100 30% @ CURRENT EVENT 4146
+>> DATA_100 40% @ CURRENT EVENT 5528
+>> DATA_100 50% @ CURRENT EVENT 6910
+>> DATA_100 60% @ CURRENT EVENT 8292
+>> DATA_100 69.99% @ CURRENT EVENT 9674
+ >> --------------------------------------------------------------------------  << 
+ >>                       PHI EVENT YEAH! 
+ >> WRITING TO TXT FILE 
+ >> 0 3 1 2
+ >> SETTING ELECTRON KINEMATICS 
+ >> SETTING PROTON KINEMATICS 
+ >> SETTING KP KINEMATICS 
+ >> SETTING KM KINEMATICS 
+ >> Q2 elements 10.6 -0.0906476080417633 -0.6001291871070862 1.8725515604019165
+>> t 0.44905637367624074
+ >> FILLING PHYSICS EVENT HISTOGRAMS 
+ >> Q2 2.0331881387254214
+ >> xb 0.1255253053550236
+ >> -t 0.44905637367624074
+ >> KP Mass 0.49367992536567956
+ >> KM Mass 0.4936800061784485
+ >> FILLING HISTO 2D PHI MASS IS: 2.1730876083584247
+ >> PHI EVENT DETECTED 
+ >> FILLING PHI HISTO WITH 1.1194885772129013
+>> DATA_100 79.99% @ CURRENT EVENT 11056
+>> DATA_100 89.99% @ CURRENT EVENT 12438
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.84.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.84.hipo
+[READER] ---> open successful, size : 640631012
+  27996  56  0
+** reader-open ** records = 164, events = 14201, schemas = 117, time = 645 ms
+[DataSourceDump] --> opened file with events # 14201
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1420
+>> DATA_100 20% @ CURRENT EVENT 2840
+>> DATA_100 30% @ CURRENT EVENT 4260
+>> DATA_100 40% @ CURRENT EVENT 5680
+>> DATA_100 50% @ CURRENT EVENT 7100
+>> DATA_100 60% @ CURRENT EVENT 8520
+>> DATA_100 70% @ CURRENT EVENT 9940
+>> DATA_100 79.99% @ CURRENT EVENT 11360
+>> DATA_100 89.99% @ CURRENT EVENT 12780
+ >> FILE TO ANALYZE /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.85.hipo
+File Exists
+[READER] ----> opening current file : /run/media/sdiehl/easystore1/brandon/skim_clas_004013.evio.85.hipo
+[READER] ---> open successful, size : 638276292
+  27996  56  0
+** reader-open ** records = 164, events = 14064, schemas = 117, time = 766 ms
+[DataSourceDump] --> opened file with events # 14064
+[34m>> BEGINNING EVENT LOOP NOW:[0m
+>> DATA_100 0% @ CURRENT EVENT 0
+>> DATA_100 10% @ CURRENT EVENT 1406
+>> DATA_100 19.99% @ CURRENT EVENT 2812
+>> DATA_100 29.99% @ CURRENT EVENT 4218
+>> DATA_100 39.99% @ CURRENT EVENT 5624
+>> DATA_100 49.99% @ CURRENT EVENT 7030
+>> DATA_100 59.98% @ CURRENT EVENT 8436

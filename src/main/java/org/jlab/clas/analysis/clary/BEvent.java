@@ -223,3 +223,42 @@ public class BEvent {
 	return total_accumulatedcharge;
     }
 }
+
+
+//FOR DEBUGGING AND GENERAL USE 
+/*
+  System.out.println(" >> charge out test " + bevent.charge );
+  System.out.println(" >> starttime  " + bevent.start_time );
+  System.out.println(" >> rf " + bevent.rf_value );
+  System.out.println(" >> q " + bevent.charge );
+  System.out.println(" >> px " + bevent.px );
+  System.out.println(" >> py " + bevent.py );
+  System.out.println(" >> pz " + bevent.pz );
+  System.out.println(" >> vz " + bevent.vz );
+  System.out.println(" >> ecal_sect " + bevent.ecal_sect );
+  System.out.println(" >> ecsf " + bevent.ecsf );
+  System.out.println(" >> ec_ei " + bevent.ec_ei );
+  System.out.println(" >> ec_eo " + bevent.ec_eo);
+  System.out.println(" >> pcal_e " + bevent.pcal_e );
+  System.out.println(" >> nphe " + bevent.htcc_nphe );
+  System.out.println(" >> dcr1 s " + bevent.dcr1_sect );
+  System.out.println(" >> dcr1 cx " + bevent.dcr1_cx );
+  System.out.println(" >> dcr1 cy " + bevent.dcr1_cy );
+  System.out.println(" >> dcr2 s " + bevent.dcr2_sect );
+  System.out.println(" >> dcr2 cx " + bevent.dcr2_cx );
+  System.out.println(" >> dcr2 cy " + bevent.dcr2_cy );
+  System.out.println(" >> dcr3 s " + bevent.dcr3_sect );
+  System.out.println(" >> dcr3 cx " + bevent.dcr3_cx );
+  System.out.println(" >> dcr3 cy " + bevent.dcr3_cy );
+  System.out.println(" >> pcal x " + bevent.pcal_x );
+  System.out.println(" >> pcal y " + bevent.pcal_y );
+  System.out.println(" >> clas12beta " + bevent.clas12_beta );
+  System.out.println(" >> ftof1 energy " + bevent.ftofl1_energy );
+  System.out.println(" >> ftof1 path " + bevent.ftofl1_path );
+  System.out.println(" >> ftof1 tof " + bevent.ftofl1_tof );
+  System.out.println(" >> ftof2 energy " + bevent.ftofl2_energy );
+  System.out.println(" >> ftof2 path " + bevent.ftofl2_path );
+  System.out.println(" >> ftof2 tof " + bevent.ftofl2_tof );
+*/
+		
+	

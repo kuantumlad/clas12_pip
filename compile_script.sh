@@ -12,7 +12,7 @@ echo " BEGIN electronPID ANALYSIS for $1 $2 $3 $4"
 # $6 = FILE PREFIX
 
 fix_files=100
-num_jobs=$(($3/fix_files))
+num_jobs=$((1 + $3/fix_files))
 min_jobs=1 
 pid_files='/home/bclary/CLAS12/pics/pid_clary/'
 
@@ -26,8 +26,8 @@ fi
 #else
     
 
-i=0
-j=0
+i=1
+j=100
 echo ">> CREATING " $num_jobs 
 while [ $i -lt $num_jobs ]
 do
@@ -37,6 +37,7 @@ do
     el_dir_name='h_el_'$2'_'$4'_pid_clary_job_'$i'/'
     pr_dir_name='h_pr_'$2'_'$4'_pid_clary_job_'$i'/'
     kp_dir_name='h_kp_'$2'_'$4'_pid_clary_job_'$i'/'
+    phys_dir_name='h_phys_'$2'_'$4'_pid_clary_job_'$i'/'
 
     #mkdir $pid_files$el_dir_name
     #mkdir $pid_files$pr_dir_name
@@ -49,6 +50,7 @@ do
 	mv $pid_files'h_'$2'_'$4'_thread-'$k'_el_pid_clary.hipo' $pid_files$el_dir_name
 	mv $pid_files'h_'$2'_'$4'_thread-'$k'_proton_pid_clary.hipo' $pid_files$pr_dir_name
 	mv $pid_files'h_'$2'_'$4'_thread-'$k'_kaonP_pid_clary.hipo' $pid_files$kp_dir_name
+	mv $pid_files'h_'$2'_'$4'_thread-'$k'_phys_clary.hipo' $pid_files$phys_dir_name
 	k=$((k+1))
     done
 

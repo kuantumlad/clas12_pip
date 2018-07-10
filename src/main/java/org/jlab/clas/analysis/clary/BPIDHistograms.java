@@ -230,9 +230,9 @@ public class BPIDHistograms {
 
     H2F h_el_q2x_comp = new H2F("h_"+s_run_number+"_el_q2x_comp","h_"+s_run_number+"_el_q2x_comp", 200, 0.0, 1.1, 200, 0.0, beam_energy);
 
-    public void createElectronHistoToHipoOut( int i ){
+    //public void createElectronHistoToHipoOut( int i ){
 		
-    }
+    //}
            
     public void createElectronHistograms(int i){
 

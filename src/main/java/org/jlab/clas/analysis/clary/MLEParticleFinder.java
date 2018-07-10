@@ -14,14 +14,23 @@ public class MLEParticleFinder{
     MLEPion mle_pion = new MLEPion();
 
     int charge_type;
+    int proton_pid;
+    int pion_pid;
+    int kaon_pid;
 
     public MLEParticleFinder(String particle_charge ){
 	if( particle_charge == "pos" ){
 	    System.out.println(" >> INITIALIZE CUTS FOR POSITION HADRON PARTICLES ");
 	    charge_type = 1;
+	    proton_pid = PhysicalConstants.protonID;
+	    pion_pid = PhysicalConstants.pionplusID;
+	    kaon_pid = PhysicalConstants.kaonplusID;
 	}
 	if( particle_charge == "neg" ){
 	    System.out.println(" >> INITIALIZE CUTS FOR NEGATIVE HADRON PARTICLES ");
+	    proton_pid = PhysicalConstants.protonID; // BASE RESPONSE FOR PARTICLE
+	    pion_pid = PhysicalConstants.pionminusID;
+	    kaon_pid = PhysicalConstants.kaonminusID;
 	    charge_type = -1;
 	}
 	
@@ -53,8 +62,8 @@ public class MLEParticleFinder{
 	}
 
 	m_mle_particle.put(2212, mle_proton.getMLEProtonParticle().getProperty("likelihood"));
-	m_mle_particle.put(321, mle_kaon.getMLEKaonParticle().getProperty("likelihood"));
-	m_mle_particle.put(211, mle_pion.getMLEPionParticle().getProperty("likelihood"));
+	m_mle_particle.put(charge_type*321, mle_kaon.getMLEKaonParticle().getProperty("likelihood"));
+	m_mle_particle.put(charge_type*211, mle_pion.getMLEPionParticle().getProperty("likelihood"));
 	
 	//System.out.println(" >> MAP OF HADRONS " + m_mle_particle);
 
@@ -79,20 +88,33 @@ public class MLEParticleFinder{
 	setMLEParticle( bev, rec_i );
 	int mle_pid = sortMLEParticles();
 
-	switch( mle_pid ){
-	case 2212:
+
+	/*	switch( mle_pid ){
+	case proton_pid:
 	    mle_particle = mle_proton.getMLEProtonParticle();
 	    break;
-	case 211:
+	case pion_pid:
 	    mle_particle = mle_pion.getMLEPionParticle();
 	    break;
-	case 321:
+	case kaon_pid:
 	    mle_particle = mle_kaon.getMLEKaonParticle();
 	    break;
 	default: 
 	    mle_particle = null;
 	    break;
 	}
+	*/
+
+	if( mle_pid == proton_pid ){
+	    mle_particle = mle_proton.getMLEProtonParticle();
+	}
+	else if( mle_pid == pion_pid ){
+	    mle_particle = mle_pion.getMLEPionParticle();
+	}
+	else if( mle_pid == kaon_pid ){
+	    mle_particle = mle_kaon.getMLEKaonParticle();
+	}
+
 	
 	return mle_particle;
 

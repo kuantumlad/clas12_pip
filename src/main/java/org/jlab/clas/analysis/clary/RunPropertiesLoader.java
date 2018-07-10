@@ -107,3 +107,29 @@ public class RunPropertiesLoader{
     
 }
 
+
+// HOW TO USE AND USEFUL FOR DEBUGGING 
+
+/*
+  run_properties.getRunInfoClass().addRunToRunInfo("3059");
+  run_properties.getRunInfoClass().getRunParametersClass("3059").setRunNumber(3059);
+  run_properties.getRunInfoClass().getRunParametersClass("3059").setBeamEnergy(3.4582);
+  run_properties.getRunInfoClass().getRunParametersClass("3059").setCurrent(5.0);
+  run_properties.getRunInfoClass().getRunParametersClass("3059").setTarget("LH2");
+  run_properties.writeRunProperties();
+  
+  run_properties.getRunInfoClass().getRunParametersClass("3059").setCutTypeMap();
+  run_properties.getRunInfoClass().getRunParametersClass("3059").addCutLevelToCutType("cut_nom");
+  run_properties.getRunInfoClass().getRunParametersClass("3059").getCutTypeClass("cut_nom").setCutLevel(0);
+  run_properties.getRunInfoClass().getRunParametersClass("3059").getCutTypeClass("cut_nom").setECParameterMap();
+  run_properties.getRunInfoClass().getRunParametersClass("3059").getCutTypeClass("cut_nom").addECCutParameters("ec_sf_cut");
+  run_properties.getRunInfoClass().getRunParametersClass("3059").getCutTypeClass("cut_nom").getECCutParametersClass("ec_sf_cut").setCutName("ECSFCut");
+  List<Double> testlist = new ArrayList<Double>();
+  testlist.add(0.3);
+  testlist.add(0.4);
+  testlist.add(0.5);
+  testlist.add(0.6);
+  testlist.add(0.6);
+  run_properties.getRunInfoClass().getRunParametersClass("3059").getCutTypeClass("cut_nom").getECCutParametersClass("ec_sf_cut").setMaxFitParametersSector1( testlist );
+  run_properties.writeRunProperties();
+*/

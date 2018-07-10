@@ -53,6 +53,7 @@ public class BHistoPhys {
 	System.out.println(" >> Q2 " + -phyev.lv_q.mass2());
 	System.out.println(" >> xb " + phyev.xB);
 	System.out.println(" >> -t " + phyev.t);
+	System.out.println(" >> KP Mass " + phyev.lv_kp.mass());
 	System.out.println(" >> KM Mass " + phyev.lv_km.mass());
 	
 	if( phyev.topology == 4 ){

@@ -52,16 +52,16 @@ public class BHistoPIDLevel {
 
     public void CreateHistograms(){
 	
-	h_bpid.createElectronHistoToHipoOut(0);
+	//h_bpid.createElectronHistoToHipoOut(0);
 
-	for( int i = 0; i <= 12; i++ ){ //THIS NUMBER SHOULD NOT BE HARD CODED :o // REPRESENTS NUMBER OF CUTS
+	for( int i = 0; i <= 11; i++ ){ //THIS NUMBER SHOULD NOT BE HARD CODED :o // REPRESENTS NUMBER OF CUTS
 	    h_bpid.createElectronHistograms(i);
 	    //h_bprotonpid.createProtonHistograms(i);
 	    //h_bkppid.createKaonPHistograms(i);
 	}
 
 	for( int j = 0; j <= 6; j++ ){
-	    h_bpid.createElectronSectorHistograms(j,12);
+	    h_bpid.createElectronSectorHistograms(j,11);
 	    //h_bprotonpid.createProtonSectorHistograms(j,6);
 	    //h_bkppid.createKaonPSectorHistograms(j,6);
 	}
